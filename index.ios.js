@@ -4,51 +4,42 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import React, {Component } from 'react';
+import {Content, Container, Header, Title, Button, Icon, Text, View, Footer, FooterTab} from 'native-base';
+import { 
+  AppRegistry } from 'react-native';
+import FooterComponent from './app/FooterComponent';  
 
 export default class AwesomeProject extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+      // <Container>
+      //   <Content />
+      //     <Footer >
+      //         <FooterTab>
+      //             <Button>
+      //                 <Icon name="apps" />
+      //                 <Text>Apps</Text>
+      //             </Button>
+      //             <Button>
+      //                 <Icon name="camera" />
+      //                 <Text>Camera</Text>
+      //             </Button>
+      //             <Button active>
+      //                 <Icon active name="navigate" />
+      //                 <Text>Navigate</Text>
+      //             </Button>
+      //             <Button>
+      //                 <Icon name="person" />
+      //                 <Text>Contact</Text>
+      //             </Button>
+      //         </FooterTab>
+      //     </Footer>
+      // </Container>
+      <FooterComponent />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 
