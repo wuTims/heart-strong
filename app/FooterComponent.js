@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
 
-export default class FooterTabsExample extends Component {
+export default class FooterComponent extends Component {
+    constructor() {
+      super();
+      this.state = {selectedTab: 'tabOne'}
+    }
+    setTab(tabID) {
+      this.setState({selectedTab: tabID})
+    }
     render() {
         return (
             <Container>
@@ -9,21 +16,33 @@ export default class FooterTabsExample extends Component {
 
                 <Footer >
                     <FooterTab>
-                        <Button>
-                            <Icon name="apps" />
-                            <Text>Apps</Text>
+                        <Button
+                        active={this.state.selectedTab === 'tabOne'}  
+                        onPress={() => this.setTab('tabOne')}>
+                            <Icon 
+                            name="bookmarks"/>      
+                            <Text>Guide</Text>
                         </Button>
-                        <Button>
-                            <Icon name="camera" />
-                            <Text>Camera</Text>
+                        <Button
+                        active={this.state.selectedTab === 'tabTwo'}
+                        onPress={() => this.setTab('tabTwo')}>
+                            <Icon
+                            name="brush"/>
+                            <Text>Journal</Text>
                         </Button>
-                        <Button active>
-                            <Icon active name="navigate" />
-                            <Text>Navigate</Text>
+                        <Button
+                        active={this.state.selectedTab === 'tabThree'} 
+                        onPress={() => this.setTab('tabThree')}>
+                            <Icon 
+                            name="pulse"/>
+                            <Text>Data</Text>
                         </Button>
-                        <Button>
-                            <Icon name="person" />
-                            <Text>Contact</Text>
+                        <Button
+                        active={this.state.selectedTab === 'tabFour'} 
+                        onPress={() => this.setTab('tabFour')}>
+                            <Icon 
+                            name="settings"/>
+                            <Text>Settings</Text>
                         </Button>
                     </FooterTab>
                 </Footer>
