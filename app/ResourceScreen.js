@@ -10,7 +10,7 @@ export default class ResourceScreen extends Component {
       		<View style={{flex: 1}}>
 				<HeaderComponent active=''/>
 				<Text style={styles.testStyle}>Resources Screen!</Text>
-				<FooterComponent />
+				<FooterComponent navigator={this.props.navigator}/>
 			</View>
 		);
 	}
