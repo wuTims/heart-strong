@@ -4,51 +4,64 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
+import React, {Component } from 'react';
+import {Content, Container, Header, Title, Button, Icon, Text, Footer, FooterTab, Left, Body, Right} from 'native-base';
+import { 
   AppRegistry,
+  View,
   StyleSheet,
-  Text,
-  View
-} from 'react-native';
+  Navigator } from 'react-native';
+import FooterComponent from './app/FooterComponent'; 
+import NavigatorComponent from './app/NavigatorComponent';
+import HeaderComponent from './app/HeaderComponent';
+import HomeScreen from './app/HomeScreen';
+import SettingScreen from './app/SettingScreen'
+import DataScreen from './app/DataScreen'
+import JournalScreen from './app/JournalScreen'
+import ResourceScreen from './app/ResourceScreen'
 
 export default class AwesomeProject extends Component {
+  constructor() {
+    super();
+    this.state = {
+      homePressed: true
+    }
+  }
+
+  renderScene(route, navigator) {
+    if (route.name == 'Home') {
+      return <HomeScreen navigator={navigator} />
+    }
+    if (route.name == 'Resources') {
+      return <ResourceScreen navigator={navigator} />
+    }
+    if (route.name == 'Journal') {
+      return <JournalScreen navigator={navigator} />
+    }
+    if (route.name == 'Data') {
+      return <DataScreen navigator={navigator} />
+    }
+    if (route.name == 'Settings') {
+      return <SettingScreen navigator={navigator} />
+    }
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+      <View style={{flex: 1}}>
+        <Navigator
+          initialRoute={{
+            name: 'Settings'
+          }}
+          renderScene={
+            this.renderScene.bind(this)
+          }
+        />
       </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 
