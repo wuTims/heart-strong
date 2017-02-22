@@ -5,18 +5,63 @@
  */
 
 import React, {Component } from 'react';
-import {Content, Container, Header, Title, Button, Icon, Text, View, Footer, FooterTab} from 'native-base';
+import {Content, Container, Header, Title, Button, Icon, Text, Footer, FooterTab, Left, Body, Right} from 'native-base';
 import { 
-  AppRegistry } from 'react-native';
+  AppRegistry,
+  View,
+  StyleSheet,
+  Navigator } from 'react-native';
 import FooterComponent from './app/FooterComponent'; 
+import NavigatorComponent from './app/NavigatorComponent';
+import HeaderComponent from './app/HeaderComponent';
+import HomeScreen from './app/HomeScreen';
+import SettingScreen from './app/SettingScreen'
+import DataScreen from './app/DataScreen'
+import JournalScreen from './app/JournalScreen'
+import ResourceScreen from './app/ResourceScreen'
 
 export default class AwesomeProject extends Component {
+  constructor() {
+    super();
+    this.state = {
+      homePressed: true
+    }
+  }
+
+  renderScene(route, navigator) {
+    if (route.name == 'Home') {
+      return <HomeScreen navigator={navigator} />
+    }
+    if (route.name == 'Resources') {
+      return <ResourceScreen navigator={navigator} />
+    }
+    if (route.name == 'Journal') {
+      return <JournalScreen navigator={navigator} />
+    }
+    if (route.name == 'Data') {
+      return <DataScreen navigator={navigator} />
+    }
+    if (route.name == 'Settings') {
+      return <SettingScreen navigator={navigator} />
+    }
+  }
+
   render() {
     return (
-      <FooterComponent /> 
+      <View style={{flex: 1}}>
+        <Navigator
+          initialRoute={{
+            name: 'Settings'
+          }}
+          renderScene={
+            this.renderScene.bind(this)
+          }
+        />
+      </View>
     );
   }
 }
+
 
 AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 

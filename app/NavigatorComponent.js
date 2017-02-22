@@ -3,7 +3,7 @@ import { Container, Content, Footer, FooterTab, Button, Icon} from 'native-base'
 import { AppRegistry, Text, StyleSheet} from 'react-native';
 
 
-export default class FooterComponent extends Component {
+export default class NavigatorComponent extends Component {
     constructor() {
       super();
       this.state = {
