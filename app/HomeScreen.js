@@ -10,7 +10,7 @@ export default class HomeScreen extends Component {
       		<View style={{flex: 1}}>
 				<HeaderComponent active='true'/>
 				<Text style={styles.testStyle}>Home Screen!</Text>
-				<FooterComponent />
+				<FooterComponent navigator={this.props.navigator}/>
 			</View>
 		);
 	}

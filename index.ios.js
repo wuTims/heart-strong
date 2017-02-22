@@ -51,7 +51,7 @@ export default class AwesomeProject extends Component {
       <View style={{flex: 1}}>
         <Navigator
           initialRoute={{
-            name: 'Settings'
+            name: 'Home'
           }}
           renderScene={
             this.renderScene.bind(this)
