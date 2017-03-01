@@ -8,9 +8,9 @@ export default class ResourceScreen extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
-				<HeaderComponent active=''/>
+				<HeaderComponent navigator={this.props.navigator} active=''/>
 				<Text style={styles.testStyle}>Resources Screen!</Text>
-				<FooterComponent navigator={this.props.navigator}/>
+				<FooterComponent activeTab='tabOne' navigator={this.props.navigator}/>
 			</View>
 		);
 	}

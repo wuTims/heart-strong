@@ -8,7 +8,7 @@ export default class HomeScreen extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
-				<HeaderComponent active='true'/>
+				<HeaderComponent navigator={this.props.navigator} active='true'/>
 				<Text style={styles.testStyle}>Home Screen!</Text>
 				<FooterComponent navigator={this.props.navigator}/>
 			</View>
