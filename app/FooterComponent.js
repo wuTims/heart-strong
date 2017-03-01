@@ -28,32 +28,32 @@ export default class FooterComponent extends Component {
                 <Footer >
                     <FooterTab>
                         <Button
-                        active={this.state.selectedTab === 'tabOne'}  
+                        active={this.props.activeTab === 'tabOne'}  
                         onPress={() => {this.setTab('tabOne'); this.navigate('Resources')}}>
                             <Icon 
                             name="bookmarks"/>      
-                            <Text style={(this.state.selectedTab === 'tabOne') ? styles.pressedColor : styles.textSize}>Resources</Text>
+                            <Text style={(this.props.activeTab === 'tabOne') ? styles.pressedColor : styles.textSize}>Resources</Text>
                         </Button>
                         <Button
-                        active={this.state.selectedTab === 'tabTwo'}
+                        active={this.props.activeTab === 'tabTwo'}
                         onPress={() => {this.setTab('tabTwo'); this.navigate('Journal')}}>
                             <Icon
                             name="book"/>
-                            <Text style={(this.state.selectedTab === 'tabTwo') ? styles.pressedColor : styles.textSize}>Journal</Text>
+                            <Text style={(this.props.activeTab === 'tabTwo') ? styles.pressedColor : styles.textSize}>Journal</Text>
                         </Button>
                         <Button
-                        active={this.state.selectedTab === 'tabThree'} 
+                        active={this.props.activeTab === 'tabThree'} 
                         onPress={() => {this.setTab('tabThree'); this.navigate('Data')}}>
                             <Icon 
                             name="pulse"/>
-                            <Text style={(this.state.selectedTab === 'tabThree') ? styles.pressedColor : styles.textSize}>Data</Text>
+                            <Text style={(this.props.activeTab === 'tabThree') ? styles.pressedColor : styles.textSize}>Data</Text>
                         </Button>
                         <Button
-                        active={this.state.selectedTab === 'tabFour'} 
+                        active={this.props.activeTab === 'tabFour'} 
                         onPress={() => {this.setTab('tabFour'); this.navigate('Settings')}}>
                             <Icon 
                             name="settings"/>
-                            <Text style={(this.state.selectedTab === 'tabFour') ? styles.pressedColor : styles.textSize}>Settings</Text>
+                            <Text style={(this.props.activeTab === 'tabFour') ? styles.pressedColor : styles.textSize}>Settings</Text>
                         </Button>
                     </FooterTab>
                 </Footer>

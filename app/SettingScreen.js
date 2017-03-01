@@ -8,9 +8,9 @@ export default class SettingScreen extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
-				<HeaderComponent active=''/>
+				<HeaderComponent navigator={this.props.navigator} active=''/>
 				<Text style={styles.testStyle}>Settings Screen!</Text>
-				<FooterComponent navigator={this.props.navigator}/>
+				<FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
 			</View>
 		);
 	}
@@ -22,4 +22,3 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   }
 })
-
