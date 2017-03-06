@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.15.0",
