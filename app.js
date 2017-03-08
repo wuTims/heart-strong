@@ -24,8 +24,8 @@ if(process.env.MONGODB_PASSWORD){
     connection_string = "mongodb://" +
         process.env.MONGODB_USER + ":" +
         process.env.MONGODB_PASSWORD + "@" +
-        IP_ADDRESS + ":" +
-        "27017" + "/" +
+        process.env.HOSTNAME + ":" +
+        process.env.MONGODB_PORT + "/" +
         process.env.MONGODB_DATABASE;
 }
 console.log('attempting to connect to MongoDB at ' + connection_string);
