@@ -11,7 +11,8 @@ app.listen(port, function () {
 });
 
 // Needed for OpenShift. Remove if not using OpenShift
-var IP_ADDRESS = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+// var IP_ADDRESS = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var IP_ADDRESS = '127.0.0.1';
 var PORT = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 app.listen(PORT, IP_ADDRESS,() => {
