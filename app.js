@@ -24,7 +24,7 @@ if(process.env.MONGODB_PASSWORD){
     connection_string = "mongodb://" +
         process.env.MONGODB_USER + ":" +
         process.env.MONGODB_PASSWORD + "@" +
-        process.env.MONGODB_IP + ':' +
+        IP_ADDRESS + ":" +
         process.env.MONGODB_PORT + '/' +
         process.env.MONGODB_DATABASE;
 }
