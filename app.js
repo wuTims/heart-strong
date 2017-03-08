@@ -24,13 +24,13 @@ if(process.env.MONGODB_PASSWORD){
     connection_string = "mongodb://" +
         process.env.MONGODB_USER + ":" +
         process.env.MONGODB_PASSWORD + "@" +
-        "mongodb-2-wjzf0" + ":" +
+        IP_ADDRESS + ":" +
         "27017" + "/" +
         process.env.MONGODB_DATABASE;
 }
 console.log('attempting to connect to MongoDB at ' + connection_string);
-mongoose.connect(connection_string);
-mongoose.connection.on('error', () => {
-  console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
-  process.exit();
-});
+mongoose.connect(connection_string, function(err) { if (err) { throw err; }});
+// mongoose.connection.on('error', () => {
+//   console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
+//   process.exit();
+// });
