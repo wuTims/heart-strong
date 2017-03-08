@@ -30,6 +30,6 @@ if(process.env.MONGODB_PASSWORD){
 console.log('attempting to connect to MongoDB at ' + connection_string);
 mongoose.connect(connection_string);
 mongoose.connection.on('error', () => {
-  console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
+  console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
   process.exit();
 });
