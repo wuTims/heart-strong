@@ -15,10 +15,11 @@ import FooterComponent from './app/FooterComponent';
 import NavigatorComponent from './app/NavigatorComponent';
 import HeaderComponent from './app/HeaderComponent';
 import HomeScreen from './app/HomeScreen';
-import SettingScreen from './app/SettingScreen'
-import DataScreen from './app/DataScreen'
-import JournalScreen from './app/JournalScreen'
-import ResourceScreen from './app/ResourceScreen'
+import SettingScreen from './app/SettingScreen';
+import DataScreen from './app/DataScreen';
+import JournalScreen from './app/JournalScreen';
+import ResourceScreen from './app/ResourceScreen';
+import JournalInput from './app/Journal/JournalInput';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -44,6 +45,9 @@ export default class AwesomeProject extends Component {
     if (route.name == 'Settings') {
       return <SettingScreen navigator={navigator} />
     }
+    if (route.name == 'JournalInput') {
+      return <JournalInput navigator={navigator} />
+    }
   }
 
   render() {
@@ -51,7 +55,7 @@ export default class AwesomeProject extends Component {
       <View style={{flex: 1}}>
         <Navigator
           initialRoute={{
-            name: 'Settings'
+            name: 'Home'
           }}
           renderScene={
             this.renderScene.bind(this)

@@ -1,96 +1,100 @@
+
+
 import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View} from 'react-native';
-import {Container, Content, InputGroup, Input, Icon, Button, Left, Right, Body, Header, Title,  ListItem } from 'native-base';
+import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
 
-var journalList = React.createClass({
-    render(){
-      return(
-           <Container>
-                <Content>
-                <Header>
-                    
-                    <Left>
-                    <Button transparent>
-                        <Icon name='arrow-back' />
-                    </Button>
-                </Left>
-                    <Body>
-                        <Title>Journals</Title>
-                    </Body>
-                    <Right />
-                </Header>
-                     <ListItem>
-                        <Text>I feel good today!</Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text>need drink more water </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text>feeling lonely...  </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text>feeling longely still </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text> my back hurts </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text> met a nice girl </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text> great dinner </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text> see doctor tomorrow  </Text>
-                    </ListItem>
-                    <ListItem>
-                        <Text>LOVE THIS APP! </Text>
-                    </ListItem>
-                    
-                </Content>
-            </Container>
 
-      );
 
+
+export default class JournalScreen extends Component {
+    navigate(routeName) {
+        this.props.navigator.push({
+            name: routeName
+        })
     }
- });
 
- var input = React.createClass({
-    render(){
-      return (
-         <Container>
+	render() {
+		return (
+      		<View style={{flex: 1}}>
+				
+                <Container>
+                    <Content>
+                    <Header>
+                        
+                        <Left/ >
+                        <Body>
+                            <Title>Journals</Title>
+                        </Body>
 
-                 <Header>
-                    <Left/>
-                    <Body>
-                        <Title>New Journal</Title>
-                    </Body>
-                    <Right />
-                </Header>
+                        <Right>
+                         <Button transparent onPress={() => {this.navigate('JournalInput')}}>
+                            <Icon name='add' />
+                        </Button>
+                        </Right>
+                    </Header>
 
-                <Content>
-                   
-                    <Input placeholder="Date"  style={{color: '#00c497', height:50}} />
-                    <Input placeholder="Anything new today? "  style={{color: '#00c497', height: 200}} />
-                    <Button round success ><Text> submit </Text></Button>
-                </Content>
+                         <ListItem>
+                             <Text onPress={() => {this.navigate('JournalInput')}}>I feel good today!</Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text>need drink more water </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text>feeling lonely...  </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text>feeling longely still </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text> my back hurts </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text> met a nice girl </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text> great dinner </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text> see doctor tomorrow  </Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text>LOVE THIS APP! </Text>
+                        </ListItem>
+                        
+                    </Content>
+                </Container>
+                
+                     
+				<FooterComponent navigator={this.props.navigator}/>
+
+			</View>
+
+
+            
+            
+		);
+	}
+}
 
 
 
 
-            </Container>
-      );
-    }
- });
-
+ 
  const styles = StyleSheet.create({
-  testStyle: {
-    textAlign: 'center',
+  
+
+  actionButtonIcon: {
+    fontSize: 20,
+    height: 22,
+    color: 'white',
   }
+
+
 })
 
 

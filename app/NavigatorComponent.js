@@ -36,7 +36,7 @@ export default class NavigatorComponent extends Component {
                         </Button>
                         <Button
                         active={this.state.selectedTab === 'tabTwo'}
-                        onPress={() => {this.setTab('tabTwo'); this.navigate.bind(this, 'Jounral')}}>
+                        onPress={() => {this.setTab('tabTwo'); this.navigate.bind(this, 'Journal')}}>
                             <Icon
                             name="book"/>
                             <Text style={(this.state.selectedTab === 'tabTwo') ? styles.pressedColor : styles.textSize}>Journal</Text>
