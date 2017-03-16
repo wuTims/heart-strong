@@ -19,6 +19,7 @@ import SettingScreen from './app/SettingScreen'
 import DataScreen from './app/DataScreen'
 import JournalScreen from './app/JournalScreen'
 import ResourceScreen from './app/ResourceScreen'
+import JournalInput from './app/Journal/JournalInput';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -46,6 +47,9 @@ export default class AwesomeProject extends Component {
     }
     if (route.name == 'Settings') {
       return <SettingScreen navigator={navigator} />
+    }    
+    if (route.name == 'JournalInput') {
+      return <JournalInput navigator={navigator} />
     }
   }
 
