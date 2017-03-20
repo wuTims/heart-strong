@@ -22,9 +22,6 @@ export default class FooterComponent extends Component {
 
     render() {
         return (
-            <Container>
-                <Content />
-
                 <Footer >
                     <FooterTab>
                         <Button
@@ -57,7 +54,6 @@ export default class FooterComponent extends Component {
                         </Button>
                     </FooterTab>
                 </Footer>
-            </Container>
         );
     }
 }

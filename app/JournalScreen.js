@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View, ListView, TouchableHighlight} from 'react-native';
 import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
+import { AppRegistry, Text, StyleSheet, View} from 'react-native';
+import { Content } from 'native-base';
+>>>>>>> Stashed changes
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
@@ -74,6 +77,11 @@ export default class JournalScreen extends Component {
 		              </Content>
 		          </Container>
 					
+      		<View style={{flex: 1}}>
+				<HeaderComponent navigator={this.props.navigator} active=''/>
+				<Content>
+					<Text style={styles.testStyle}>Journal Screen!</Text>
+				</Content>
 				<FooterComponent activeTab='tabTwo' navigator={this.props.navigator}/>
 			</View>
 		);
