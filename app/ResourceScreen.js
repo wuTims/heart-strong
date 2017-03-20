@@ -36,7 +36,7 @@ export default class ResourceScreen extends Component {
                              <Text >Introduce to My Healthy Heart Care</Text>
                         </ListItem>
                         <ListItem>
-                            <Text>Week 1 </Text>
+                            <Text onPress={() => {this.navigate('Week1Content')}}>week 1</Text>
                         </ListItem>
                         <ListItem>
                             <Text>Week 2 </Text>
