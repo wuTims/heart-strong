@@ -17,7 +17,7 @@ export default class JournalScreen extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://10.122.10.87:3030/', {
+		fetch('http://172.17.10.72:3030/', {
 			method: 'GET'
 		})
 			.then((response) => response.json())
