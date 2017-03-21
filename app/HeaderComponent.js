@@ -38,6 +38,7 @@ export default class HeaderComponent extends Component {
                         onPress={ () => {this.homePressed(); this.navigate('Home')}}>
                         	<Icon 
                         	name='heart' 
+                            active={(this.props.active !== '') ? this.props.active : this.state.homePressed}
                         	/>
                         </Button>
                     </Body>
