@@ -8,9 +8,9 @@ export default class DataScreen extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
-				<HeaderComponent navigator={this.props.navigator} active=''/>
+				<HeaderComponent titleText='Data' navigator={this.props.navigator} active=''/>
 				<Text style={styles.testStyle}>Data Screen!</Text>
-				<FooterComponent activeTab='tabThree' navigator={this.props.navigator}/>
+				<FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
 			</View>
 		);
 	}

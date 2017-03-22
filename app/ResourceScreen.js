@@ -54,7 +54,7 @@ export default class ResourceScreen extends Component {
                 </Container>
                 
                      
-				<FooterComponent activeTab='tabOne' navigator={this.props.navigator}/>
+				<FooterComponent activeTab='tabTwo' navigator={this.props.navigator}/>
 
 			</View>  
 
