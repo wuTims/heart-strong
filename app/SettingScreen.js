@@ -8,11 +8,13 @@ import HeaderComponent from '../app/HeaderComponent';
 export default class SettingScreen extends Component {
 	render() {
 		return (
-      		<View style={{flex: 1}}>
-				<HeaderComponent titleText='Settings' navigator={this.props.navigator} settings='true'/>
-				<Text style={styles.testStyle}>Settings Screen!</Text>
-				<FooterComponent activeTab='tabFive' navigator={this.props.navigator}/>
-			</View>
+	      		<View style={{flex: 1}}>
+					<HeaderComponent titleText='Settings' navigator={this.props.navigator} settings='true'/>
+					<Content>
+					<Text style={styles.testStyle}>Settings Screen!</Text>
+					</Content>
+					<FooterComponent navigator={this.props.navigator}/>
+				</View>
 		);
 	}
 }
