@@ -21,6 +21,12 @@ import JournalScreen from './app/JournalScreen';
 import ResourceScreen from './app/ResourceScreen';
 import JournalInput from './app/Journal/JournalInput';
 import CurriculumScreen from './app/CurriculumScreen';
+import Week1Content from './app/Corriculum/Week1Content';
+import Week1Q1 from './app/Corriculum/Week1Q1';
+import Week1A1 from './app/Corriculum/Week1A1';
+import Week1Q2 from './app/Corriculum/Week1Q2';
+import Week1A2 from './app/Corriculum/Week1A2';
+import QuizFinish from './app/Corriculum/QuizFinish';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -55,6 +61,26 @@ export default class AwesomeProject extends Component {
     if (route.name == 'JournalInput') {
       return <JournalInput navigator={navigator} />
     }
+     if (route.name == 'Week1Content') {
+      return <Week1Content navigator={navigator} />
+    }
+     if (route.name == 'Week1Q1') {
+      return <Week1Q1 navigator={navigator} />
+    }
+    if (route.name == 'Week1A1') {
+      return <Week1A1 navigator={navigator} />
+    }
+      if (route.name == 'Week1Q2') {
+      return <Week1Q2 navigator={navigator} />
+    }
+      if (route.name == 'Week1A2') {
+      return <Week1A2 navigator={navigator} />
+    }
+    if (route.name == 'QuizFinish') {
+      return <QuizFinish navigator={navigator} />
+    }
+
+   
   }
 
   render() {
