@@ -10,7 +10,6 @@ import DataInput from '../app/data/DataInput';
 import GraphView from '../app/data/GraphView';
 
 export default class DataScreen extends Component {
-
     navigate(routeName) {
       this.props.navigator.push({
           name: routeName
