@@ -9,7 +9,9 @@ export default class CurriculumScreen extends Component {
 		return (
       		<View style={{flex: 1}}>
 				<HeaderComponent titleText='Curriculum' navigator={this.props.navigator} />
+				<Content>
 				<Text style={styles.testStyle}>Curriculum Screen!</Text>
+				</Content>
 				<FooterComponent activeTab='tabOne' navigator={this.props.navigator}/>
 			</View>
 		);
