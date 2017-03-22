@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {StyleSheet, View, Button, Text, Dimensions} from 'react-native'
+import {StyleSheet, View, Button, Text, Dimensions} from 'react-native';
+import { Icon } from 'native-base';
 import CalendarPicker from 'react-native-calendar-picker';
 
 export default class CalendarView extends Component {
@@ -9,6 +10,12 @@ export default class CalendarView extends Component {
 			date: new Date()  
 		  } 
 	}
+
+	navigate(routeName){
+        this.props.navigator.push({
+            name: routeName
+        })
+    }
 
 	onDateChange(date) {
 		this.setState({ date: date });
@@ -56,7 +63,8 @@ export default class CalendarView extends Component {
 					<Button 
 						title= {"Entry for: " + this.returnMonth() + this.state.date.getDate().toString()} 
 						color="#841584"
-                        backgroundColor="#FFFFFF" />
+                        backgroundColor="#FFFFFF"
+                        onPress = { () => {this.navigate('DataInput')}} /> 
 				</View>
 			</View>
 		);

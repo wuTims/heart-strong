@@ -9,6 +9,12 @@ export default class DataInput extends Component {
 		  } 
 	}
 
+    navigate(routeName) {
+      this.props.navigator.push({
+          name: routeName
+      })
+  }
+
 	returnMonth() {
 		if(this.state.date.getMonth().toString() == 0) {
 			return "Jan ";
@@ -126,7 +132,9 @@ export default class DataInput extends Component {
                 <View style={styles.buttonstyle}> 
                     <Button 
 						title="Save" 
-						color="#841584"/>
+						color="#841584"
+                        onPress={() => {this.props.navigator.pop()}} 
+                        />
                 </View>
           </View>
         );

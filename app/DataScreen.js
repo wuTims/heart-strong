@@ -10,6 +10,13 @@ import DataInput from '../app/data/DataInput';
 import GraphView from '../app/data/GraphView';
 
 export default class DataScreen extends Component {
+
+    navigate(routeName) {
+      this.props.navigator.push({
+          name: routeName
+      })
+  }
+
     render() {
         return (
             <Container>
@@ -18,7 +25,7 @@ export default class DataScreen extends Component {
                         <View style={{flex: 1}}>
                                 <Tabs>
                                     <Tab heading="Calendar">
-                                        <CalendarView />
+                                        <CalendarView navigator={this.props.navigator}/>
                                     </Tab>
                                     <Tab heading="Graph">
                                         <GraphView />

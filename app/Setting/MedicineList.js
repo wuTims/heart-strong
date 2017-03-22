@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, StyleSheet, View} from 'react-native';
-import { Content, Title, ListItem, Right, Left, Radio, Icon, Body, Switch } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
-export default class SettingScreen extends Component {
+export default class MedicineList extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
 				<HeaderComponent navigator={this.props.navigator} active=''/>
 				<Content>
-					<ListItem icon>
+					 <ListItem selected={false}>
+                        <Text>Lunch Break</Text>
                         <Right>
-                            <Icon name="arrow" />
+                          <Radio selected={false} />
                         </Right>
-                        <Body>
-                          <Text>Airplane Mode</Text>
-                        </Body>
-                        
+                    </ListItem>
+                    <ListItem selected={true}>
+                        <Text>Discussion with Client</Text>
+                        <Right>
+                            <Radio selected={true} />
+                        </Right>
                     </ListItem>
 				</Content>
 				<FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
@@ -26,10 +27,3 @@ export default class SettingScreen extends Component {
 		);
 	}
 }
-
-
-const styles = StyleSheet.create({
-  testStyle: {
-    textAlign: 'center',
-  }
-})
