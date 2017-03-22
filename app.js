@@ -40,7 +40,7 @@ app.get('/', function(req, res){
 
 var connection_string = "mongodb://localhost:27017/sampledb";
 if(process.env.MONGODB_PASSWORD){
-    var mongoServiceName = process.env.DATABASE_SERVICE_NAME.topUpperCase();
+    var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase();
     connection_string = "mongodb://" +
         process.env.MONGODB_USER + ":" +
         process.env.MONGODB_PASSWORD + "@" +
