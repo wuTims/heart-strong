@@ -14,6 +14,7 @@ export default class CurriculumScreen extends Component {
             </View>
         );
     }
+
 }
 
 

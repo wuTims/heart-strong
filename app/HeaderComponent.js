@@ -34,16 +34,16 @@ export default class HeaderComponent extends Component {
 
     render() {
         return (
-            <Container>
                 <Header>
                     <Left>
-                        <Button 
+                        {/*<Button 
                         transparent
                         onPress={ () => {this.homePressed(); this.navigate('Home')}}>
                             <Icon name='home' 
                             active={(this.props.active !== '') ? this.props.active : this.state.homePressed}
                             />
                         </Button>
+                        */}
                     </Left>
                     <Body>
                         {/* <Button 
@@ -67,7 +67,6 @@ export default class HeaderComponent extends Component {
                         </Button>
                     </Right>
                 </Header>
-            </Container>
         );
     }
 }
