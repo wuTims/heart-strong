@@ -11,7 +11,7 @@ export default class SettingScreen extends Component {
       		<View style={{flex: 1}}>
 				<HeaderComponent titleText='Settings' navigator={this.props.navigator} settings='true'/>
 				<Text style={styles.testStyle}>Settings Screen!</Text>
-				<FooterComponent activeTab='tabFive' navigator={this.props.navigator}/>
+				<FooterComponent navigator={this.props.navigator}/>
 			</View>
 		);
 	}

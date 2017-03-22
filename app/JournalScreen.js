@@ -33,71 +33,73 @@ export default class JournalScreen extends Component {
 // 	    });
 // 	}
 
-// 	render() { 
-// 		return (
-// 	      	<View style={{flex: 1}}>
-// 				  <Container>
-// 				  		<Header>
-// 				  			<Left>
-// 			                    <Title>Journals</Title>
-// 		                    </Left>
+	render() { 
+		return (
+	      	<View style={{flex: 1}}>
+				  <Container>
+				  		<Header>
+				  			<Left>
+			                    <Title>Journals</Title>
+		                    </Left>
 
-// 		                    <Right>
-// 			                    <Button transparent onPress={() => {this.navigate('JournalInput')}}>
-// 			                        <Icon name='add' />
-// 			                    </Button>
-// 		                    </Right>
-// 		                </Header>
-// 		              <Content>
+		                    <Right>
+			                    <Button transparent onPress={() => {this.navigate('JournalInput')}}>
+			                        <Icon name='add' />
+			                    </Button>
+		                    </Right>
+		                </Header>
+		              <Content>
 
-// 		                <ListView
-// 		                  dataSource={this.state.dataSource}
-// 		                  renderRow={(rowData) => 
-// 		                  	<TouchableHighlight onPress= { () => this.navigate('JournalInput')}>
-// 								<View style={styles.row}>
-// 									<Text>{rowData.content}</Text>
-// 								</View>
-// 							</TouchableHighlight>
-// 		                  }
-// 		                  renderSeparator = {(sectionId, rowId) =>
-// 					          <View
-// 					            style={styles.style_separator}
-// 					            key={rowId}
-// 					          />
-// 					      }>
-// 		                </ListView>
+		                <ListView
+		                  dataSource={this.state.dataSource}
+		                  renderRow={(rowData) => 
+		                  	<TouchableHighlight onPress= { () => this.navigate('JournalInput')}>
+								<View style={styles.row}>
+									<Text>{rowData.content}</Text>
+								</View>
+							</TouchableHighlight>
+		                  }
+		                  renderSeparator = {(sectionId, rowId) =>
+					          <View
+					            style={styles.style_separator}
+					            key={rowId}
+					          />
+					      }>
+		                </ListView>
 
-// 		              </Content>
-// 		          </Container>
+		              </Content>
+		          </Container>
 					
-// 				<FooterComponent activeTab='tabThree' navigator={this.props.navigator}/>
-// 			</View>
-// 		);
-// 	}
-// }
+				<FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
+			</View>
+		);
+	}
+}
 
 
-// const styles = StyleSheet.create({
-//   testStyle: {
-//     textAlign: 'center',
-//   },
-//   row: {
-//     flexDirection: 'row',
-//     justifyContent: 'center',
-//    	alignItems: 'center',
-//     padding: 10,
-//     height: 50,
-//     backgroundColor: '#F6F6F6',
-//   },
-//   actionButtonIcon: {
-//     fontSize: 20,
-//     height: 22,
-//     color: 'white',
-//   },
-//   style_separator: {
-//   	flex: 1,
-//   	height: StyleSheet.hairlineWidth,
-//   	backgroundColor: '#000',
-//   },
-// })
+const styles = StyleSheet.create({
+  testStyle: {
+    textAlign: 'center',
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+   	alignItems: 'center',
+    padding: 10,
+    height: 50,
+    backgroundColor: '#F6F6F6',
+  },
+  actionButtonIcon: {
+    fontSize: 20,
+    height: 22,
+    color: 'white',
+  },
+  style_separator: {
+  	flex: 1,
+  	height: StyleSheet.hairlineWidth,
+  	backgroundColor: '#000',
+  },
+})
+
+
 

@@ -19,7 +19,7 @@ export default class DataScreen extends Component {
     render() {
         return (
             <Container>
-                <HeaderComponent active={false}/>
+                <HeaderComponent titleText='Data' navigator={this.props.navigator} active=''/>
                 <Content>
                         <View style={{flex: 1}}>
                                 <Tabs>
@@ -34,7 +34,7 @@ export default class DataScreen extends Component {
                                 </Content>
                         </View>
                 </Content>
-                <FooterComponent navigator={this.props.navigator}/>
+                <FooterComponent activeTab='tabFive' navigator={this.props.navigator}/>
             </Container>
 
         );
