@@ -4,13 +4,13 @@ import FooterComponent from '../app/FooterComponent';
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
-export default class SettingScreen extends Component {
+export default class CurriculumScreen extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
-				<HeaderComponent titleText='Settings' navigator={this.props.navigator} settings='true'/>
-				<Text style={styles.testStyle}>Settings Screen!</Text>
-				<FooterComponent activeTab='tabFive' navigator={this.props.navigator}/>
+				<HeaderComponent titleText='Curriculum' navigator={this.props.navigator} />
+				<Text style={styles.testStyle}>Curriculum Screen!</Text>
+				<FooterComponent activeTab='tabOne' navigator={this.props.navigator}/>
 			</View>
 		);
 	}

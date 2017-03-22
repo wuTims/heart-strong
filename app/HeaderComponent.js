@@ -5,7 +5,8 @@ export default class HeaderComponent extends Component {
 	constructor() {
 		super();
 		this.state = {
-			homePressed: ''
+			homePressed: '',
+            settingsPressed: ''
 		}
 	}
 
@@ -16,6 +17,14 @@ export default class HeaderComponent extends Component {
 			this.setState({homePressed: 'true'})
 		}
 	}
+
+    settingsPressed() {
+        if (this.state.settingsPressed == 'true') {
+            this.setState({settingsPressed: ''})
+        } else {
+            this.setState({settingsPressed: 'true'})
+        }
+    }
 
 	navigate(routeName) {
 		this.props.navigator.push({
@@ -28,12 +37,16 @@ export default class HeaderComponent extends Component {
             <Container>
                 <Header>
                     <Left>
-                        <Button transparent>
-                            <Icon name='list' />
+                        <Button 
+                        transparent
+                        onPress={ () => {this.homePressed(); this.navigate('Home')}}>
+                            <Icon name='home' 
+                            active={(this.props.active !== '') ? this.props.active : this.state.homePressed}
+                            />
                         </Button>
                     </Left>
                     <Body>
-                        <Button 
+                        {/* <Button 
                         transparent
                         onPress={ () => {this.homePressed(); this.navigate('Home')}}>
                         	<Icon 
@@ -41,10 +54,16 @@ export default class HeaderComponent extends Component {
                             active={(this.props.active !== '') ? this.props.active : this.state.homePressed}
                         	/>
                         </Button>
+                        */}
+                        <Text>{this.props.titleText}</Text>
                     </Body>
                     <Right>
-                        <Button transparent>
-                            <Icon name='person' />
+                        <Button 
+                        transparent
+                        onPress={() => {this.settingsPressed(); this.navigate('Settings')}}>
+                            <Icon name='settings' 
+                            active={(this.props.settings !== '') ? this.props.settings : this.state.settingsPressed} 
+                            />
                         </Button>
                     </Right>
                 </Header>

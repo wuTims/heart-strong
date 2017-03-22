@@ -20,6 +20,7 @@ import DataScreen from './app/DataScreen';
 import JournalScreen from './app/JournalScreen';
 import ResourceScreen from './app/ResourceScreen';
 import JournalInput from './app/Journal/JournalInput';
+import CurriculumScreen from './app/CurriculumScreen';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -35,6 +36,9 @@ export default class AwesomeProject extends Component {
   renderScene(route, navigator) {
     if (route.name == 'Home') {
       return <HomeScreen navigator={navigator} />
+    }
+    if (route.name == 'Curriculum') {
+      return <CurriculumScreen navigator={navigator} />
     }
     if (route.name == 'Resources') {
       return <ResourceScreen navigator={navigator} />
