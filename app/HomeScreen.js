@@ -20,7 +20,7 @@ export default class HomeScreen extends Component {
 					<Text style={styles.reminderStyle}>Notification Five</Text>
 					<Text style={styles.alarmStyle}>Notification Six</Text>		
 				</ScrollView>
-				<FooterComponent navigator={this.props.navigator}/>
+				<FooterComponent activeTab="tabThree" navigator={this.props.navigator}/>
 			</View>
 		);
 	}

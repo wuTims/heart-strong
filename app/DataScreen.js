@@ -10,7 +10,7 @@ export default class DataScreen extends Component {
       		<View style={{flex: 1}}>
 				<HeaderComponent titleText='Data' navigator={this.props.navigator} active=''/>
 				<Text style={styles.testStyle}>Data Screen!</Text>
-				<FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
+				<FooterComponent activeTab='tabFive' navigator={this.props.navigator}/>
 			</View>
 		);
 	}

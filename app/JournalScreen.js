@@ -74,7 +74,7 @@ export default class JournalScreen extends Component {
 		              </Content>
 		          </Container>
 					
-				<FooterComponent activeTab='tabThree' navigator={this.props.navigator}/>
+				<FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
 			</View>
 		);
 	}

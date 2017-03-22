@@ -43,26 +43,25 @@ export default class FooterComponent extends Component {
                         </Button>
                         <Button
                         active={this.props.activeTab === 'tabThree'}
-                        onPress={() => {this.setTab('tabThree'); this.navigate('Journal')}}>
+                        onPress={() => {this.setTab('tabThree'); this.navigate('Home')}}>
                             <Icon
-                            name="book"/>
-                            <Text style={(this.props.activeTab === 'tabThree') ? styles.pressedColor : styles.textSize}>Journal</Text>
+                            name="home"/>
+                            <Text style={(this.props.activeTab === 'tabThree') ? styles.pressedColor : styles.textSize}>Home</Text>
                         </Button>
                         <Button
                         active={this.props.activeTab === 'tabFour'} 
-                        onPress={() => {this.setTab('tabFour'); this.navigate('Data')}}>
+                        onPress={() => {this.setTab('tabFour'); this.navigate('Journal')}}>
+                            <Icon 
+                            name="book"/>
+                            <Text style={(this.props.activeTab === 'tabFour') ? styles.pressedColor : styles.textSize}>Journal</Text>
+                        </Button>
+                        <Button
+                        active={this.props.activeTab === 'tabFive'} 
+                        onPress={() => {this.setTab('tabFive'); this.navigate('Data')}}>
                             <Icon 
                             name="pulse"/>
-                            <Text style={(this.props.activeTab === 'tabFour') ? styles.pressedColor : styles.textSize}>Data</Text>
-                        </Button>
-                        {/*<Button
-                        active={this.props.activeTab === 'tabFive'} 
-                        onPress={() => {this.setTab('tabFive'); this.navigate('Settings')}}>
-                            <Icon 
-                            name="settings"/>
-                            <Text style={(this.props.activeTab === 'tabFive') ? styles.pressedColor : styles.textSize}>Settings</Text>
-                        </Button>
-                        */}
+                            <Text style={(this.props.activeTab === 'tabFive') ? styles.pressedColor : styles.textSize}>Data</Text>
+                        </Button>                        
                     </FooterTab>
                 </Footer>
             </Container>
@@ -72,11 +71,11 @@ export default class FooterComponent extends Component {
 
 const styles = StyleSheet.create({
   textSize: {
-    fontSize: 9,
+    fontSize: 7,
     color: '#000000',
   },
   pressedColor: {
-    fontSize: 9, 
+    fontSize: 7, 
     color: '#448cff'
   }
 })
