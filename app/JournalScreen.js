@@ -27,11 +27,11 @@ export default class JournalScreen extends Component {
 // 			});
 // 	}
 
-//   	navigate(routeName){
-// 	    this.props.navigator.push({
-// 	        name: routeName
-// 	    });
-// 	}
+  	navigate(routeName){
+	    this.props.navigator.push({
+	        name: routeName
+	    });
+	}
 
 	render() { 
 		return (
@@ -50,7 +50,7 @@ export default class JournalScreen extends Component {
 		                </Header>
 		              <Content>
 
-		                <ListView
+		                {/*<ListView
 		                  dataSource={this.state.dataSource}
 		                  renderRow={(rowData) => 
 		                  	<TouchableHighlight onPress= { () => this.navigate('JournalInput')}>
@@ -66,7 +66,7 @@ export default class JournalScreen extends Component {
 					          />
 					      }>
 		                </ListView>
-
+						*/}
 		              </Content>
 		          </Container>
 					
