@@ -20,6 +20,7 @@ import DataScreen from './app/DataScreen'
 import JournalScreen from './app/JournalScreen'
 import ResourceScreen from './app/ResourceScreen'
 import JournalInput from './app/Journal/JournalInput';
+import DataInput from './app/data/DataInput';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -50,6 +51,9 @@ export default class AwesomeProject extends Component {
     }    
     if (route.name == 'JournalInput') {
       return <JournalInput navigator={navigator} />
+    }
+    if (route.name == 'DataInput') {
+      return <DataInput navigator={navigator} />
     }
   }
 

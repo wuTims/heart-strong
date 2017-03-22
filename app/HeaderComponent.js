@@ -34,7 +34,6 @@ export default class HeaderComponent extends Component {
 
     render() {
         return (
-            <Container>
                 <Header>
                     <Left>
                         {/*<Button 
@@ -68,7 +67,6 @@ export default class HeaderComponent extends Component {
                         </Button>
                     </Right>
                 </Header>
-            </Container>
         );
     }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View} from 'react-native';
+import { Content, Title, ListItem, Right, Left, Radio, Icon, Body, Switch } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
