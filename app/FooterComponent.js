@@ -25,33 +25,41 @@ export default class FooterComponent extends Component {
                 <Footer >
                     <FooterTab>
                         <Button
-                        active={this.props.activeTab === 'tabOne'}  
-                        onPress={() => {this.setTab('tabOne'); this.navigate('Resources')}}>
-                            <Icon 
-                            name="bookmarks"/>      
-                            <Text style={(this.props.activeTab === 'tabOne') ? styles.pressedColor : styles.textSize}>Resources</Text>
+                        active={this.props.activeTab === 'tabOne'}
+                        onPress={() => {this.setTab('tabOne'); this.navigate('Curriculum')}}>
+                            <Icon
+                            name="bookmarks"/>
+                            <Text style={(this.props.activeTab === 'tabOne') ? styles.pressedColor : styles.textSize}>Curriculum</Text>
                         </Button>
                         <Button
-                        active={this.props.activeTab === 'tabTwo'}
-                        onPress={() => {this.setTab('tabTwo'); this.navigate('Journal')}}>
+                        active={this.props.activeTab === 'tabTwo'}  
+                        onPress={() => {this.setTab('tabTwo'); this.navigate('Resources')}}>
+                            <Icon 
+                            name="ios-folder-outline"/>      
+                            <Text style={(this.props.activeTab === 'tabTwo') ? styles.pressedColor : styles.textSize}>Resources</Text>
+                        </Button>
+                        <Button
+                        active={this.props.activeTab === 'tabThree'}
+                        onPress={() => {this.setTab('tabThree'); this.navigate('Journal')}}>
                             <Icon
                             name="book"/>
-                            <Text style={(this.props.activeTab === 'tabTwo') ? styles.pressedColor : styles.textSize}>Journal</Text>
-                        </Button>
-                        <Button
-                        active={this.props.activeTab === 'tabThree'} 
-                        onPress={() => {this.setTab('tabThree'); this.navigate('Data')}}>
-                            <Icon 
-                            name="pulse"/>
-                            <Text style={(this.props.activeTab === 'tabThree') ? styles.pressedColor : styles.textSize}>Data</Text>
+                            <Text style={(this.props.activeTab === 'tabThree') ? styles.pressedColor : styles.textSize}>Journal</Text>
                         </Button>
                         <Button
                         active={this.props.activeTab === 'tabFour'} 
-                        onPress={() => {this.setTab('tabFour'); this.navigate('Settings')}}>
+                        onPress={() => {this.setTab('tabFour'); this.navigate('Data')}}>
+                            <Icon 
+                            name="pulse"/>
+                            <Text style={(this.props.activeTab === 'tabFour') ? styles.pressedColor : styles.textSize}>Data</Text>
+                        </Button>
+                        {/*<Button
+                        active={this.props.activeTab === 'tabFive'} 
+                        onPress={() => {this.setTab('tabFive'); this.navigate('Settings')}}>
                             <Icon 
                             name="settings"/>
-                            <Text style={(this.props.activeTab === 'tabFour') ? styles.pressedColor : styles.textSize}>Settings</Text>
+                            <Text style={(this.props.activeTab === 'tabFive') ? styles.pressedColor : styles.textSize}>Settings</Text>
                         </Button>
+                        */}
                     </FooterTab>
                 </Footer>
         );
@@ -60,11 +68,11 @@ export default class FooterComponent extends Component {
 
 const styles = StyleSheet.create({
   textSize: {
-    fontSize: 12,
+    fontSize: 9,
     color: '#000000',
   },
   pressedColor: {
-    fontSize: 12, 
+    fontSize: 9, 
     color: '#448cff'
   }
 })

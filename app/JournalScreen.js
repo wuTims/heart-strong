@@ -70,12 +70,7 @@ export default class JournalScreen extends Component {
 // 		              </Content>
 // 		          </Container>
 					
-//       		<View style={{flex: 1}}>
-// 				<HeaderComponent navigator={this.props.navigator} active=''/>
-// 				<Content>
-// 					<Text style={styles.testStyle}>Journal Screen!</Text>
-// 				</Content>
-// 				<FooterComponent activeTab='tabTwo' navigator={this.props.navigator}/>
+// 				<FooterComponent activeTab='tabThree' navigator={this.props.navigator}/>
 // 			</View>
 // 		);
 // 	}
@@ -106,5 +101,3 @@ export default class JournalScreen extends Component {
 //   },
 // })
 
-
-}
