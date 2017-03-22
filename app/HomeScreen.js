@@ -9,6 +9,9 @@ export default class HomeScreen extends Component {
 		return (
       		<View style={{flex: 1}}>
 				<HeaderComponent navigator={this.props.navigator} active='true'/>
+<<<<<<< HEAD
+				<Text style={styles.testStyle}>Home Screen!</Text>
+=======
 				<View style={styles.quoteView}>
 					<Text style={styles.quote}> MOTIVATIONAL QUOTE GOES HERE </Text>
 				</View>
@@ -20,6 +23,7 @@ export default class HomeScreen extends Component {
 					<Text style={styles.reminderStyle}>Notification Five</Text>
 					<Text style={styles.alarmStyle}>Notification Six</Text>		
 				</ScrollView>
+>>>>>>> master
 				<FooterComponent navigator={this.props.navigator}/>
 			</View>
 		);
