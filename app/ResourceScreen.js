@@ -15,6 +15,7 @@ export default class ResourceScreen extends Component {
 	render() {
 		return (
       		<View style={{flex: 1}}>
+
 				
                 <Container>
                     <Content>
@@ -56,6 +57,7 @@ export default class ResourceScreen extends Component {
 				<FooterComponent navigator={this.props.navigator}/>
 
 			</View>  
+
 		);
 	}
 }

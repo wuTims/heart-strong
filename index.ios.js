@@ -35,6 +35,9 @@ export default class AwesomeProject extends Component {
     }
   }
 
+  /*
+  * TODO: Clean the code up by using switch statements instead of ifs.
+  */
   renderScene(route, navigator) {
     if (route.name == 'Home') {
       return <HomeScreen navigator={navigator} />
