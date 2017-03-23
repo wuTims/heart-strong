@@ -50,7 +50,7 @@ export default class JournalScreen extends Component {
 		                </Header>
 		              <Content>
 
-		                <ListView
+		                {/*<ListView
 		                  dataSource={this.state.dataSource}
 		                  renderRow={(rowData) => 
 		                  	<TouchableHighlight onPress= { () => this.navigate('JournalInput')}>
@@ -66,7 +66,7 @@ export default class JournalScreen extends Component {
 					          />
 					      }>
 		                </ListView>
-
+						*/}
 		              </Content>
 		          </Container>
 					
