@@ -22,6 +22,8 @@ import ResourceScreen from './app/ResourceScreen'
 import JournalInput from './app/Journal/JournalInput';
 import DataInput from './app/data/DataInput';
 
+var CalendarView = require('./app/data/CalendarView')
+
 export default class AwesomeProject extends Component {
   constructor() {
     super();
@@ -53,7 +55,8 @@ export default class AwesomeProject extends Component {
       return <JournalInput navigator={navigator} />
     }
     if (route.name == 'DataInput') {
-      return <DataInput navigator={navigator} />
+      dateSelected = route.dateSelected;
+      return <DataInput navigator={navigator} date = {dateSelected}/>
     }
   }
 
