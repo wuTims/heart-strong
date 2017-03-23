@@ -28,7 +28,7 @@ export default class JournalInput extends Component {
                 <Content>
                     <Text>Congradulations!  </Text>
                     <Text>You finished this week's quiz. Now go back to check your progress. </Text>
-                    <Button round success onPress= {() => {this.navigate('Resources')}}  ><Text> back to journal</Text></Button>
+                    <Button round success onPress= {() => {this.navigate('Curriculum')}}  ><Text> back to Curriculum</Text></Button>
 
 
                 </Content>

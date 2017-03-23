@@ -2,8 +2,7 @@ var express = require('express');
 var http = require('http');
 var app = express();
 var port = 3000;
-var mongoose = require('mongoose');
-
+var db = require('./config/db')
 
 app.use(express.static(__dirname + '/public'));
 
@@ -32,12 +31,6 @@ app.get('/', function(req, res){
             });
 });
 
-
-
-// app.listen(3030, function(){
-//     console.log("Express server listening on port 3030");
-// });
-
 var connection_string = "mongodb://localhost:27017/sampledb";
 if(process.env.MONGODB_PASSWORD){
     var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase();
@@ -48,16 +41,9 @@ if(process.env.MONGODB_PASSWORD){
         process.env[mongoServiceName + '_SERVICE_PORT'] + "/" +
         process.env.MONGODB_DATABASE;
 }
-console.log('attempting to connect to MongoDB at ' + connection_string);
-mongoose.connect(connection_string, function(err) { 
-	if (err) { 
-		throw err; 
-	}
-	app.listen(PORT, IP_ADDRESS,() => {
-    	console.log(`Express server listening on port ${PORT} in ${app.settings.env} mode`);
-	});
-});
-mongoose.connection.on('error', () => {
-  console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
-  process.exit();
-});
+
+db.connect(connection_string, function(){
+     app.listen(PORT, IP_ADDRESS, () => {
+         console.log(`Express server listening on port ${PORT} in ${app.settings.env} mode`);
+     });
+})
