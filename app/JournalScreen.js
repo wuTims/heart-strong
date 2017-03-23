@@ -6,11 +6,11 @@ import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
 export default class JournalScreen extends Component {
-// 	constructor(props) { 
-// 		super(props);
-// 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-// 		this.state = {dataSource: ds.cloneWithRows(['row 1', 'row 2'])};
-// 	}
+	constructor(props) { 
+		super(props);
+		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+		this.state = {dataSource: ds.cloneWithRows(['row 1', 'row 2'])};
+	}
 
 // 	componentDidMount() {
 // 		fetch('http://10.122.10.87:3030/', {
@@ -27,11 +27,11 @@ export default class JournalScreen extends Component {
 // 			});
 // 	}
 
-//   	navigate(routeName){
-// 	    this.props.navigator.push({
-// 	        name: routeName
-// 	    });
-// 	}
+  	navigate(routeName){
+	    this.props.navigator.push({
+	        name: routeName
+	    });
+	}
 
 	render() { 
 		return (

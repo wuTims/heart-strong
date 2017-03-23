@@ -1,43 +1,30 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, StyleSheet, View, TouchableOpacity } from 'react-native';
-import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem} from 'native-base';
+import { AppRegistry, Text, StyleSheet, View} from 'react-native';
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
+import { Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 
-export default class ResourceScreen extends Component {
-	   navigate(routeName) {
+export default class CurriculumScreen extends Component {
+      navigate(routeName) {
         this.props.navigator.push({
             name: routeName
         })
     }
-    
-	render() {
-		return (
-      		<View style={{flex: 1}}>
 
-				
-                <Container>
+    render() {
+        return (
+            <View style={{flex: 1}}>
+                <HeaderComponent titleText='Curriculum' navigator={this.props.navigator} />
+
+              <Container>
                     <Content>
-                    <Header>
-                        
-                        <Left/ >
-                        <Body>
-                            <Title>Corriculum</Title>
-                        </Body>
 
-                        <Right>
-                         <Button transparent onPress={() => {this.navigate('JournalInput')}}>
-                            <Icon name='add' />
-                        </Button>
-                        </Right>
-                    </Header>
-
-                         <ListItem>
+                         <ListItem onPress={() => {this.navigate('Week1Content')}}>
                              <Text >Introduce to My Healthy Heart Care</Text>
                         </ListItem>
-                        <ListItem  onPress={() => {this.navigate('Week1Content')}}>
-                           <Text> week 1 </Text> 
+                        <ListItem onPress={() => {this.navigate('Week1Content')}}>
+                            <Text > week 1</Text>
                         </ListItem>
                         <ListItem onPress={() => {this.navigate('Week1Content')}}>
                             <Text>Week 2 </Text>
@@ -53,13 +40,14 @@ export default class ResourceScreen extends Component {
                     </Content>
                 </Container>
                 
-                     
-				<FooterComponent activeTab='tabTwo' navigator={this.props.navigator}/>
 
-			</View>  
 
-		);
-	}
+
+
+                <FooterComponent activeTab='tabOne' navigator={this.props.navigator}/>
+            </View>
+        );
+    }
 }
 
 
