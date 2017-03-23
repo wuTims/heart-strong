@@ -17,7 +17,7 @@ export default class ResourceScreen extends Component {
             <View style={{flex: 1}}>
                 <HeaderComponent titleText='Resource' navigator={this.props.navigator} />
                  <Content>
-                <Text style={styles.testStyle}>Curriculum Screen!</Text>
+                <Text style={styles.testStyle}>Resource Screen!</Text>
                 </Content>
                 
                      
