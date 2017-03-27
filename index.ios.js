@@ -27,6 +27,8 @@ import Week1A1 from './app/Corriculum/Week1A1';
 import Week1Q2 from './app/Corriculum/Week1Q2';
 import Week1A2 from './app/Corriculum/Week1A2';
 import QuizFinish from './app/Corriculum/QuizFinish';
+import SignUp from './app/SignupScreen';
+import LogIn from './app/LoginScreen';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -40,6 +42,12 @@ export default class AwesomeProject extends Component {
   * TODO: Clean the code up by using switch statements instead of ifs.
   */
   renderScene(route, navigator) {
+    if (route.name == 'Login') {
+      return <LogIn navigator={navigator} />
+    }
+    if (route.name == 'Signup') {
+      return <SignUp navigator={navigator} />
+    }
     if (route.name == 'Home') {
       return <HomeScreen navigator={navigator} />
     }
@@ -61,19 +69,19 @@ export default class AwesomeProject extends Component {
     if (route.name == 'JournalInput') {
       return <JournalInput navigator={navigator} />
     }
-     if (route.name == 'Week1Content') {
+    if (route.name == 'Week1Content') {
       return <Week1Content navigator={navigator} />
     }
-     if (route.name == 'Week1Q1') {
+    if (route.name == 'Week1Q1') {
       return <Week1Q1 navigator={navigator} />
     }
     if (route.name == 'Week1A1') {
       return <Week1A1 navigator={navigator} />
     }
-      if (route.name == 'Week1Q2') {
+    if (route.name == 'Week1Q2') {
       return <Week1Q2 navigator={navigator} />
     }
-      if (route.name == 'Week1A2') {
+    if (route.name == 'Week1A2') {
       return <Week1A2 navigator={navigator} />
     }
     if (route.name == 'QuizFinish') {
@@ -88,7 +96,7 @@ export default class AwesomeProject extends Component {
       <View style={{flex: 1}}>
         <Navigator
           initialRoute={{
-            name: 'Home'
+            name: 'Signup'
           }}
           renderScene={
             this.renderScene.bind(this)

@@ -6,7 +6,8 @@ import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
 export default class ResourceScreen extends Component {
-       navigate(routeName) {
+  
+    navigate(routeName) {
         this.props.navigator.push({
             name: routeName
         })
