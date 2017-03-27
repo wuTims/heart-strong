@@ -21,7 +21,7 @@ export default class JournalInput extends Component {
 
                  <Header>
                      <Left>
-                        <Button transparent   onPress={() => {this.navigate('Resources')}} >
+                        <Button transparent   onPress={() => {this.navigate('Curriculum')}} >
                             <Icon name='ios-arrow-round-back'  />
                         </Button>
                     </Left>

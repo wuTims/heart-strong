@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {StyleSheet, View, Button, Text, TextInput} from 'react-native'
 
+var CalendarView = require('./CalendarView');
 export default class DataInput extends Component {
 	constructor() {
 		super();
 		  this.state = {
-			date: new Date()  
+			
 		  } 
 	}
 
@@ -16,27 +17,27 @@ export default class DataInput extends Component {
   }
 
 	returnMonth() {
-		if(this.state.date.getMonth().toString() == 0) {
+		if(this.props.date.getMonth().toString() == 0) {
 			return "Jan ";
-		} else if(this.state.date.getMonth().toString() == 1) {
+		} else if(this.props.date.getMonth().toString() == 1) {
 			return "Feb ";
-		} else if(this.state.date.getMonth().toString() == 2) {
+		} else if(this.props.date.getMonth().toString() == 2) {
 			return "Mar ";
-		} else if(this.state.date.getMonth().toString() == 3) {
+		} else if(this.props.date.getMonth().toString() == 3) {
 			return "April ";
-		} else if(this.state.date.getMonth().toString() == 4) {
+		} else if(this.props.date.getMonth().toString() == 4) {
 			return "May ";
-		} else if(this.state.date.getMonth().toString() == 5) {
+		} else if(this.props.date.getMonth().toString() == 5) {
 			return "June ";
-		} else if(this.state.date.getMonth().toString() == 6) {
+		} else if(this.props.date.getMonth().toString() == 6) {
 			return "July ";
-		} else if(this.state.date.getMonth().toString() == 7) {
+		} else if(this.props.date.getMonth().toString() == 7) {
 			return "Aug ";
-		} else if(this.state.date.getMonth().toString() == 8) {
+		} else if(this.props.date.getMonth().toString() == 8) {
 			return "Sept ";
-		} else if(this.state.date.getMonth().toString() == 9) {
+		} else if(this.props.date.getMonth().toString() == 9) {
 			return "Oct ";
-		} else if(this.state.date.getMonth().toString() == 10) {
+		} else if(this.props.date.getMonth().toString() == 10) {
 			return "Nov ";
 		} else {
 			return "Dec ";
@@ -51,7 +52,9 @@ export default class DataInput extends Component {
                 alignItems: 'flex-start',
                 padding: 10
             }}>
-            <Text style={styles.titleStyle}> { this.returnMonth() + this.state.date.getDate().toString() + ", " + this.state.date.getFullYear().toString() } </Text>
+            <Text style={styles.titleStyle}>{ "Entry for: " +
+                this.returnMonth() + this.props.date.getDate().toString() + ", " + this.props.date.getFullYear().toString() 
+            } </Text>
                 <View style={{
 					flexDirection: 'row',
 					alignItems:'center', 
@@ -129,10 +132,9 @@ export default class DataInput extends Component {
                         >
                     </TextInput>
                 </View>
-                <View style={styles.buttonstyle}> 
+                <View> 
                     <Button 
 						title="Save" 
-						color="#841584"
                         onPress={() => {this.props.navigator.pop()}} 
                         />
                 </View>
