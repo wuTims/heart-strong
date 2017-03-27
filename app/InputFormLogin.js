@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text} from 'react-native';
 
-export default class InputForm extends Component {
+export default class InputFormLogin extends Component {
 	navigate(routeName) {
 		this.props.navigator.push({
 			name: routeName
@@ -12,24 +12,19 @@ export default class InputForm extends Component {
 		return (
 			<View style={styles.container}>
 				<TextInput 
-				placeholder="Username"
+				placeholder="Login Pin"
 				style={styles.input} 
-				/>
-				<TextInput 
-				placeholder="Password"
-				style={styles.input} 
-				secureTextEntry
 				/>
 				<TouchableOpacity 
 				style={styles.buttonContainer}
-				onPress={ () => {this.navigate('Login')}}>
+				onPress={ () => {this.navigate('Home')}}>
 					<Text style={styles.button}>{this.props.buttonName}</Text>
 				</TouchableOpacity>
-					<Text style={styles.loginText}>Already have an account?</Text>
+					<Text style={styles.loginText}>Don't have an account?</Text>
 					<Text 
 					style={styles.loginTextLink}
-					onPress={ () => {this.navigate('Login')}}>
-					Log in
+					onPress={() => {this.navigate('Signup')}}>
+					Sign up
 					</Text>
 			</View>
 		);

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
-import InputForm from './InputForm';
+import InputFormLogin from './InputFormLogin';
 
-export default class SignupScreen extends Component {
-
+export default class LoginScreen extends Component {
 	navigate(routeName) {
 		this.props.navigator.push({
 			name: routeName
@@ -18,7 +17,7 @@ export default class SignupScreen extends Component {
 					<Text style={styles.title}> My Healthy Heart </Text>
 				</View>
 				<View style={styles.formContainer}>
-					<InputForm navigator={this.props.navigator} buttonName='Sign Up'/>
+					<InputFormLogin navigator={this.props.navigator} buttonName='Log In'/>
 				</View>
 			</View>
 		);

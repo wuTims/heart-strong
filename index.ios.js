@@ -28,6 +28,7 @@ import Week1Q2 from './app/Corriculum/Week1Q2';
 import Week1A2 from './app/Corriculum/Week1A2';
 import QuizFinish from './app/Corriculum/QuizFinish';
 import SignUp from './app/SignupScreen';
+import LogIn from './app/LoginScreen';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -41,6 +42,9 @@ export default class AwesomeProject extends Component {
   * TODO: Clean the code up by using switch statements instead of ifs.
   */
   renderScene(route, navigator) {
+    if (route.name == 'Login') {
+      return <LogIn navigator={navigator} />
+    }
     if (route.name == 'Signup') {
       return <SignUp navigator={navigator} />
     }
