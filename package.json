@@ -4,7 +4,8 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node app.js start"
+    "start": "node app.js start",
+    "test": "jest"
   },
   "dependencies": {
     "d3": "^4.7.3",
@@ -25,6 +26,9 @@
     "react-test-renderer": "15.4.2"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|my-project|react-native-button|native-base|mongoose|d3|express|react-native-action-button|react-native-calendar-picker|react-native-icon|react-native-vector-icons)/"
+    ]
   }
 }
