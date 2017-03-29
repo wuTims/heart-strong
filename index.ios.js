@@ -21,12 +21,12 @@ import JournalScreen from './app/JournalScreen';
 import ResourceScreen from './app/ResourceScreen';
 import JournalInput from './app/Journal/JournalInput';
 import CurriculumScreen from './app/CurriculumScreen';
-import Week1Content from './app/Corriculum/Week1Content';
-import Week1Q1 from './app/Corriculum/Week1Q1';
-import Week1A1 from './app/Corriculum/Week1A1';
-import Week1Q2 from './app/Corriculum/Week1Q2';
-import Week1A2 from './app/Corriculum/Week1A2';
-import QuizFinish from './app/Corriculum/QuizFinish';
+import Week1Content from './app/Curriculum/Week1Content';
+import Week1Q1 from './app/Curriculum/Week1Q1';
+import Week1A1 from './app/Curriculum/Week1A1';
+import Week1Q2 from './app/Curriculum/Week1Q2';
+import Week1A2 from './app/Curriculum/Week1A2';
+import QuizFinish from './app/Curriculum/QuizFinish';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
 
@@ -86,6 +86,10 @@ export default class AwesomeProject extends Component {
     }
     if (route.name == 'QuizFinish') {
       return <QuizFinish navigator={navigator} />
+    }
+    if (route.name == 'DataInput') {
+      dateSelected = route.dateSelected;
+      return <DataInput navigator={navigator} date = {dateSelected}/>
     }
 
    

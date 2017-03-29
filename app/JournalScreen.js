@@ -6,11 +6,11 @@ import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
 export default class JournalScreen extends Component {
-// 	constructor(props) { 
-// 		super(props);
-// 		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-// 		this.state = {dataSource: ds.cloneWithRows(['row 1', 'row 2'])};
-// 	}
+	constructor(props) { 
+		super(props);
+		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+		this.state = {dataSource: ds.cloneWithRows(['row 1', 'row 2'])};
+	}
 
 // 	componentDidMount() {
 // 		fetch('http://10.122.10.87:3030/', {
@@ -37,18 +37,11 @@ export default class JournalScreen extends Component {
 		return (
 	      	<View style={{flex: 1}}>
 				  <Container>
-				  		<Header>
-				  			<Left>
-			                    <Title>Journals</Title>
-		                    </Left>
-
-		                    <Right>
-			                    <Button transparent onPress={() => {this.navigate('JournalInput')}}>
-			                        <Icon name='add' />
-			                    </Button>
-		                    </Right>
-		                </Header>
-		              <Content>
+				  	<HeaderComponent titleText='Journal Entries' navigator={this.props.navigator}/>
+					<Content>
+						<Button onPress={() => {this.navigate('JournalInput')}}>
+							<Icon name='add' />
+                    	</Button>
 
 		                {/*<ListView
 		                  dataSource={this.state.dataSource}

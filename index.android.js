@@ -15,12 +15,21 @@ import FooterComponent from './app/FooterComponent';
 import NavigatorComponent from './app/NavigatorComponent';
 import HeaderComponent from './app/HeaderComponent';
 import HomeScreen from './app/HomeScreen';
-import SettingScreen from './app/SettingScreen'
-import DataScreen from './app/DataScreen'
-import JournalScreen from './app/JournalScreen'
-import ResourceScreen from './app/ResourceScreen'
+import SettingScreen from './app/SettingScreen';
+import DataScreen from './app/DataScreen';
+import JournalScreen from './app/JournalScreen';
+import ResourceScreen from './app/ResourceScreen';
 import JournalInput from './app/Journal/JournalInput';
-import DataInput from './app/data/DataInput';
+import CurriculumScreen from './app/CurriculumScreen';
+import Week1Content from './app/Curriculum/Week1Content';
+import Week1Q1 from './app/Curriculum/Week1Q1';
+import Week1A1 from './app/Curriculum/Week1A1';
+import Week1Q2 from './app/Curriculum/Week1Q2';
+import Week1A2 from './app/Curriculum/Week1A2';
+import QuizFinish from './app/Curriculum/QuizFinish';
+import SignUp from './app/SignupScreen';
+import LogIn from './app/LoginScreen';
+import MedicineList from './app/Setting/MedicineList';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -34,8 +43,17 @@ export default class AwesomeProject extends Component {
   * TODO: Clean the code up by using switch statements instead of ifs.
   */
   renderScene(route, navigator) {
+    if (route.name == 'Login') {
+      return <LogIn navigator={navigator} />
+    }
+    if (route.name == 'Signup') {
+      return <SignUp navigator={navigator} />
+    }
     if (route.name == 'Home') {
       return <HomeScreen navigator={navigator} />
+    }
+    if (route.name == 'Curriculum') {
+      return <CurriculumScreen navigator={navigator} />
     }
     if (route.name == 'Resources') {
       return <ResourceScreen navigator={navigator} />
@@ -48,13 +66,36 @@ export default class AwesomeProject extends Component {
     }
     if (route.name == 'Settings') {
       return <SettingScreen navigator={navigator} />
-    }    
+    }
     if (route.name == 'JournalInput') {
       return <JournalInput navigator={navigator} />
     }
-    if (route.name == 'DataInput') {
-      return <DataInput navigator={navigator} />
+    if (route.name == 'Week1Content') {
+      return <Week1Content navigator={navigator} />
     }
+    if (route.name == 'Week1Q1') {
+      return <Week1Q1 navigator={navigator} />
+    }
+    if (route.name == 'Week1A1') {
+      return <Week1A1 navigator={navigator} />
+    }
+    if (route.name == 'Week1Q2') {
+      return <Week1Q2 navigator={navigator} />
+    }
+    if (route.name == 'Week1A2') {
+      return <Week1A2 navigator={navigator} />
+    }
+    if (route.name == 'QuizFinish') {
+      return <QuizFinish navigator={navigator} />
+    }
+    if (route.name == 'DataInput') {
+      dateSelected = route.dateSelected;
+      return <DataInput navigator={navigator} date = {dateSelected}/>
+    }
+    if (route.name == 'AlarmSettings') {
+      return <MedicineList navigator={navigator} />
+    }
+   
   }
 
   render() {
@@ -62,7 +103,7 @@ export default class AwesomeProject extends Component {
       <View style={{flex: 1}}>
         <Navigator
           initialRoute={{
-            name: 'Home'
+            name: 'Signup'
           }}
           renderScene={
             this.renderScene.bind(this)
