@@ -37,18 +37,11 @@ export default class JournalScreen extends Component {
 		return (
 	      	<View style={{flex: 1}}>
 				  <Container>
-				  		<Header>
-				  			<Left>
-			                    <Title>Journals</Title>
-		                    </Left>
-
-		                    <Right>
-			                    <Button transparent onPress={() => {this.navigate('JournalInput')}}>
-			                        <Icon name='add' />
-			                    </Button>
-		                    </Right>
-		                </Header>
-		              <Content>
+				  	<HeaderComponent titleText='Journal Entries' navigator={this.props.navigator}/>
+					<Content>
+						<Button onPress={() => {this.navigate('JournalInput')}}>
+							<Icon name='add' />
+                    	</Button>
 
 		                {/*<ListView
 		                  dataSource={this.state.dataSource}
