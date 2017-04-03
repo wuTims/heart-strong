@@ -67,11 +67,11 @@ export default class FooterComponent extends Component {
 
 const styles = StyleSheet.create({
   textSize: {
-    fontSize: 7,
+    fontSize: 7.5,
     color: '#000000',
   },
   pressedColor: {
-    fontSize: 7, 
+    fontSize: 7.5, 
     color: '#448cff'
   }
 })

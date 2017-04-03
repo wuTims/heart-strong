@@ -26,6 +26,16 @@ export default class HeaderComponent extends Component {
         }
     }
 
+    backPressed() {
+        if(this.props.titleText == 'Home Screen') {
+        {/* Does nothing when on Home screen for now because I 
+            didn't want it to go back to the login screen. Will 
+            think of a way to fix later*/}
+        } else {
+            this.props.navigator.pop();
+        }
+    }
+
 	navigate(routeName) {
 		this.props.navigator.push({
 			name: routeName
@@ -44,6 +54,10 @@ export default class HeaderComponent extends Component {
                             />
                         </Button>
                         */}
+                    <Button transparent
+                    onPress={() => {this.backPressed()}}>
+                        <Icon name='arrow-back'/>
+                    </Button>
                     </Left>
                     <Body>
                         {/* <Button 
@@ -55,11 +69,10 @@ export default class HeaderComponent extends Component {
                         	/>
                         </Button>
                         */}
-                        <Text>{this.props.titleText}</Text>
+                        <Title>{this.props.titleText}</Title>
                     </Body>
                     <Right>
-                        <Button 
-                        transparent
+                        <Button transparent
                         onPress={() => {this.settingsPressed(); this.navigate('Settings')}}>
                             <Icon name='settings' 
                             active={(this.props.settings !== '') ? this.props.settings : this.state.settingsPressed} 

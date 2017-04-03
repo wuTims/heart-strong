@@ -47,4 +47,3 @@ db.connect(connection_string, function(){
          console.log(`Express server listening on port ${PORT} in ${app.settings.env} mode`);
      });
 })
-

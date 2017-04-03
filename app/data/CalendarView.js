@@ -11,10 +11,16 @@ export default class CalendarView extends Component {
 		  } 
 	}
 
-	navigate(routeName){
+	getSelectedDate() {
+		var date = this.state.date;
+		this.setState({date: date});
+	}
+
+	navigate(routeName, date){
         this.props.navigator.push({
-            name: routeName
-        })
+            name: routeName, 
+            dateSelected: date
+        });
     }
 
 	onDateChange(date) {
@@ -59,12 +65,12 @@ export default class CalendarView extends Component {
 						screenWidth={Dimensions.get('window').width}
 						selectedBackgroundColor={'#0bac10'} /> 
 				</View>
-				<View style={{backgroundColor:'transparent'}}>
+				<View>
 					<Button 
 						title= {"Entry for: " + this.returnMonth() + this.state.date.getDate().toString()} 
-						color="#841584"
+						color="#F5B6FC"
                         backgroundColor="#FFFFFF"
-                        onPress = { () => {this.navigate('DataInput')}} /> 
+                        onPress = { () => {this.navigate('DataInput', this.state.date)}} /> 
 				</View>
 			</View>
 		);
