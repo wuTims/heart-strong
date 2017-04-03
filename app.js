@@ -41,25 +41,10 @@ if(process.env.MONGODB_PASSWORD){
         process.env[mongoServiceName + '_SERVICE_PORT'] + "/" +
         process.env.MONGODB_DATABASE;
 }
-<<<<<<< HEAD
 
 db.connect(connection_string, function(){
      app.listen(PORT, IP_ADDRESS, () => {
          console.log(`Express server listening on port ${PORT} in ${app.settings.env} mode`);
      });
 })
-=======
-console.log('attempting to connect to MongoDB at ' + connection_string);
-mongoose.connect(connection_string, function(err) { 
-	if (err) { 
-		throw err; 
-	}
-	app.listen(PORT, IP_ADDRESS,() => {
-    	console.log(`Express server listening on port ${PORT} in ${app.settings.env} mode`);
-	});
-});
-mongoose.connection.on('error', () => {
-  console.log('%s MongoDB connection error. Please make sure MongoDB is running.');
-  process.exit();
-});
->>>>>>> b3d5c9b220ff152b6bc6c2d009afa167a0e0df38
+
