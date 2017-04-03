@@ -30,6 +30,8 @@ import QuizFinish from './app/Curriculum/QuizFinish';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
 import MedicineList from './app/Setting/MedicineList';
+import DataInput from './app/Data/DataInput';
+
 
 export default class AwesomeProject extends Component {
   constructor() {
