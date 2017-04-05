@@ -14,7 +14,7 @@ export default class LoginScreen extends Component {
 			<View style={styles.container}>
 				<View style={styles.logoContainer}>
 					<Image source={require('../img/strongHeart.png')} style={styles.image} />
-					<Text style={styles.title}> My Healthy Heart </Text>
+					<Text style={styles.title}> HeartStrong </Text>
 				</View>
 				<View style={styles.formContainer}>
 					<InputFormLogin navigator={this.props.navigator} buttonName='Log In'/>
