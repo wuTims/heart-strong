@@ -12,7 +12,7 @@ export default class InputForm extends Component {
 		return (
 			<View style={styles.container}>
 				<TextInput 
-				placeholder="Username"
+				placeholder="Email"
 				style={styles.input} 
 				/>
 				<TextInput 

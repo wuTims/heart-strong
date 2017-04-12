@@ -1,23 +1,61 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text} from 'react-native';
+import DismissKeyboard from 'react-native-dismiss-keyboard';
+import * as firebase from 'firebase';
+
 
 export default class InputFormLogin extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			email: "",
+			password: "",
+			response: ""
+		};
+
+		this.login = this.login.bind(this);
+	}
+
 	navigate(routeName) {
 		this.props.navigator.push({
 			name: routeName
 		})
 	}
 
+	async login() {
+		DismissKeyboard();
+
+		try {
+			await firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password);
+			setTimeout(() => {
+				this.navigate('Home')
+			}, 1500);
+		} catch (error) {
+			this.setState({
+				response: 'Invalid Login'
+			})
+		}
+	}
+
 	render () {
 		return (
 			<View style={styles.container}>
 				<TextInput 
-				placeholder="Login Pin"
+				placeholder="Email"
+				keyboardType="email-address"
+				onChangeText = {(email) => this.setState({email})}
 				style={styles.input} 
+				/>
+				<TextInput 
+				placeholder="Password"
+				onChangeText = {(password) => this.setState({password})}
+				style={styles.input} 
+				secureTextEntry
 				/>
 				<TouchableOpacity 
 				style={styles.buttonContainer}
-				onPress={ () => {this.navigate('Home')}}>
+				onPress={this.login}>
 					<Text style={styles.button}>{this.props.buttonName}</Text>
 				</TouchableOpacity>
 					<Text style={styles.loginText}>Don't have an account?</Text>
@@ -26,9 +64,11 @@ export default class InputFormLogin extends Component {
 					onPress={() => {this.navigate('Signup')}}>
 					Sign up
 					</Text>
+					<Text>{this.state.response}</Text>
 			</View>
 		);
 	}
+
 }
 
 const styles = StyleSheet.create({
