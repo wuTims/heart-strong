@@ -114,14 +114,6 @@ export default class AwesomeProject extends Component {
     );
   }
 
-  async signup(email, pass) {
-    try {
-      await firebase.auth().createUserWithEmailAndPassword(email, pass);
-      console.log("Account created");
-    } catch (error) {
-      console.log(error.toString());
-    }
-  }
 }
 
 
