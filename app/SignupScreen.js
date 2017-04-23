@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import InputForm from './InputForm';
+import * as firebase from 'firebase';
 
 export default class SignupScreen extends Component {
 

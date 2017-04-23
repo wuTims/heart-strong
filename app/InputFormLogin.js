@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text} from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, ActivityIndicator} from 'react-native';
 import DismissKeyboard from 'react-native-dismiss-keyboard';
 import * as firebase from 'firebase';
 
-
+// Export default is a simplified way of exporting this class for usage
+// Substitute for using export default "class name"
+// or module.exports
 export default class InputFormLogin extends Component {
 	constructor(props) {
 		super(props);
@@ -11,7 +13,8 @@ export default class InputFormLogin extends Component {
 		this.state = {
 			email: "",
 			password: "",
-			response: ""
+			response: "",
+			animating: false
 		};
 
 		this.login = this.login.bind(this);
@@ -28,13 +31,17 @@ export default class InputFormLogin extends Component {
 
 		try {
 			await firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password);
+			this.setState({
+				response: "Login Successful.. redirecting to home",
+				animating: true
+			})
 			setTimeout(() => {
-				this.navigate('Home')
-			}, 1500);
+				this.navigate('Home');
+			}, 2000);
 			// Add animation or text for screen loading/transition
 		} catch (error) {
 			this.setState({
-				response: 'Invalid Login'
+				response: error.toString()
 			})
 		}
 	}
@@ -65,7 +72,8 @@ export default class InputFormLogin extends Component {
 					onPress={() => {this.navigate('Signup')}}>
 					Sign up
 					</Text>
-					<Text>{this.state.response}</Text>
+					<Text style={styles.response}>{this.state.response}</Text>
+					<ActivityIndicator style={styles.activity} size="small" animating={this.state.animating} />
 			</View>
 		);
 	}
@@ -95,6 +103,13 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		textAlign: 'center'
+	},
+	response: {
+		textAlign: 'center',
+		paddingTop: 10
+	},
+	activity: {
+		paddingTop: 10
 	},
 	loginText: {
 		textAlign: 'center',
