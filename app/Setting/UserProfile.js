@@ -11,12 +11,19 @@ const dimensionWindow = Dimensions.get('window');
 export default class UserProfile extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      userName: this.props.userInfo.userName,
+      phoneNumber: this.props.userInfo.phoneNumber,
+      doctorNumber: this.props.userInfo.doctorNumber,
+      doctorEmail: this.props.userInfo.doctorEmail,
+    }
   }
 	navigate(routeName){
         this.props.navigator.push({
             name: routeName
         });
   }
+
   render() {
   return (
           <View style={{flex: 1}}>
@@ -24,7 +31,7 @@ export default class UserProfile extends Component {
               <Content>
           		<ListItem itemDivider>
     						<Text>Personal Info</Text>
-    					</ListItem>  
+    					</ListItem>
             	<ListItem>
                 	<InputGroup>
                     	<Icon name='contact'/>
@@ -32,7 +39,7 @@ export default class UserProfile extends Component {
 							         style={{height: 40, width: Math.round(dimensionWindow.width * 0.9)}}
             						placeholder= "Username"
             						onChangeText={(userName) => this.setState({userName})}
-            						value={this.props.userInfo.userName}
+            						value={this.state.userName}
   						        />
                 	</InputGroup>
               </ListItem>
@@ -41,10 +48,10 @@ export default class UserProfile extends Component {
                   	<Icon name='phone-portrait' />
                   	<TextInput
     							     style={{height: 40, width: Math.round(dimensionWindow.width * 0.9)}}
-          						placeholder= {this.props.userInfo.phoneNumber}
+          						placeholder= "Phone Number"
           						keyboardType = 'numeric'
           						onChangeText={(phoneNumber) => this.setState({phoneNumber})}
-          						value={this.props.phoneNumber}
+          						value={this.state.phoneNumber}
 						        />
 
               	</InputGroup>
@@ -60,7 +67,7 @@ export default class UserProfile extends Component {
         							keyboardType = 'numeric'
               						placeholder= {this.props.userInfo.doctorNumber}
               						onChangeText={(doctorNumber) => this.setState({doctorNumber})}
-              						value={this.props.doctorNumber}
+              						value={this.state.doctorNumber}
           						/>
           						<Text style={{fontWeight: "bold", color: 'blue'}} onPress={() => Communications.phonecall(this.state.doctorNumber, true)}> Call </Text>
               	    <Text style={{fontWeight: "bold", color: 'blue'}} onPress={() => Communications.text(this.state.doctorNumber)}> Text </Text>
@@ -69,11 +76,12 @@ export default class UserProfile extends Component {
               </ListItem>
               <ListItem>
               	<InputGroup>
+                    <Icon name='mail'/>
                   	<TextInput
     							     style={{height: 40, width: Math.round(dimensionWindow.width * 0.7)}}
           						placeholder= {this.props.userInfo.doctorEmail}
           						onChangeText={(doctorEmail) => this.setState({doctorEmail})}
-          						value={this.props.doctorEmail}
+          						value={this.state.doctorEmail}
         						/>
 						        <Text style={{fontWeight: "bold", color: 'blue'}} onPress={() => Communications.email(['emailAddress1', 'emailAddress2'],null,null,'My Subject','My body text')}> Email </Text>
               	</InputGroup>

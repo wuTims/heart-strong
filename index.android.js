@@ -34,9 +34,13 @@ import AddAlarm from './app/Setting/AddAlarm';
 import EditAlarm from './app/Setting/EditAlarm';
 import DataInput from './app/Data/DataInput';
 import UserProfile from './app/Setting/UserProfile';
+import * as firebase from 'firebase';
+import Firebase from './app/includes/firebase';
+
 
 export default class AwesomeProject extends Component {
   constructor() {
+    Firebase.initialise();
     super();
     this.state = {
       homePressed: true
@@ -117,7 +121,7 @@ export default class AwesomeProject extends Component {
       <View style={{flex: 1}}>
         <Navigator
           initialRoute={{
-            name: 'Signup'
+            name: 'Login'
           }}
           renderScene={
             this.renderScene.bind(this)
