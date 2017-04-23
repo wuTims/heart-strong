@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, StyleSheet, View, ListView, TouchableHighlight} from 'react-native';
-import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
+import { TouchableOpacity, AppRegistry, Text, StyleSheet, View, ListView, TouchableHighlight, Button} from 'react-native';
+import {Container, Content, Input, Icon, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
+import * as firebase from 'firebase';
+
+
 
 export default class JournalScreen extends Component {
 	constructor(props) { 
 		super(props);
-		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-		this.state = {dataSource: ds.cloneWithRows(['row 1', 'row 2'])};
+		this.createJournals = this.createJournals.bind(this);
+
+		this.journalRef = this.getRef().child('journals');
+	}
+
+	getRef() {
+		return firebase.database().ref();
 	}
 
 // 	componentDidMount() {
@@ -33,33 +41,30 @@ export default class JournalScreen extends Component {
 	    });
 	}
 
+	createJournals() {
+		this.journalRef.set({
+			testEntry1: {
+				date_of_entry: "April 23",
+				entry: "This is a test journal entry"
+			},
+
+			testEntry2: {
+				date_of_entry: "April 24",
+				entry: "This is the second test"
+			}
+		});
+	}
+
 	render() { 
 		return (
 	      	<View style={{flex: 1}}>
 				  <Container>
-				  	<HeaderComponent titleText='Journal Entries' navigator={this.props.navigator}/>
+				  	<HeaderComponent titleText='Journal' navigator={this.props.navigator}/>
 					<Content>
-						<Button onPress={() => {this.navigate('JournalInput')}}>
-							<Icon name='add' />
-                    	</Button>
-
-		                {/*<ListView
-		                  dataSource={this.state.dataSource}
-		                  renderRow={(rowData) => 
-		                  	<TouchableHighlight onPress= { () => this.navigate('JournalInput')}>
-								<View style={styles.row}>
-									<Text>{rowData.content}</Text>
-								</View>
-							</TouchableHighlight>
-		                  }
-		                  renderSeparator = {(sectionId, rowId) =>
-					          <View
-					            style={styles.style_separator}
-					            key={rowId}
-					          />
-					      }>
-		                </ListView>
-						*/}
+						<TouchableOpacity style={styles.actionButtonIcon} onPress={this.createJournals}>
+							<Text style={styles.textStyle}> + </Text>
+						</TouchableOpacity>
+						
 		              </Content>
 		          </Container>
 					
@@ -71,8 +76,10 @@ export default class JournalScreen extends Component {
 
 
 const styles = StyleSheet.create({
-  testStyle: {
+  textStyle: {
     textAlign: 'center',
+    color: '#FFFFFF',
+    fontSize: 24,
   },
   row: {
     flexDirection: 'row',
@@ -83,9 +90,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#F6F6F6',
   },
   actionButtonIcon: {
-    fontSize: 20,
-    height: 22,
-    color: 'white',
+    alignSelf: 'stretch',
+    backgroundColor: '#4286f4',
+    padding: 10,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 50,
   },
   style_separator: {
   	flex: 1,
