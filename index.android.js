@@ -29,9 +29,11 @@ import Week1A2 from './app/Curriculum/Week1A2';
 import QuizFinish from './app/Curriculum/QuizFinish';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
-import MedicineList from './app/Setting/MedicineList';
+import AlarmSetting from './app/Setting/AlarmSetting';
+import AddAlarm from './app/Setting/AddAlarm';
+import EditAlarm from './app/Setting/EditAlarm';
 import DataInput from './app/Data/DataInput';
-
+import UserProfile from './app/Setting/UserProfile';
 
 export default class AwesomeProject extends Component {
   constructor() {
@@ -95,7 +97,17 @@ export default class AwesomeProject extends Component {
       return <DataInput navigator={navigator} date = {dateSelected}/>
     }
     if (route.name == 'AlarmSettings') {
-      return <MedicineList navigator={navigator} />
+      return <AlarmSetting navigator={navigator} />
+    }
+    if (route.name == 'AddAlarm') {
+      return <AddAlarm navigator={navigator} />
+    }
+    if (route.name == 'EditAlarm') {
+      return <EditAlarm navigator={navigator} />
+    }
+    if (route.name == 'UserProfile') {
+      userInfo = route.userInfo;
+      return <UserProfile navigator={navigator} userInfo = {userInfo}/>
     }
    
   }

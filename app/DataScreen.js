@@ -17,7 +17,7 @@ export default class DataScreen extends Component {
         this.state = {
             weightData: fixtures.userData,
             selectedItem: undefined,
-            selected1: '5',
+            selected1: '7',
             results: {
                 items: []
             }
@@ -51,13 +51,9 @@ export default class DataScreen extends Component {
                                             mode="dropdown"
                                             selectedValue={this.state.selected1}
                                             onValueChange={this.onValueChange.bind(this)}>
-                                            <Item label="This Week" value="5" />
-                                            <Item label="Last Week" value="7" />
+                                            <Item label="This Week" value="7" />
                                             <Item label="Last Two Weeks" value="14" />
-                                            <Item label="Last Month" value="30" />
-                                            <Item label="All" value="0" />
-                                       </Picker>
-                                            
+                                        </Picker>
                                         <WeightPage data={this.state.weightData} value={this.state.selected1}/>
                                     </Tab>
                                 </Tabs>
