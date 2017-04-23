@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import InputForm from './InputForm';
+import * as firebase from 'firebase';
 
 export default class SignupScreen extends Component {
 
@@ -15,7 +16,7 @@ export default class SignupScreen extends Component {
 			<View style={styles.container}>
 				<View style={styles.logoContainer}>
 					<Image source={require('../img/strongHeart.png')} style={styles.image} />
-					<Text style={styles.title}> My Healthy Heart </Text>
+					<Text style={styles.title}> HeartStrong </Text>
 				</View>
 				<View style={styles.formContainer}>
 					<InputForm navigator={this.props.navigator} buttonName='Sign Up'/>

@@ -1,23 +1,69 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text} from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, ActivityIndicator} from 'react-native';
+import DismissKeyboard from 'react-native-dismiss-keyboard';
+import * as firebase from 'firebase';
 
+// Export default is a simplified way of exporting this class for usage
+// Substitute for using export default "class name"
+// or module.exports
 export default class InputFormLogin extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			email: "",
+			password: "",
+			response: "",
+			animating: false
+		};
+
+		this.login = this.login.bind(this);
+	}
+
 	navigate(routeName) {
 		this.props.navigator.push({
 			name: routeName
 		})
 	}
 
+	async login() {
+		DismissKeyboard();
+
+		try {
+			await firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password);
+			this.setState({
+				response: "Login Successful.. redirecting to home",
+				animating: true
+			})
+			setTimeout(() => {
+				this.navigate('Home');
+			}, 2000);
+			// Add animation or text for screen loading/transition
+		} catch (error) {
+			this.setState({
+				response: error.toString()
+			})
+		}
+	}
+
 	render () {
 		return (
 			<View style={styles.container}>
 				<TextInput 
-				placeholder="Login Pin"
+				placeholder="Email"
+				keyboardType="email-address"
+				onChangeText = {(email) => this.setState({email})}
 				style={styles.input} 
+				/>
+				<TextInput 
+				placeholder="Password"
+				onChangeText = {(password) => this.setState({password})}
+				style={styles.input} 
+				secureTextEntry
 				/>
 				<TouchableOpacity 
 				style={styles.buttonContainer}
-				onPress={ () => {this.navigate('Home')}}>
+				onPress={this.login}>
 					<Text style={styles.button}>{this.props.buttonName}</Text>
 				</TouchableOpacity>
 					<Text style={styles.loginText}>Don't have an account?</Text>
@@ -26,9 +72,12 @@ export default class InputFormLogin extends Component {
 					onPress={() => {this.navigate('Signup')}}>
 					Sign up
 					</Text>
+					<Text style={styles.response}>{this.state.response}</Text>
+					<ActivityIndicator style={styles.activity} size="small" animating={this.state.animating} />
 			</View>
 		);
 	}
+
 }
 
 const styles = StyleSheet.create({
@@ -54,6 +103,13 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		textAlign: 'center'
+	},
+	response: {
+		textAlign: 'center',
+		paddingTop: 10
+	},
+	activity: {
+		paddingTop: 10
 	},
 	loginText: {
 		textAlign: 'center',

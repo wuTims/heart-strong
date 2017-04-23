@@ -29,9 +29,13 @@ import Week1A2 from './app/Curriculum/Week1A2';
 import QuizFinish from './app/Curriculum/QuizFinish';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
+import * as firebase from 'firebase';
+import Firebase from './app/includes/firebase';
+
 
 export default class AwesomeProject extends Component {
   constructor() {
+    Firebase.initialise();
     super();
     this.state = {
       homePressed: true
@@ -100,7 +104,7 @@ export default class AwesomeProject extends Component {
       <View style={{flex: 1}}>
         <Navigator
           initialRoute={{
-            name: 'Signup'
+            name: 'Login'
           }}
           renderScene={
             this.renderScene.bind(this)
@@ -109,6 +113,7 @@ export default class AwesomeProject extends Component {
       </View>
     );
   }
+
 }
 
 

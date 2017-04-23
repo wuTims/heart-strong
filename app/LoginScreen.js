@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 import InputFormLogin from './InputFormLogin';
+import * as firebase from 'firebase';
+
 
 export default class LoginScreen extends Component {
 	navigate(routeName) {
@@ -14,7 +16,7 @@ export default class LoginScreen extends Component {
 			<View style={styles.container}>
 				<View style={styles.logoContainer}>
 					<Image source={require('../img/strongHeart.png')} style={styles.image} />
-					<Text style={styles.title}> My Healthy Heart </Text>
+					<Text style={styles.title}> HeartStrong </Text>
 				</View>
 				<View style={styles.formContainer}>
 					<InputFormLogin navigator={this.props.navigator} buttonName='Log In'/>
@@ -22,6 +24,7 @@ export default class LoginScreen extends Component {
 			</View>
 		);
 	}
+
 }
 
 const styles = StyleSheet.create({

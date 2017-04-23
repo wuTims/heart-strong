@@ -1,28 +1,70 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text} from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, ActivityIndicator} from 'react-native';
+import DismissKeyboard from 'react-native-dismiss-keyboard';
+import * as firebase from 'firebase';
 
 export default class InputForm extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			email: "",
+			password: "",
+			response: "",
+			animating: false
+		}
+
+		this.signup = this.signup.bind(this);
+	}
+
 	navigate(routeName) {
 		this.props.navigator.push({
 			name: routeName
 		})
 	}
 
+
+	async signup() {
+		DismissKeyboard();
+
+		try {
+			await firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password);
+			this.setState({
+				response: "Sign up successful, redirecting to login",
+				animating: true
+			})
+
+			setTimeout(() => {
+				this.navigate('Login');
+			}, 2000);
+
+		} catch (error) {
+			this.setState({
+				response: error.toString()
+			})
+		}
+		
+	}
+
+
 	render () {
 		return (
 			<View style={styles.container}>
 				<TextInput 
-				placeholder="Username"
+				placeholder="Email"
+				keyboardType="email-address"
+				onChangeText = {(email) => this.setState({email})}
 				style={styles.input} 
 				/>
 				<TextInput 
 				placeholder="Password"
+				onChangeText = {(password) => this.setState({password})}
 				style={styles.input} 
 				secureTextEntry
 				/>
 				<TouchableOpacity 
 				style={styles.buttonContainer}
-				onPress={ () => {this.navigate('Login')}}>
+				onPress={this.signup}>
 					<Text style={styles.button}>{this.props.buttonName}</Text>
 				</TouchableOpacity>
 					<Text style={styles.loginText}>Already have an account?</Text>
@@ -31,6 +73,8 @@ export default class InputForm extends Component {
 					onPress={ () => {this.navigate('Login')}}>
 					Log in
 					</Text>
+					<Text style={styles.response}>{this.state.response}</Text>
+					<ActivityIndicator style={styles.activity} size="small" animating={this.state.animating} />
 			</View>
 		);
 	}
@@ -59,6 +103,13 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		textAlign: 'center'
+	},
+	response: {
+		textAlign: 'center',
+		paddingTop: 10
+	},
+	activity: {
+		paddingTop: 10
 	},
 	loginText: {
 		textAlign: 'center',
