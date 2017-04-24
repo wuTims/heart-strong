@@ -21,12 +21,15 @@ import JournalScreen from './app/JournalScreen';
 import ResourceScreen from './app/ResourceScreen';
 import JournalInput from './app/Journal/JournalInput';
 import CurriculumScreen from './app/CurriculumScreen';
-import Week1Content from './app/Curriculum/Week1Content';
-import Week1Q1 from './app/Curriculum/Week1Q1';
-import Week1A1 from './app/Curriculum/Week1A1';
-import Week1Q2 from './app/Curriculum/Week1Q2';
-import Week1A2 from './app/Curriculum/Week1A2';
-import QuizFinish from './app/Curriculum/QuizFinish';
+import Week1Content from './app/Curriculum/Week1/Week1Content';
+import Week1Q1 from './app/Curriculum/Week1/Week1Q1';
+import Week1A1 from './app/Curriculum/Week1/Week1A1';
+import Week1Q2 from './app/Curriculum/Week1/Week1Q2';
+import Week1A2 from './app/Curriculum/Week1/Week1A2';
+import Week1Q3 from './app/Curriculum/Week1/Week1Q3';
+import Week1Q4 from './app/Curriculum/Week1/Week1Q4';
+import Week1Q5 from './app/Curriculum/Week1/Week1Q5';
+import QuizFinish from './app/Curriculum/Week1/QuizFinish';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
 import AlarmSetting from './app/Setting/AlarmSetting';
@@ -78,7 +81,7 @@ export default class AwesomeProject extends Component {
     if (route.name == 'JournalInput') {
       return <JournalInput navigator={navigator} />
     }
-    if (route.name == 'Week1Content') {
+   if (route.name == 'Week1Content') {
       return <Week1Content navigator={navigator} />
     }
     if (route.name == 'Week1Q1') {
@@ -92,6 +95,15 @@ export default class AwesomeProject extends Component {
     }
     if (route.name == 'Week1A2') {
       return <Week1A2 navigator={navigator} />
+    }
+    if (route.name == 'Week1Q3') {
+      return <Week1Q3 navigator={navigator} />
+    }
+    if (route.name == 'Week1Q4') {
+      return <Week1Q4 navigator={navigator} />
+    }
+    if (route.name == 'Week1Q5') {
+      return <Week1Q5 navigator={navigator} />
     }
     if (route.name == 'QuizFinish') {
       return <QuizFinish navigator={navigator} />
