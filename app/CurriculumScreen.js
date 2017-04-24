@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, StyleSheet, View} from 'react-native';
+import { AppRegistry, Text, StyleSheet, View, ScrollView} from 'react-native';
 
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
@@ -21,23 +21,15 @@ export default class CurriculumScreen extends Component {
 
               <Container>
                     <Content>
-
-                         <ListItem onPress={() => {this.navigate('Week1Content')}}>
-                             <Text >Introduce to My Healthy Heart Care</Text>
-                        </ListItem>
-                        <ListItem onPress={() => {this.navigate('Week1Content')}}>
-                            <Text > week 1</Text>
-                        </ListItem>
-                        <ListItem onPress={() => {this.navigate('Week1Content')}}>
-                            <Text>Week 2 </Text>
-                        </ListItem>
-                        <ListItem onPress={() => {this.navigate('Week1Content')}}>
-                            <Text>week 3 </Text>
-                        </ListItem>
-                        <ListItem onPress={() => {this.navigate('Week1Content')}}>
-                            <Text> week 4 </Text>
-                        </ListItem>
+                        <ScrollView style={styles.scrollView}>
+                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Introduce to My Healthy Heart Care</Text>
+                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week One: Survival Skills</Text>
+                              <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week Two: Norishing the Body</Text>
+                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week Three: Rehabilitation</Text>
+                            <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week Four: Ready for Self-care</Text>
                         
+         
+                        </ScrollView>
                         
                     </Content>
                 </Container>
@@ -58,5 +50,18 @@ export default class CurriculumScreen extends Component {
 const styles = StyleSheet.create({
   testStyle: {
     textAlign: 'center',
-  }
+  },
+  alertStyle: {
+    textAlign: 'center',
+    paddingTop: 10,
+    paddingBottom: 10,
+    borderWidth: 1,
+    borderColor: '#D3D3D3',
+    borderRadius: 2,
+  },
+    scrollView: {
+    marginTop: 0,
+    backgroundColor: 'white',
+    opacity: 0.75,
+  },
 })

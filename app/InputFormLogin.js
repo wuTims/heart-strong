@@ -3,6 +3,7 @@ import { StyleSheet, View, TextInput, TouchableOpacity, Text, ActivityIndicator}
 import DismissKeyboard from 'react-native-dismiss-keyboard';
 import * as firebase from 'firebase';
 
+
 // Export default is a simplified way of exporting this class for usage
 // Substitute for using export default "class name"
 // or module.exports
@@ -18,6 +19,12 @@ export default class InputFormLogin extends Component {
 		};
 
 		this.login = this.login.bind(this);
+		this.userRef = this.getRef().child('users');
+		this.authData; 
+	}
+
+	getRef() {
+		return firebase.database().ref();
 	}
 
 	navigate(routeName) {
@@ -35,6 +42,15 @@ export default class InputFormLogin extends Component {
 				response: "Login Successful.. redirecting to home",
 				animating: true
 			})
+
+			// Current User built into firebase to retrieve uid
+			this.authData = await firebase.auth().currentUser;
+
+			this.userRef.child(this.authData.uid).set({
+				email: this.state.email,
+				password: this.state.password
+			});
+
 			setTimeout(() => {
 				this.navigate('Home');
 			}, 50);
