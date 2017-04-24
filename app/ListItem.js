@@ -12,7 +12,8 @@ export default class ListItem extends Component {
 		return (
 			<TouchableHighlight onPress={this.props.onPress}>	
 				<View style={styles.list}>
-					<Text style={styles.listText}>{this.props.entry.date}</Text>
+					<Text style={styles.dateText}>{this.props.entry.date_of_entry}</Text>
+					<Text style={styles.listText}>{this.props.entry.entry}</Text>
 				</View>
 			</TouchableHighlight>
 		);
@@ -26,6 +27,12 @@ const styles = StyleSheet.create({
 	    borderColor: 'transparent',
 	    borderWidth: 1,
 	    padding: 10,
+	},
+	dateText: {
+		color: '#595959',
+		fontSize: 10,
+		textAlign: 'center',
+		paddingBottom: 7,
 	},
 	listText: {
 		color: '#333',
