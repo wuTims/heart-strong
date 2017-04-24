@@ -26,15 +26,28 @@ export default class JournalInput extends Component {
                 </Header>
 
                 <Content>
-                    <Text>Congradulations!  </Text>
-                    <Text>You finished this week's quiz. Now go back to check your progress. </Text>
-                    <Button round success onPress= {() => {this.navigate('Curriculum')}}  ><Text> back to Curriculum</Text></Button>
-
+                  <View style={{flex: 1, flexDirection: 'column'}}> 
+                    <View style={{ height: 500}}>
+                   <Text  style = {{textAlign: 'center',fontSize: 30}}> Congradulations! </Text>
+                   <Text style = {{fontSize: 20}} > You finished this week's quiz. Now go back to check your progress.</Text>
+                   </View>
+                    <View style={styles.buttonContainer}>
+                    <Button rounded info full onPress= {() => {this.navigate('Curriculum')}}  ><Text style={{color: '#FFFFFF'}}> Back to Curriculum </Text></Button>
+                    </View>
+                  </View>
 
                 </Content>
 
             </Container>
       );
     }
-
 }
+
+const styles = StyleSheet.create({
+
+  buttonContainer: {
+    height: 50,
+  }
+    
+})
+
