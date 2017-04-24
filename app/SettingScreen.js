@@ -43,7 +43,7 @@ export default class SettingScreen extends Component {
 						<ListItem itemDivider>
 							<Text>Notification Settings</Text>
 						</ListItem>
-						<ListItem onPress={() => {this.navigate('AlarmSettings'), userInfo}}>
+						<ListItem onPress={() => {this.navigate('AlarmSettings')}}>
 							<Text>Alarms</Text>
 						</ListItem>
 					</Content>

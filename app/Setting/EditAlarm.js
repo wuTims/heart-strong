@@ -4,8 +4,13 @@ import { Content, ListItem, Right, Left, H2, Button} from 'native-base';
 import FooterComponent from '../FooterComponent'; 
 import NavigatorComponent from '../NavigatorComponent';
 import HeaderComponent from '../HeaderComponent';
+import DatePicker from 'react-native-datepicker'
 
 export default class EditAlarm extends Component {
+    constructor(props){
+        super(props)
+        this.state = {time: '09:00'}
+    }
     navigate(routeName){
         this.props.navigator.push({
             name: routeName
@@ -17,19 +22,34 @@ export default class EditAlarm extends Component {
                 <View style={{flex: 1}}>
                     <HeaderComponent titleText='Edit Alarm' navigator={this.props.navigator}/>
                     <Content>
-                        <View>
-                        <Text>Edit alarm here</Text>
+                    <View style={{flexDirection: 'column'}}>
+                        <Text style={styles.instructions}>Alarm: {this.state.time}</Text>
+                        <View style={styles.container}>
+                            <DatePicker
+                              style={{width: 200}}
+                              date={this.state.time}
+                              mode="time"
+                              androidMode="default"
+                              format="HH:mm"
+                              confirmBtnText="Confirm"
+                              cancelBtnText="Cancel"
+                              showIcon="false"
+                              minuteInterval={10}
+                              onDateChange={(time) => {this.setState({time: time});}}
+                            />
                         </View>
-                        <View>
+                        <View style={{flexDirection: 'row', justifyContent:'center', alignItems:'center'}}>
                         {/* TODO: need to update the list array in alarm setting*/}
                             <Button primary onPress={() => {this.navigate('AlarmSettings')}}>
                               <Text> Save </Text>
                             </Button>
+                            <Text> </Text>
                         {/* TODO: need to update the list array in alarm setting*/}
                             <Button danger onPress={() => {this.navigate('AlarmSettings')}}>
                               <Text> Delete </Text>
                             </Button>
                         </View>
+                    </View>
                     </Content>
                     <FooterComponent navigator={this.props.navigator}/>
                 </View>
@@ -40,5 +60,18 @@ export default class EditAlarm extends Component {
 const styles = StyleSheet.create({
     ButtonRow: {
         flexDirection: 'row',
-  },
+    },
+    container: {
+        flex: 1,
+        height: 200,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF'
+    },
+    instructions: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 15,
+        marginBottom: 5
+    }
 })
