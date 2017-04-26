@@ -81,7 +81,7 @@ export default class AwesomeProject extends Component {
     if (route.name == 'JournalInput') {
       return <JournalInput navigator={navigator} />
     }
-   if (route.name == 'Week1Content') {
+    if (route.name == 'Week1Content') {
       return <Week1Content navigator={navigator} />
     }
     if (route.name == 'Week1Q1') {
