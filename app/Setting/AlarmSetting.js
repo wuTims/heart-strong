@@ -34,10 +34,12 @@ export default class AlarmSetting extends Component {
                         <View>
                             <AlarmList list= {this.state.list} navigator={this.props.navigator}/>
                         </View>
-                        <View style= {{alignItems: 'center'}}>
-                            <Text onPress={() => {this.navigate('AddAlarm')}}>Add Alarm</Text>
+                        <View style= {{height: 100, alignItems: 'center', justifyContent:'flex-end'}}>
+                            <Button onPress={() => {this.navigate('AlarmSettings')}}>
+                                <Text style={{ fontWeight: 'bold', fontSize: 15}} onPress={() => {this.navigate('AddAlarm')}}>Add Alarm</Text>
+                            </Button>
                         </View>
-                    </Content>
+                    </Content>  
                     <FooterComponent navigator={this.props.navigator}/>
                 </View>
         );

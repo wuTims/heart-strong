@@ -54,6 +54,7 @@ export default class InputFormLogin extends Component {
 			setTimeout(() => {
 				this.navigate('Home');
 			}, 100);
+
 			// Add animation or text for screen loading/transition
 		} catch (error) {
 			this.setState({
