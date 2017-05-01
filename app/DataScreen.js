@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View, Dimensions, TextInput, Button} from 'react-native';
 import { Header, Container, Content, Tab, Tabs, ListItem, Title, Picker, Item} from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
-import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 import CalendarPicker from 'react-native-calendar-picker';
 import CalendarView from '../app/Data/CalendarView';
