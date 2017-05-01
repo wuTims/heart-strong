@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, StyleSheet, View, Dimensions, TextInput, Button} from 'react-native';
+import { AppRegistry, Text, StyleSheet, View, Dimensions, TextInput, Button, TouchableHighlight} from 'react-native';
 import { Header, Container, Content, Tab, Tabs, ListItem, Title, Picker, Item} from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
 import NavigatorComponent from '../app/NavigatorComponent'
@@ -7,17 +7,17 @@ import HeaderComponent from '../app/HeaderComponent';
 import CalendarPicker from 'react-native-calendar-picker';
 import CalendarView from '../app/Data/CalendarView';
 import DataInput from '../app/Data/DataInput';
-import GraphView from '../app/Data/GraphView';
-import * as fixtures from '../app/Data/WeightData';
-import WeightPage from '../app/Data/WeightPage';
+import * as fixtures from '../app/Data/Data';
+import GraphPage from '../app/Data/GraphPage';
 
 export default class DataScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            weightData: fixtures.userData,
+            data: fixtures.userData,
             selectedItem: undefined,
-            selected1: '7',
+            selected1: '1',
+            type: 'weight',
             results: {
                 items: []
             }
@@ -36,6 +36,8 @@ export default class DataScreen extends Component {
         });
     }
 
+    
+
     render() {
         return (
             <Container>
@@ -51,10 +53,24 @@ export default class DataScreen extends Component {
                                             mode="dropdown"
                                             selectedValue={this.state.selected1}
                                             onValueChange={this.onValueChange.bind(this)}>
-                                            <Item label="This Week" value="7" />
-                                            <Item label="Last Two Weeks" value="14" />
+                                            <Item label="This Week" value="1" />
+                                            <Item label="Last Week" value="2" />
                                         </Picker>
-                                        <WeightPage data={this.state.weightData} value={this.state.selected1}/>
+                                        <GraphPage data={this.state.data} value={this.state.selected1} type={this.state.type}/>
+                                        <View style={{flexDirection: 'row', justifyContent:'space-around'}}>
+                                            <Button 
+                                                title= 'Weight'
+                                                onPress={() => this.setState({ type: 'weight' })}
+                                            />
+                                            <Button 
+                                                title= 'Blood Pressure'
+                                                onPress={() => this.setState({ type: 'bloodpressure' })}
+                                            />
+                                            <Button 
+                                                title= 'Heart Rate'
+                                                onPress={() => this.setState({ type: 'heartrate' })}
+                                            />
+                                        </View>
                                     </Tab>
                                 </Tabs>
                                 <Content>

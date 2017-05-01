@@ -25,7 +25,7 @@ const TickWidth = PaddingSize * 2;
 
 const dimensionWindow = Dimensions.get('window');
 
-export default class WeightGraph extends Component {
+export default class DataGraph extends Component {
   static propTypes = {
     /* eslint-disable react/no-unused-prop-types */
     data: PropTypes.array.isRequired,
@@ -133,7 +133,7 @@ export default class WeightGraph extends Component {
 
             return (
               <Text key={index} style={[styles.tickLabelX, tickStyles]}>
-                {tickXFormat(new Date(tick.datum.time * 1000))}
+                {tickXFormat(new Date(tick.datum.date_of_entry))}
               </Text>
             );
           })}
