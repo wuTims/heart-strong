@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { TouchableOpacity, AppRegistry, Text, StyleSheet, View, ListView, TouchableHighlight, Button, AlertIOS} from 'react-native';
 import {Container, Content, Input, Icon, Left, Right, Body, Header, Title  } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
-import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 import ListItem from '../app/ListItem';
 import * as firebase from 'firebase';
@@ -18,7 +17,6 @@ export default class JournalScreen extends Component {
 			}),
 			entry: ""
 		};
-		this.createJournals = this.createJournals.bind(this);
 		this.journalRef = this.getRef().child('journals');
 
 	}
@@ -66,38 +64,7 @@ export default class JournalScreen extends Component {
 	    });
 	}
 
-	createJournals() {
-		this.journalRef.set({
-			testEntry1: {
-				date_of_entry: "April 23",
-				entry: "This is a test journal entry"
-			},
 
-			testEntry2: {
-				date_of_entry: "April 24",
-				entry: "This is the second test"
-			}
-		});
-	}
-
-	_addEntry() {
-		AlertIOS.prompt(
-			'Type note here',
-			null,
-			[
-				{
-					text: 'Add',
-					onPress: (text) => {
-						this.journalRef.push({
-							date_of_entry: new Date().toLocaleString(),
-							entry: text
-						});
-					}
-				}, 
-			],
-			'plain-text'
-		);
-	}
 
 	render() { 
 		return (
@@ -105,7 +72,7 @@ export default class JournalScreen extends Component {
 				  <Container>
 				  	<HeaderComponent titleText='Journal' navigator={this.props.navigator}/>
 					<Content>
-						<TouchableOpacity style={styles.actionButtonIcon} onPress={this._addEntry.bind(this)}>
+						<TouchableOpacity style={styles.actionButtonIcon} onPress= {() => {this.navigate('JournalInput')}}>
 							<Text style={styles.textStyle}> + </Text>
 						</TouchableOpacity>
 						
