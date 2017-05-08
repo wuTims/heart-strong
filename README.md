@@ -11,7 +11,7 @@
 ## 1. Software
 Any text editor like Sublime, Brackets would work (if you use Sublime we recommend Babel - http://www.storybench.org/install-babel-packages-sublime-text-3/)
  - Mac users need [Xcode](https://developer.apple.com/xcode/) to run the emulator
- - Window users need [Android studio](https://developer.android.com/studio/index.html)
+ - Windows users need [Android studio](https://developer.android.com/studio/index.html)
  
  
 ## 2. Hardware
