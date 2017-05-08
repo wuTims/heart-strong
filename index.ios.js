@@ -19,6 +19,11 @@ import SettingScreen from './app/SettingScreen';
 import DataScreen from './app/DataScreen';
 import JournalScreen from './app/JournalScreen';
 import ResourceScreen from './app/ResourceScreen';
+import R1 from './app/Resourse/R1';
+import R2 from './app/Resourse/R2';
+import R3 from './app/Resourse/R3';
+import R4 from './app/Resourse/R4';
+import FAQ from './app/Resourse/FAQ';
 import JournalInput from './app/Journal/JournalInput';
 import CurriculumScreen from './app/CurriculumScreen';
 import Week1Content from './app/Curriculum/Week1/Week1Content';
@@ -30,6 +35,10 @@ import Week1Q3 from './app/Curriculum/Week1/Week1Q3';
 import Week1Q4 from './app/Curriculum/Week1/Week1Q4';
 import Week1Q5 from './app/Curriculum/Week1/Week1Q5';
 import QuizFinish from './app/Curriculum/Week1/QuizFinish';
+import Week2Content from './app/Curriculum/Week2/Week2Content';
+import Week3Content from './app/Curriculum/Week3/Week3Content';
+import Week4Content from './app/Curriculum/Week4/Week4Content';
+import Week0Content from './app/Curriculum/Week0/Week0Content';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
 import AlarmSetting from './app/Setting/AlarmSetting';
@@ -69,6 +78,26 @@ export default class AwesomeProject extends Component {
     if (route.name == 'Resources') {
       return <ResourceScreen navigator={navigator} />
     }
+     if (route.name == 'R1') {
+      return <R1 navigator={navigator} />
+    }
+
+    if (route.name == 'R2') {
+      return <R2 navigator={navigator} />
+    }
+
+    if (route.name == 'R3') {
+      return <R3 navigator={navigator} />
+    }
+
+    if (route.name == 'R4') {
+      return <R4 navigator={navigator} />
+    }
+
+    if (route.name == 'FAQ') {
+      return <FAQ navigator={navigator} />
+    }
+
     if (route.name == 'Journal') {
       return <JournalScreen navigator={navigator} />
     }
@@ -107,6 +136,18 @@ export default class AwesomeProject extends Component {
     }
     if (route.name == 'QuizFinish') {
       return <QuizFinish navigator={navigator} />
+    }
+     if (route.name == 'Week2Content') {
+      return <Week2Content navigator={navigator} />
+    }
+    if (route.name == 'Week3Content') {
+      return <Week3Content navigator={navigator} />
+    }
+    if (route.name == 'Week4Content') {
+      return <Week4Content navigator={navigator} />
+    }
+    if (route.name == 'Week0Content') {
+      return <Week0Content navigator={navigator} />
     }
     if (route.name == 'DataInput') {
       dateSelected = route.dateSelected;

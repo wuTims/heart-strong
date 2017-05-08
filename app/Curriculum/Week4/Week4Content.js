@@ -5,7 +5,7 @@ import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Titl
 
 export default class JournalInput extends Component {
 
-  navigate(routeName) {
+  navigate(routeName) { 
       this.props.navigator.push({
           name: routeName
       })
@@ -26,7 +26,7 @@ export default class JournalInput extends Component {
                         </Button>
                     </Left>
                     <Body>
-                        <Title>Week 1 </Title>
+                        <Title>Week 4 </Title>
                     </Body>
                     <Right />
                 </Header>
@@ -35,34 +35,35 @@ export default class JournalInput extends Component {
 
               
                   <View style={{flex:1, flexDirection: 'column'}}>
-                  <Image style={styles.image} source={require('../../../img/week1Content.jpg')}/>
+                  <Image style={styles.image} source={require('../../../img/week4Content.jpg')}/>
                     
                  
                   
                     <View style={styles.container}> 
                         <Text style={{fontWeight: 'bold'}}> Some useful Resources </Text> 
-                      	<Text style={{color: 'blue'}}
-             				 	     onPress={() => Linking.openURL('http://www.ksw-gtg.com/aha-heartfailure/#/1/')}>
-          					 	     Healthy Living with Heart Failure
-        						    </Text>
+                        <Text style={{color: 'blue'}}
+                           onPress={() => Linking.openURL('http://www.webmd.com/heart-disease/heart-failure/tc/quick-tips-self-care-for-heart-failure-get-started#1')}>
+                         Self Care I
+                        </Text>
 
-        						  <Text style={{color: 'blue'}}
-             				 	 onPress={() => Linking.openURL('http://www.heart.org/HEARTORG/Conditions/More/ConsumerHealthCare/Medication-Adherence---Taking-Your-Meds-as-Directed_UCM_453329_Article.jsp#.WL7U1tIrKUk')}>
-          						 Symptom to Not Ignore
-        						  </Text>
-
-        						  <Text style={{color: 'blue'}}
-             				 	 onPress={() => Linking.openURL('http://greatergood.berkeley.edu/article/item/tips_for_keeping_a_gratitude_journal')}>
-          						  Tips for Keeping a Gratitude Journal
-        						  </Text>
-
-                      <Text  style={{color: 'blue'}} onPress={() => {this.navigate('R1')}}>
-                      Find More under Resources page 
+                     <Text style={{color: 'blue'}}
+                       onPress={() => Linking.openURL('https://www.hov.org/media/1112/living-will_forms.pdf')}>
+                        Living Will I
                       </Text>
 
+                      <Text style={{color: 'blue'}}
+                       onPress={() => Linking.openURL('https://powerofattorney.com/medical-power-attorney/')}>
+                        Healthcare Power of Attorney
+                      </Text>
+
+
+                      <Text style={{color: 'blue'}} onPress={() => {this.navigate('R4')}}>
+                      Find More under Resources page 
+                      </Text>
+                      
                       </View >
 
-                      <View style={{height: 50}}>
+                      <View style={{height: 40}}>
                         <Button rounded info full onPress= {() => {this.navigate('Week1Q1'); this.addToDB()}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
                       </View>
                   </View>
@@ -85,7 +86,7 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     width: 320, 
-    height: 360
+    height: 410
   },
     
 })
