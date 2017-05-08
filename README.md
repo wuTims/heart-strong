@@ -2,10 +2,10 @@
 
 ## Table of Contents
 
-1. [Software] (#1-software)
-2. [Hardware] (#2-hardware)
-3. [Get Started] (#3-get-started)
-4. [Backend using Firebase] (#4-backend-using-firebase)
+1. [Software](#1-software)
+2. [Hardware](#2-hardware)
+3. [Get Started](#3-get-started)
+4. [Backend using Firebase](#4-backend-using-firebase)
 
 ### 1. Software
 Any text editor like Sublime, Brackets would work (if you use Sublime we recommend Babel - http://www.storybench.org/install-babel-packages-sublime-text-3/)
