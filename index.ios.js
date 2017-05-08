@@ -35,9 +35,29 @@ import Week1Q4 from './app/Curriculum/Week1/Week1Q4';
 import Week1Q5 from './app/Curriculum/Week1/Week1Q5';
 import QuizFinish from './app/Curriculum/Week1/QuizFinish';
 import Week2Content from './app/Curriculum/Week2/Week2Content';
+import Week2Q1 from './app/Curriculum/Week2/Week2Q2';
+import Week2A1 from './app/Curriculum/Week2/Week2A2';
+import Week2Q2 from './app/Curriculum/Week2/Week2Q2';
+import Week2A2 from './app/Curriculum/Week2/Week2A2';
+import Week2Q3 from './app/Curriculum/Week2/Week2Q3';
+import Week2A3 from './app/Curriculum/Week2/Week2A3';
+import QuizFinishW2 from './app/Curriculum/Week2/QuizFinishW2';
 import Week3Content from './app/Curriculum/Week3/Week3Content';
+import Week3Q1 from './app/Curriculum/Week3/Week3Q1';
+import Week3Q2 from './app/Curriculum/Week3/Week3Q2';
+import Week3Q3 from './app/Curriculum/Week3/Week3Q3';
 import Week4Content from './app/Curriculum/Week4/Week4Content';
+import Week4Q1 from './app/Curriculum/Week4/Week4Q1';
+import Week4Q2 from './app/Curriculum/Week4/Week4Q2';
+import Week4Q3 from './app/Curriculum/Week4/Week4Q3';
 import Week0Content from './app/Curriculum/Week0/Week0Content';
+import Week0Q1 from './app/Curriculum/Week0/Week0Q1';
+import Week0Q2 from './app/Curriculum/Week0/Week0Q2';
+import Week0A5 from './app/Curriculum/Week0/Week0A5';
+import Week0Q3 from './app/Curriculum/Week0/Week0Q3';
+import Week0Q4 from './app/Curriculum/Week0/Week0Q4';
+import Week0Q5 from './app/Curriculum/Week0/Week0Q5';
+import QuizFinishW0 from './app/Curriculum/Week0/QuizFinishW0';
 import SignUp from './app/SignupScreen';
 import LogIn from './app/LoginScreen';
 import AlarmSetting from './app/Setting/AlarmSetting';
@@ -139,14 +159,77 @@ export default class AwesomeProject extends Component {
      if (route.name == 'Week2Content') {
       return <Week2Content navigator={navigator} />
     }
+    if (route.name == 'Week2Q1') {
+      return <Week2Q1 navigator={navigator} />
+    }
+    if (route.name == 'Week2A1') {
+      return <Week2A1 navigator={navigator} />
+    }
+    if (route.name == 'Week2Q2') {
+      return <Week2Q2 navigator={navigator} />
+    }
+    if (route.name == 'Week2A2') {
+      return <Week2A2 navigator={navigator} />
+    }
+    if (route.name == 'Week2Q3') {
+      return <Week2Q3 navigator={navigator} />
+    }
+    if (route.name == 'Week2A3') {
+      return <Week2A3 navigator={navigator} />
+    }
+    if (route.name == 'QuizFinishW2') {
+      return <QuizFinishW2 navigator={navigator} />
+    }
     if (route.name == 'Week3Content') {
       return <Week3Content navigator={navigator} />
+    }
+    if (route.name == 'Week3Q1') {
+      return <Week3Q1 navigator={navigator} />
+    }
+
+    if (route.name == 'Week3Q2') {
+      return <Week3Q2 navigator={navigator} />
+    }
+    if (route.name == 'Week3Q3') {
+      return <Week3Q3 navigator={navigator} />
     }
     if (route.name == 'Week4Content') {
       return <Week4Content navigator={navigator} />
     }
+    if (route.name == 'Week4Q1') {
+      return <Week4Q1 navigator={navigator} />
+    }
+
+    if (route.name == 'Week4Q2') {
+      return <Week4Q2 navigator={navigator} />
+    }
+    if (route.name == 'Week4Q3') {
+      return <Week4Q3 navigator={navigator} />
+    }
     if (route.name == 'Week0Content') {
       return <Week0Content navigator={navigator} />
+    }
+    if (route.name == 'Week0Q1') {
+      return <Week0Q1 navigator={navigator} />
+    }
+
+    if (route.name == 'Week0Q2') {
+      return <Week0Q2 navigator={navigator} />
+    }
+    if (route.name == 'Week0A5') {
+      return <Week0A5 navigator={navigator} />
+    }
+    if (route.name == 'Week0Q3') {
+      return <Week0Q3 navigator={navigator} />
+    }
+    if (route.name == 'Week0Q4') {
+      return <Week0Q4 navigator={navigator} />
+    }
+    if (route.name == 'Week0Q5') {
+      return <Week0Q5 navigator={navigator} />
+    }
+    if (route.name == 'QuizFinishW0') {
+      return <QuizFinishW0 navigator={navigator} />
     }
     if (route.name == 'DataInput') {
       dateSelected = route.dateSelected;

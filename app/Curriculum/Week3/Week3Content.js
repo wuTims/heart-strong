@@ -64,7 +64,7 @@ export default class JournalInput extends Component {
                       </View >
 
                       <View style={{height: 40}}>
-                        <Button rounded info full onPress= {() => {this.navigate('Week1Q1'); this.addToDB()}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
+                        <Button rounded info full onPress= {() => {this.navigate('Week3Q1')}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
                       </View>
                   </View>
                 </Content>

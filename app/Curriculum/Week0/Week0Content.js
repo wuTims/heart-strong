@@ -26,7 +26,7 @@ export default class JournalInput extends Component {
                         </Button>
                     </Left>
                     <Body>
-                        <Title> Day of Discharge </Title>
+                        <Title> Beginning </Title>
                     </Body>
                     <Right />
                 </Header>
@@ -61,7 +61,7 @@ export default class JournalInput extends Component {
                       </View >
 
                       <View style={{height: 50}}>
-                        <Button rounded info full onPress= {() => {this.navigate('Week1Q1'); this.addToDB()}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
+                        <Button rounded info full onPress= {() => {this.navigate('Week0Q1')}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
                       </View>
                   </View>
                 </Content>
