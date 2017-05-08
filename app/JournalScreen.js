@@ -64,7 +64,7 @@ export default class JournalScreen extends Component {
   	// _renderItem's argument is the row data set by cloneWithRows
   	/**
   	* Retrieves and renders all journal entries stored in Firebase journal table/child.
-  	* @param {Object} - journalRef - Firebase reference to journal table/child.
+  	* @param {Object} journalRef - Firebase reference to journal table/child.
   	*/
   	listenForEntries(journalRef) {
 	    journalRef.on('value', (snapshot) => {
