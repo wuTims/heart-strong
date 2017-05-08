@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View,alertrt} from 'react-native';
 import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 
-export default class JournalInput extends Component {
+/**
+* Finish Quiz template for Week 1.
+*
+*/
+export default class QuizFinish extends Component {
 
   navigate(routeName) {
       this.props.navigator.push({
@@ -27,7 +31,7 @@ export default class JournalInput extends Component {
                 <Content>
                   <View style={{flex: 1, flexDirection: 'column'}}> 
                     <View style={{ height: 500}}>
-                   <Text  style = {{textAlign: 'center',fontSize: 30}}> Congradulations! </Text>
+                   <Text  style = {{textAlign: 'center',fontSize: 30}}> Congratulations! </Text>
                    <Text style = {{fontSize: 20}} > You finished this week's quiz. Now go back to check your progress.</Text>
                    </View>
                     <View style={styles.buttonContainer}>

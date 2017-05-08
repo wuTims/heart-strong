@@ -3,7 +3,14 @@ import {StyleSheet, View, Button, Text, Dimensions} from 'react-native';
 import { Icon } from 'native-base';
 import CalendarPicker from 'react-native-calendar-picker';
 
+/**
+* Component to display Calendar.
+* Navigates to DataInput component.
+*/
 export default class CalendarView extends Component {
+	/**
+	* Initialize state.date.
+	*/
 	constructor() {
 		super();
 		  this.state = {
@@ -11,11 +18,11 @@ export default class CalendarView extends Component {
 		  } 
 	}
 
-	getSelectedDate() {
-		var date = this.state.date;
-		this.setState({date: date});
-	}
-
+	/**
+	* Navigate to DataInput component with extra dateSelected prop.
+	* @param {String} routeName - Name of next component.
+	* @param {Date} date - The selected date.
+	*/
 	navigate(routeName, date){
         this.props.navigator.push({
             name: routeName, 
@@ -23,10 +30,18 @@ export default class CalendarView extends Component {
         });
     }
 
+    /**
+    * Sets state.date to currently selected date.
+    * @param {Date} date - The selected date.
+    */
 	onDateChange(date) {
 		this.setState({ date: date });
 	}
 
+	/**
+	* Returns String value of month.
+	* @return {String} The String value of the month number.
+	*/
 	returnMonth() {
 		if(this.state.date.getMonth().toString() == 0) {
 			return "Jan ";

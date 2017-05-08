@@ -3,7 +3,14 @@ import { StyleSheet, View, TextInput, TouchableOpacity, Text, ActivityIndicator}
 import DismissKeyboard from 'react-native-dismiss-keyboard';
 import * as firebase from 'firebase';
 
+/**
+* Component that handles user registration input.
+* Uses Firebase user creation and authentication.
+*/
 export default class InputForm extends Component {
+	/**
+    * Initialize state fields and Firebase table reference.
+    */
 	constructor(props) {
 		super(props);
 
@@ -18,7 +25,11 @@ export default class InputForm extends Component {
 		this.userRef = this.getRef().child('users');
 		this.authData; 
 	}
-
+  
+    /** 
+    * Returns the configured Firebase reference.
+    * @returns {Firebase} The Firebase reference.
+    */
 	getRef() {
 		return firebase.database().ref();
 	}
@@ -29,7 +40,11 @@ export default class InputForm extends Component {
 		})
 	}
 
-
+	/**
+	* Async method to signup and create user with Firebase.
+	* @param {email} email - User input email.
+	* @param {password} password - User input password.
+	*/
 	async signup() {
 		DismissKeyboard();
 

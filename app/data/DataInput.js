@@ -4,7 +4,16 @@ import * as firebase from 'firebase';
 import DismissKeyboard from 'react-native-dismiss-keyboard';
 
 var CalendarView = require('./CalendarView');
+
+/**
+* Component to handle user data input for weight, blood pressure, and heart rate.
+*/
 export default class DataInput extends Component {
+
+    /**
+    * Initialize state fields and functions
+    * @params {props} props - Holds selected date object
+    */
 	constructor(props) {
 		super(props);
 		  this.state = {
@@ -28,10 +37,18 @@ export default class DataInput extends Component {
       })
     }
 
+  /** 
+  * Returns the configured Firebase reference.
+  * @returns {Firebase} The Firebase reference.
+  */
     getRef() {
         return firebase.database().ref();
     }
 
+    /**
+    * Returns String value of month.
+    * @return {String} The String value of the month number.
+    */
 	returnMonth() {
 		if(this.props.date.getMonth().toString() == 0) {
 			return "Jan ";
@@ -60,6 +77,14 @@ export default class DataInput extends Component {
 		} 
 	}
 
+    /**
+    * Saves user input data to Firebase database.
+    * @param {Date} date_of_entry - The selected date.
+    * @param {number} weight - The input weight.
+    * @param {number} bloodPressureT - The input blood pressure T.
+    * @param {number} bloodPressureB - The input blood pressure B.
+    * @param {number} heartRate - The input heart rate.
+    */
     checkFields(){
         DismissKeyboard();
 

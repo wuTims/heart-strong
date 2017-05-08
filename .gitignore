@@ -30,6 +30,10 @@ build/
 local.properties
 *.iml
 
+#doc
+#
+doc/package.json
+
 # node.js
 #
 node_modules/

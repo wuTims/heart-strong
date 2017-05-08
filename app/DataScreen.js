@@ -9,7 +9,15 @@ import DataInput from '../app/Data/DataInput';
 import * as fixtures from '../app/Data/Data';
 import GraphPage from '../app/Data/GraphPage';
 
+/**
+* Component that holds CalendarView and GraphPage.
+* Navigates to selected component based on current tab.
+*/
 export default class DataScreen extends Component {
+    /**
+    * Initialize state fields.
+    * @param {props} props - Require navigator object in props to have navigation.
+    */
     constructor(props) {
         super(props);
         this.state = {
@@ -29,7 +37,11 @@ export default class DataScreen extends Component {
       })
     };
 
-    onValueChange (value: string) {
+    /**
+    * Sets state.selected1 to selected dropdown option.
+    * @param {String} value - Currently selected dropdown option for GraphPage tab.
+    */
+    onValueChange (value) {
         this.setState({
             selected1 : value
         });

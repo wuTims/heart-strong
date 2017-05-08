@@ -4,10 +4,14 @@ import DismissKeyboard from 'react-native-dismiss-keyboard';
 import * as firebase from 'firebase';
 
 
-// Export default is a simplified way of exporting this class for usage
-// Substitute for using export default "class name"
-// or module.exports
+/**
+* Component that handles user login.
+* Uses Firebase user authentication to sign in and authenticate user.
+*/
 export default class InputFormLogin extends Component {
+	/**
+    * Initialize state fields and Firebase table reference.
+    */
 	constructor(props) {
 		super(props);
 
@@ -23,6 +27,10 @@ export default class InputFormLogin extends Component {
 		this.authData; 
 	}
 
+    /** 
+    * Returns the configured Firebase reference.
+    * @returns {Firebase} The Firebase reference.
+    */
 	getRef() {
 		return firebase.database().ref();
 	}
@@ -33,6 +41,11 @@ export default class InputFormLogin extends Component {
 		})
 	}
 
+	/**
+	* Async method to login with Firebase.
+	* @param {email} email - User input email.
+	* @param {password} password - User input password.
+	*/
 	async login() {
 		DismissKeyboard();
 

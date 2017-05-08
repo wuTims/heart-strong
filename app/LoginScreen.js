@@ -3,7 +3,9 @@ import { StyleSheet, View, Text, Image } from 'react-native';
 import InputFormLogin from './InputFormLogin';
 import * as firebase from 'firebase';
 
-
+/**
+* Component for user login. Renders InputFormLogin component for user to fill out.
+*/
 export default class LoginScreen extends Component {
 	navigate(routeName) {
 		this.props.navigator.push({

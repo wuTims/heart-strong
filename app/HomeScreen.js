@@ -3,6 +3,9 @@ import { Image, AppRegistry, Text, StyleSheet, View, ScrollView} from 'react-nat
 import FooterComponent from '../app/FooterComponent'; 
 import HeaderComponent from '../app/HeaderComponent';
 
+/**
+* Component that holds notifications, alarms, and inspirational quotes.
+*/
 export default class HomeScreen extends Component {
 	render() {
 		return (

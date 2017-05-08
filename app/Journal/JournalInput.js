@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import HeaderComponent from '../../app/HeaderComponent';
 import FooterComponent from '../../app/FooterComponent';
 import * as firebase from 'firebase';
-
-
 import { View, AppRegistry, Text, TextInput, StyleSheet, Button, TouchableOpacity} from 'react-native';
 import { Container, Content, Icon, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 
+
+/** Component that handles user input from the Journal Page.*/
 export default class JournalInput extends Component {
   constructor(props) {
     super(props);
@@ -17,6 +17,10 @@ export default class JournalInput extends Component {
     this.journalRef = this.getRef().child('journals');
   }
 
+  /** 
+  * Returns the configured Firebase reference.
+  * @returns {Firebase} The Firebase reference.
+  */
   getRef() {
     return firebase.database().ref();
   }
@@ -27,6 +31,11 @@ export default class JournalInput extends Component {
       })
   }
 
+  /**
+  * Adds current text to list of entries.
+  * @params {Date} date_of_entry - Current date/time of entry.
+  * @params {String} entry - Current text in the TextInput field.
+  */
   _addEntry() {
     this.journalRef.push({
       date_of_entry: new Date().toLocaleString(),

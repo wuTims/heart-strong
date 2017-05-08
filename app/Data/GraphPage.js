@@ -10,6 +10,10 @@ import {
 
 import DataGraph from './DataGraph';
 
+/**
+* Component to display graph visualization of data.
+* Template and code example borrowed from: https://github.com/hswolff/BetterWeather
+*/
 export default class GraphPage extends Component {
   static propTypes = {
     data: PropTypes.object.isRequired,

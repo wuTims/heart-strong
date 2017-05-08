@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {View, TouchableHighlight, Text, StyleSheet} from 'react-native';
 
+/**
+* Component to render journal entry items.
+*/
 export default class ListItem extends Component {
 	navigate(routeName) {
 		this.props.navigator.push({

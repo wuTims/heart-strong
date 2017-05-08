@@ -30,9 +30,21 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "awesomeproject/app/data/datagraph.js~datagraph",
+    "class/app/Data/DataGraph.js~DataGraph.html",
+    "<span>DataGraph</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/DataGraph.js</span>",
+    "class"
+  ],
+  [
     "awesomeproject/app/data/datainput.js~datainput",
     "class/app/Data/DataInput.js~DataInput.html",
     "<span>DataInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/DataInput.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/datascreen.js~datascreen",
+    "class/app/DataScreen.js~DataScreen.html",
+    "<span>DataScreen</span> <span class=\"search-result-import-path\">AwesomeProject/app/DataScreen.js</span>",
     "class"
   ],
   [
@@ -48,9 +60,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "awesomeproject/app/data/graphview.js~graphview",
-    "class/app/Data/GraphView.js~GraphView.html",
-    "<span>GraphView</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/GraphView.js</span>",
+    "awesomeproject/app/data/graphpage.js~graphpage",
+    "class/app/Data/GraphPage.js~GraphPage.html",
+    "<span>GraphPage</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/GraphPage.js</span>",
     "class"
   ],
   [
@@ -78,60 +90,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "awesomeproject/app/curriculum/week1/quizfinish.js~journalinput",
-    "class/app/Curriculum/Week1/QuizFinish.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/QuizFinish.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1a1.js~journalinput",
-    "class/app/Curriculum/Week1/Week1A1.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1A1.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1a2.js~journalinput",
-    "class/app/Curriculum/Week1/Week1A2.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1A2.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1content.js~journalinput",
-    "class/app/Curriculum/Week1/Week1Content.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Content.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1q1.js~journalinput",
-    "class/app/Curriculum/Week1/Week1Q1.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q1.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1q2.js~journalinput",
-    "class/app/Curriculum/Week1/Week1Q2.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q2.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1q3.js~journalinput",
-    "class/app/Curriculum/Week1/Week1Q3.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q3.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1q4.js~journalinput",
-    "class/app/Curriculum/Week1/Week1Q4.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q4.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week1/week1q5.js~journalinput",
-    "class/app/Curriculum/Week1/Week1Q5.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q5.js</span>",
-    "class"
-  ],
-  [
     "awesomeproject/app/journal/journalinput.js~journalinput",
     "class/app/Journal/JournalInput.js~JournalInput.html",
     "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Journal/JournalInput.js</span>",
@@ -156,9 +114,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "awesomeproject/app/navigatorcomponent.js~navigatorcomponent",
-    "class/app/NavigatorComponent.js~NavigatorComponent.html",
-    "<span>NavigatorComponent</span> <span class=\"search-result-import-path\">AwesomeProject/app/NavigatorComponent.js</span>",
+    "awesomeproject/app/curriculum/week1/quizfinish.js~quizfinish",
+    "class/app/Curriculum/Week1/QuizFinish.js~QuizFinish.html",
+    "<span>QuizFinish</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/QuizFinish.js</span>",
     "class"
   ],
   [
@@ -186,15 +144,63 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "awesomeproject/app/curriculum/week1/week1a1.js~week1a1",
+    "class/app/Curriculum/Week1/Week1A1.js~Week1A1.html",
+    "<span>Week1A1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1A1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1a2.js~week1a2",
+    "class/app/Curriculum/Week1/Week1A2.js~Week1A2.html",
+    "<span>Week1A2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1A2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1content.js~week1content",
+    "class/app/Curriculum/Week1/Week1Content.js~Week1Content.html",
+    "<span>Week1Content</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Content.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1q1.js~week1q1",
+    "class/app/Curriculum/Week1/Week1Q1.js~Week1Q1.html",
+    "<span>Week1Q1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1q2.js~week1q2",
+    "class/app/Curriculum/Week1/Week1Q2.js~Week1Q2.html",
+    "<span>Week1Q2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1q3.js~week1q3",
+    "class/app/Curriculum/Week1/Week1Q3.js~Week1Q3.html",
+    "<span>Week1Q3</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q3.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1q4.js~week1q4",
+    "class/app/Curriculum/Week1/Week1Q4.js~Week1Q4.html",
+    "<span>Week1Q4</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q4.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week1/week1q5.js~week1q5",
+    "class/app/Curriculum/Week1/Week1Q5.js~Week1Q5.html",
+    "<span>Week1Q5</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q5.js</span>",
+    "class"
+  ],
+  [
     "awesomeproject/app/data/graph-utils.js~createlinegraph",
     "function/index.html#static-function-createLineGraph",
     "<span>createLineGraph</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/graph-utils.js</span>",
     "function"
   ],
   [
-    "awesomeproject/app/data/weightdata.js~userdata",
+    "awesomeproject/app/data/data.js~userdata",
     "variable/index.html#static-variable-userData",
-    "<span>userData</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/WeightData.js</span>",
+    "<span>userData</span> <span class=\"search-result-import-path\">AwesomeProject/app/Data/Data.js</span>",
     "variable"
   ],
   [
@@ -534,15 +540,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/quizfinish.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/QuizFinish.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/QuizFinish.js~JournalInput#navigate",
+    "app/curriculum/week1/quizfinish.js~quizfinish#navigate",
+    "class/app/Curriculum/Week1/QuizFinish.js~QuizFinish.html#instance-method-navigate",
+    "app/Curriculum/Week1/QuizFinish.js~QuizFinish#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/quizfinish.js~journalinput#render",
-    "class/app/Curriculum/Week1/QuizFinish.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/QuizFinish.js~JournalInput#render",
+    "app/curriculum/week1/quizfinish.js~quizfinish#render",
+    "class/app/Curriculum/Week1/QuizFinish.js~QuizFinish.html#instance-method-render",
+    "app/Curriculum/Week1/QuizFinish.js~QuizFinish#render",
     "method"
   ],
   [
@@ -552,21 +558,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1a1.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1A1.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1A1.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1a1.js~week1a1#navigate",
+    "class/app/Curriculum/Week1/Week1A1.js~Week1A1.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1A1.js~Week1A1#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1a1.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1A1.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1A1.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1a1.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1A1.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1A1.js~JournalInput#render",
+    "app/curriculum/week1/week1a1.js~week1a1#render",
+    "class/app/Curriculum/Week1/Week1A1.js~Week1A1.html#instance-method-render",
+    "app/Curriculum/Week1/Week1A1.js~Week1A1#render",
     "method"
   ],
   [
@@ -576,21 +576,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1a2.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1A2.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1A2.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1a2.js~week1a2#navigate",
+    "class/app/Curriculum/Week1/Week1A2.js~Week1A2.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1A2.js~Week1A2#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1a2.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1A2.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1A2.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1a2.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1A2.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1A2.js~JournalInput#render",
+    "app/curriculum/week1/week1a2.js~week1a2#render",
+    "class/app/Curriculum/Week1/Week1A2.js~Week1A2.html#instance-method-render",
+    "app/Curriculum/Week1/Week1A2.js~Week1A2#render",
     "method"
   ],
   [
@@ -600,21 +594,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1content.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1Content.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1Content.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1content.js~week1content#navigate",
+    "class/app/Curriculum/Week1/Week1Content.js~Week1Content.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1Content.js~Week1Content#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1content.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1Content.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1Content.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1content.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1Content.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1Content.js~JournalInput#render",
+    "app/curriculum/week1/week1content.js~week1content#render",
+    "class/app/Curriculum/Week1/Week1Content.js~Week1Content.html#instance-method-render",
+    "app/Curriculum/Week1/Week1Content.js~Week1Content#render",
     "method"
   ],
   [
@@ -624,21 +612,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1q1.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1Q1.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1Q1.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1q1.js~week1q1#navigate",
+    "class/app/Curriculum/Week1/Week1Q1.js~Week1Q1.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1Q1.js~Week1Q1#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1q1.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1Q1.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1Q1.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1q1.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1Q1.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1Q1.js~JournalInput#render",
+    "app/curriculum/week1/week1q1.js~week1q1#render",
+    "class/app/Curriculum/Week1/Week1Q1.js~Week1Q1.html#instance-method-render",
+    "app/Curriculum/Week1/Week1Q1.js~Week1Q1#render",
     "method"
   ],
   [
@@ -648,21 +630,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1q2.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1Q2.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1Q2.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1q2.js~week1q2#navigate",
+    "class/app/Curriculum/Week1/Week1Q2.js~Week1Q2.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1Q2.js~Week1Q2#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1q2.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1Q2.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1Q2.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1q2.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1Q2.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1Q2.js~JournalInput#render",
+    "app/curriculum/week1/week1q2.js~week1q2#render",
+    "class/app/Curriculum/Week1/Week1Q2.js~Week1Q2.html#instance-method-render",
+    "app/Curriculum/Week1/Week1Q2.js~Week1Q2#render",
     "method"
   ],
   [
@@ -672,21 +648,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1q3.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1Q3.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1Q3.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1q3.js~week1q3#navigate",
+    "class/app/Curriculum/Week1/Week1Q3.js~Week1Q3.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1Q3.js~Week1Q3#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1q3.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1Q3.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1Q3.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1q3.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1Q3.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1Q3.js~JournalInput#render",
+    "app/curriculum/week1/week1q3.js~week1q3#render",
+    "class/app/Curriculum/Week1/Week1Q3.js~Week1Q3.html#instance-method-render",
+    "app/Curriculum/Week1/Week1Q3.js~Week1Q3#render",
     "method"
   ],
   [
@@ -696,21 +666,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1q4.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1Q4.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1Q4.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1q4.js~week1q4#navigate",
+    "class/app/Curriculum/Week1/Week1Q4.js~Week1Q4.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1Q4.js~Week1Q4#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1q4.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1Q4.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1Q4.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1q4.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1Q4.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1Q4.js~JournalInput#render",
+    "app/curriculum/week1/week1q4.js~week1q4#render",
+    "class/app/Curriculum/Week1/Week1Q4.js~Week1Q4.html#instance-method-render",
+    "app/Curriculum/Week1/Week1Q4.js~Week1Q4#render",
     "method"
   ],
   [
@@ -720,21 +684,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week1/week1q5.js~journalinput#addtodb",
-    "class/app/Curriculum/Week1/Week1Q5.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week1/Week1Q5.js~JournalInput#addToDB",
+    "app/curriculum/week1/week1q5.js~week1q5#navigate",
+    "class/app/Curriculum/Week1/Week1Q5.js~Week1Q5.html#instance-method-navigate",
+    "app/Curriculum/Week1/Week1Q5.js~Week1Q5#navigate",
     "method"
   ],
   [
-    "app/curriculum/week1/week1q5.js~journalinput#navigate",
-    "class/app/Curriculum/Week1/Week1Q5.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week1/Week1Q5.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week1/week1q5.js~journalinput#render",
-    "class/app/Curriculum/Week1/Week1Q5.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week1/Week1Q5.js~JournalInput#render",
+    "app/curriculum/week1/week1q5.js~week1q5#render",
+    "class/app/Curriculum/Week1/Week1Q5.js~Week1Q5.html#instance-method-render",
+    "app/Curriculum/Week1/Week1Q5.js~Week1Q5#render",
     "method"
   ],
   [
@@ -768,12 +726,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "app/data/calendarview.js~calendarview#getselecteddate",
-    "class/app/Data/CalendarView.js~CalendarView.html#instance-method-getSelectedDate",
-    "app/Data/CalendarView.js~CalendarView#getSelectedDate",
-    "method"
-  ],
-  [
     "app/data/calendarview.js~calendarview#navigate",
     "class/app/Data/CalendarView.js~CalendarView.html#instance-method-navigate",
     "app/Data/CalendarView.js~CalendarView#navigate",
@@ -804,15 +756,93 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "app/data/data.js",
+    "file/app/Data/Data.js.html",
+    "app/Data/Data.js",
+    "file"
+  ],
+  [
+    "app/data/datagraph.js",
+    "file/app/Data/DataGraph.js.html",
+    "app/Data/DataGraph.js",
+    "file"
+  ],
+  [
+    "app/data/datagraph.js~datagraph#componentwillmount",
+    "class/app/Data/DataGraph.js~DataGraph.html#instance-method-componentWillMount",
+    "app/Data/DataGraph.js~DataGraph#componentWillMount",
+    "method"
+  ],
+  [
+    "app/data/datagraph.js~datagraph#componentwillreceiveprops",
+    "class/app/Data/DataGraph.js~DataGraph.html#instance-method-componentWillReceiveProps",
+    "app/Data/DataGraph.js~DataGraph#componentWillReceiveProps",
+    "method"
+  ],
+  [
+    "app/data/datagraph.js~datagraph#computenextstate",
+    "class/app/Data/DataGraph.js~DataGraph.html#instance-method-computeNextState",
+    "app/Data/DataGraph.js~DataGraph#computeNextState",
+    "method"
+  ],
+  [
+    "app/data/datagraph.js~datagraph#previousgraph",
+    "class/app/Data/DataGraph.js~DataGraph.html#instance-member-previousGraph",
+    "app/Data/DataGraph.js~DataGraph#previousGraph",
+    "member"
+  ],
+  [
+    "app/data/datagraph.js~datagraph#render",
+    "class/app/Data/DataGraph.js~DataGraph.html#instance-method-render",
+    "app/Data/DataGraph.js~DataGraph#render",
+    "method"
+  ],
+  [
+    "app/data/datagraph.js~datagraph#state",
+    "class/app/Data/DataGraph.js~DataGraph.html#instance-member-state",
+    "app/Data/DataGraph.js~DataGraph#state",
+    "member"
+  ],
+  [
+    "app/data/datagraph.js~datagraph.defaultprops",
+    "class/app/Data/DataGraph.js~DataGraph.html#static-member-defaultProps",
+    "app/Data/DataGraph.js~DataGraph.defaultProps",
+    "member"
+  ],
+  [
+    "app/data/datagraph.js~datagraph.proptypes",
+    "class/app/Data/DataGraph.js~DataGraph.html#static-member-propTypes",
+    "app/Data/DataGraph.js~DataGraph.propTypes",
+    "member"
+  ],
+  [
     "app/data/datainput.js",
     "file/app/Data/DataInput.js.html",
     "app/Data/DataInput.js",
     "file"
   ],
   [
+    "app/data/datainput.js~datainput#checkfields",
+    "class/app/Data/DataInput.js~DataInput.html#instance-method-checkFields",
+    "app/Data/DataInput.js~DataInput#checkFields",
+    "method"
+  ],
+  [
     "app/data/datainput.js~datainput#constructor",
     "class/app/Data/DataInput.js~DataInput.html#instance-constructor-constructor",
     "app/Data/DataInput.js~DataInput#constructor",
+    "method"
+  ],
+  [
+    "app/data/datainput.js~datainput#dataref",
+    "class/app/Data/DataInput.js~DataInput.html#instance-member-dataRef",
+    "app/Data/DataInput.js~DataInput#dataRef",
+    "member"
+  ],
+  [
+    "app/data/datainput.js~datainput#getref",
+    "class/app/Data/DataInput.js~DataInput.html#instance-method-getRef",
+    "app/Data/DataInput.js~DataInput#getRef",
     "method"
   ],
   [
@@ -840,28 +870,64 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "app/data/graphview.js",
-    "file/app/Data/GraphView.js.html",
-    "app/Data/GraphView.js",
+    "app/data/graphpage.js",
+    "file/app/Data/GraphPage.js.html",
+    "app/Data/GraphPage.js",
     "file"
   ],
   [
-    "app/data/graphview.js~graphview#render",
-    "class/app/Data/GraphView.js~GraphView.html#instance-method-render",
-    "app/Data/GraphView.js~GraphView#render",
+    "app/data/graphpage.js~graphpage#render",
+    "class/app/Data/GraphPage.js~GraphPage.html#instance-method-render",
+    "app/Data/GraphPage.js~GraphPage#render",
     "method"
   ],
   [
-    "app/data/weightdata.js",
-    "file/app/Data/WeightData.js.html",
-    "app/Data/WeightData.js",
-    "file"
+    "app/data/graphpage.js~graphpage.proptypes",
+    "class/app/Data/GraphPage.js~GraphPage.html#static-member-propTypes",
+    "app/Data/GraphPage.js~GraphPage.propTypes",
+    "member"
   ],
   [
     "app/data/graph-utils.js",
     "file/app/Data/graph-utils.js.html",
     "app/Data/graph-utils.js",
     "file"
+  ],
+  [
+    "app/datascreen.js",
+    "file/app/DataScreen.js.html",
+    "app/DataScreen.js",
+    "file"
+  ],
+  [
+    "app/datascreen.js~datascreen#constructor",
+    "class/app/DataScreen.js~DataScreen.html#instance-constructor-constructor",
+    "app/DataScreen.js~DataScreen#constructor",
+    "method"
+  ],
+  [
+    "app/datascreen.js~datascreen#navigate",
+    "class/app/DataScreen.js~DataScreen.html#instance-method-navigate",
+    "app/DataScreen.js~DataScreen#navigate",
+    "method"
+  ],
+  [
+    "app/datascreen.js~datascreen#onvaluechange",
+    "class/app/DataScreen.js~DataScreen.html#instance-method-onValueChange",
+    "app/DataScreen.js~DataScreen#onValueChange",
+    "method"
+  ],
+  [
+    "app/datascreen.js~datascreen#render",
+    "class/app/DataScreen.js~DataScreen.html#instance-method-render",
+    "app/DataScreen.js~DataScreen#render",
+    "method"
+  ],
+  [
+    "app/datascreen.js~datascreen#state",
+    "class/app/DataScreen.js~DataScreen.html#instance-member-state",
+    "app/DataScreen.js~DataScreen#state",
+    "member"
   ],
   [
     "app/footercomponent.js",
@@ -1074,10 +1140,22 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/journal/journalinput.js~journalinput#addtodb",
-    "class/app/Journal/JournalInput.js~JournalInput.html#instance-method-addToDB",
-    "app/Journal/JournalInput.js~JournalInput#addToDB",
+    "app/journal/journalinput.js~journalinput#constructor",
+    "class/app/Journal/JournalInput.js~JournalInput.html#instance-constructor-constructor",
+    "app/Journal/JournalInput.js~JournalInput#constructor",
     "method"
+  ],
+  [
+    "app/journal/journalinput.js~journalinput#getref",
+    "class/app/Journal/JournalInput.js~JournalInput.html#instance-method-getRef",
+    "app/Journal/JournalInput.js~JournalInput#getRef",
+    "method"
+  ],
+  [
+    "app/journal/journalinput.js~journalinput#journalref",
+    "class/app/Journal/JournalInput.js~JournalInput.html#instance-member-journalRef",
+    "app/Journal/JournalInput.js~JournalInput#journalRef",
+    "member"
   ],
   [
     "app/journal/journalinput.js~journalinput#navigate",
@@ -1090,6 +1168,12 @@ window.esdocSearchIndex = [
     "class/app/Journal/JournalInput.js~JournalInput.html#instance-method-render",
     "app/Journal/JournalInput.js~JournalInput#render",
     "method"
+  ],
+  [
+    "app/journal/journalinput.js~journalinput#state",
+    "class/app/Journal/JournalInput.js~JournalInput.html#instance-member-state",
+    "app/Journal/JournalInput.js~JournalInput#state",
+    "member"
   ],
   [
     "app/journalscreen.js",
@@ -1107,12 +1191,6 @@ window.esdocSearchIndex = [
     "app/journalscreen.js~journalscreen#constructor",
     "class/app/JournalScreen.js~JournalScreen.html#instance-constructor-constructor",
     "app/JournalScreen.js~JournalScreen#constructor",
-    "method"
-  ],
-  [
-    "app/journalscreen.js~journalscreen#createjournals",
-    "class/app/JournalScreen.js~JournalScreen.html#instance-method-createJournals",
-    "app/JournalScreen.js~JournalScreen#createJournals",
     "method"
   ],
   [
@@ -1186,42 +1264,6 @@ window.esdocSearchIndex = [
     "class/app/LoginScreen.js~LoginScreen.html#instance-method-render",
     "app/LoginScreen.js~LoginScreen#render",
     "method"
-  ],
-  [
-    "app/navigatorcomponent.js",
-    "file/app/NavigatorComponent.js.html",
-    "app/NavigatorComponent.js",
-    "file"
-  ],
-  [
-    "app/navigatorcomponent.js~navigatorcomponent#constructor",
-    "class/app/NavigatorComponent.js~NavigatorComponent.html#instance-constructor-constructor",
-    "app/NavigatorComponent.js~NavigatorComponent#constructor",
-    "method"
-  ],
-  [
-    "app/navigatorcomponent.js~navigatorcomponent#navigate",
-    "class/app/NavigatorComponent.js~NavigatorComponent.html#instance-method-navigate",
-    "app/NavigatorComponent.js~NavigatorComponent#navigate",
-    "method"
-  ],
-  [
-    "app/navigatorcomponent.js~navigatorcomponent#render",
-    "class/app/NavigatorComponent.js~NavigatorComponent.html#instance-method-render",
-    "app/NavigatorComponent.js~NavigatorComponent#render",
-    "method"
-  ],
-  [
-    "app/navigatorcomponent.js~navigatorcomponent#settab",
-    "class/app/NavigatorComponent.js~NavigatorComponent.html#instance-method-setTab",
-    "app/NavigatorComponent.js~NavigatorComponent#setTab",
-    "method"
-  ],
-  [
-    "app/navigatorcomponent.js~navigatorcomponent#state",
-    "class/app/NavigatorComponent.js~NavigatorComponent.html#instance-member-state",
-    "app/NavigatorComponent.js~NavigatorComponent#state",
-    "member"
   ],
   [
     "app/resourcescreen.js",
@@ -1374,9 +1416,33 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "app/setting/userprofile.js~userprofile#componentdidmount",
+    "class/app/Setting/UserProfile.js~UserProfile.html#instance-method-componentDidMount",
+    "app/Setting/UserProfile.js~UserProfile#componentDidMount",
+    "method"
+  ],
+  [
     "app/setting/userprofile.js~userprofile#constructor",
     "class/app/Setting/UserProfile.js~UserProfile.html#instance-constructor-constructor",
     "app/Setting/UserProfile.js~UserProfile#constructor",
+    "method"
+  ],
+  [
+    "app/setting/userprofile.js~userprofile#dataref",
+    "class/app/Setting/UserProfile.js~UserProfile.html#instance-member-dataRef",
+    "app/Setting/UserProfile.js~UserProfile#dataRef",
+    "member"
+  ],
+  [
+    "app/setting/userprofile.js~userprofile#getref",
+    "class/app/Setting/UserProfile.js~UserProfile.html#instance-method-getRef",
+    "app/Setting/UserProfile.js~UserProfile#getRef",
+    "method"
+  ],
+  [
+    "app/setting/userprofile.js~userprofile#getvalue",
+    "class/app/Setting/UserProfile.js~UserProfile.html#instance-method-getValue",
+    "app/Setting/UserProfile.js~UserProfile#getValue",
     "method"
   ],
   [

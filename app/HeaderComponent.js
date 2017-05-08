@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Header, Title, Button, Left, Right, Body, Icon, Text } from 'native-base';
 
+/**
+* Component that renders header navigation for Home, Settings, and back navigation.
+* 
+*/
 export default class HeaderComponent extends Component {
+    /**
+    * Initialize state fields.
+    */
 	constructor() {
 		super();
 		this.state = {
@@ -10,14 +17,9 @@ export default class HeaderComponent extends Component {
 		}
 	}
 
-	homePressed() {
-		if (this.state.homePressed == 'true') {
-			this.setState({homePressed: ''})
-		} else {
-			this.setState({homePressed: 'true'})
-		}
-	}
-
+    /**
+    * Reverse setting icon active state
+    */
     settingsPressed() {
         if (this.state.settingsPressed == 'true') {
             this.setState({settingsPressed: ''})
@@ -26,6 +28,10 @@ export default class HeaderComponent extends Component {
         }
     }
 
+    /**
+    * Navigate to previous screen.
+    * param {navigator} navigator - Navigator from props that holds stack of screens.
+    */
     backPressed() {
         if(this.props.titleText == 'Home Screen') {
         {/* Does nothing when on Home screen for now because I 

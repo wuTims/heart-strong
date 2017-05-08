@@ -7,8 +7,15 @@ import ListItem from '../app/ListItem';
 import * as firebase from 'firebase';
 
 
-
+/**
+* Component that renders user journal entries. 
+* Navigates to JournalInput for adding journal entries.
+* Talks with Firebase to add and retrieve journal entries.
+*/
 export default class JournalScreen extends Component {
+	/**
+    * Initialize state fields and Firebase table reference.
+    */
 	constructor(props) { 
 		super(props);
 		this.state = {
@@ -21,10 +28,19 @@ export default class JournalScreen extends Component {
 
 	}
 
+    /** 
+    * Returns the configured Firebase reference.
+    * @return {Firebase} The Firebase reference.
+    */
 	getRef() {
 		return firebase.database().ref();
 	}
 
+	/**
+	* Returns ListItem component of specified journal entry.
+	* @param {Object} entry - User created journal entry.
+	* @return {Component<ListItem>} ListItem - Component that renders journal entry.
+	*/
 	_renderItem(entry) {
 	    return (
 	      <ListItem entry={entry} />
@@ -41,10 +57,15 @@ export default class JournalScreen extends Component {
 		this.listenForEntries(this.journalRef);
   	}
 
+
   	// RenderRow from listview pulls data from the DataSource which is held in the state
   	// DataSource is given a value by this listener which pulls snapshots of data from firebase (entries with two fields)
   	// CloneWithRows takes the data array pulled from firebase and clones into ListItems which is RenderRow's method call to _renderItem
   	// _renderItem's argument is the row data set by cloneWithRows
+  	/**
+  	* Retrieves and renders all journal entries stored in Firebase journal table/child.
+  	* @param {Object} - journalRef - Firebase reference to journal table/child.
+  	*/
   	listenForEntries(journalRef) {
 	    journalRef.on('value', (snapshot) => {
 

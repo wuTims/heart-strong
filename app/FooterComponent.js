@@ -2,18 +2,33 @@ import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Icon} from 'native-base';
 import { AppRegistry, Text, StyleSheet} from 'react-native';
 
-
+/**
+* Component that renders and handles navigation between footer tabs.
+* 
+*/
 export default class FooterComponent extends Component {
+    /**
+    * Initialize state fields.
+    */
     constructor() {
       super();
       this.state = {
         selectedTab: ''
         }
     }
+
+    /**
+    * Set state.selectedTab to currently selected footer component tab.
+    * @param {number} tabID - ID number for currently selected tab. 
+    */
     setTab(tabID) {
       this.setState({selectedTab: tabID})
     }
 
+    /**
+    * Navigate to designated component.
+    * @param {String} routeName - Name of next component.
+    */
     navigate(routeName) {
         this.props.navigator.push({
             name: routeName

@@ -1,4 +1,8 @@
 {
 	"source": "./app",
-	"destination": "./doc"
+	"destination": "./doc",
+	"experimentalProposal": {
+	    "classProperties": true,
+	    "objectRestSpread": true
+	}
 }

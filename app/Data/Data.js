@@ -1,3 +1,6 @@
+/**
+* Mock data until the component is connected with Firebase.
+*/
 export const userData = {
 	"weight":[
 		{"date_of_entry":"Feb 1 2017","value":171},
