@@ -4,6 +4,9 @@ import { Container, Content, Input, Icon, Button, Left, Right, Body, Header, Tit
 import FooterComponent from '../app/FooterComponent'; 
 import HeaderComponent from '../app/HeaderComponent';
 
+/**
+* Component that navigates to the different Resource screens and the FAQ screen.
+*/
 export default class ResourceScreen extends Component {
   
     navigate(routeName) {

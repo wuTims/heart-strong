@@ -1,7 +1,7 @@
 {
-  "coverage": "16.56%",
-  "expectCount": 163,
-  "actualCount": 27,
+  "coverage": "27.09%",
+  "expectCount": 251,
+  "actualCount": 68,
   "files": {
     "app/Setting/AddAlarm.js": {
       "expectCount": 5,
@@ -98,6 +98,14 @@
         11
       ]
     },
+    "app/Resource/FAQ.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        11,
+        17
+      ]
+    },
     "app/FooterComponent.js": {
       "expectCount": 6,
       "actualCount": 4,
@@ -115,55 +123,79 @@
       ]
     },
     "app/HeaderComponent.js": {
-      "expectCount": 8,
-      "actualCount": 0,
+      "expectCount": 7,
+      "actualCount": 3,
       "undocumentLines": [
-        4,
-        29,
-        5,
-        13,
-        39,
+        8,
         45,
-        21,
-        7
+        51,
+        14
       ]
     },
     "app/HomeScreen.js": {
       "expectCount": 2,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        6,
-        7
+        10
       ]
     },
     "app/InputForm.js": {
       "expectCount": 9,
-      "actualCount": 0,
+      "actualCount": 4,
       "undocumentLines": [
-        6,
-        44,
-        7,
-        22,
-        26,
-        64,
-        33,
-        10,
-        18
+        59,
+        37,
+        79,
+        17,
+        25
       ]
     },
     "app/InputFormLogin.js": {
       "expectCount": 9,
+      "actualCount": 4,
+      "undocumentLines": [
+        60,
+        38,
+        79,
+        18,
+        26
+      ]
+    },
+    "app/Curriculum/Week0/Week0A5.js": {
+      "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
-        10,
-        47,
-        11,
-        26,
-        36,
-        30,
-        66,
+        6,
+        8,
+        14
+      ]
+    },
+    "app/Curriculum/Week0/Week0Content.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
         14,
-        22
+        8,
+        18
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q1.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        9,
+        15
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q5.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        8,
+        14
       ]
     },
     "app/Journal/JournalInput.js": {
@@ -177,37 +209,67 @@
         13
       ]
     },
-    "app/JournalScreen.js": {
-      "expectCount": 9,
-      "actualCount": 0,
-      "undocumentLines": [
-        11,
-        40,
-        12,
-        24,
-        20,
-        48,
-        34,
-        69,
-        14
-      ]
-    },
-    "app/ListItem.js": {
+    "app/Curriculum/Week0/Week0Q3.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
-        4,
-        5,
-        11
+        6,
+        8,
+        14
       ]
     },
-    "app/LoginScreen.js": {
+    "app/Curriculum/Week0/Week0Q2.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
         7,
+        9,
+        15
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q4.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
         8,
         14
+      ]
+    },
+    "app/Curriculum/Week0/QuizFinishW0.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        8,
+        14
+      ]
+    },
+    "app/JournalScreen.js": {
+      "expectCount": 9,
+      "actualCount": 4,
+      "undocumentLines": [
+        56,
+        27,
+        50,
+        90,
+        21
+      ]
+    },
+    "app/ListItem.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        8,
+        14
+      ]
+    },
+    "app/LoginScreen.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        10,
+        16
       ]
     },
     "app/Curriculum/Week1/QuizFinish.js": {
@@ -218,33 +280,70 @@
         18
       ]
     },
+    "app/Curriculum/Week2/QuizFinishW2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        19
+      ]
+    },
+    "app/Resource/R1.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        11,
+        17
+      ]
+    },
+    "app/Resource/R2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        11,
+        17
+      ]
+    },
+    "app/Resource/R3.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        11,
+        17
+      ]
+    },
+    "app/Resource/R4.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        11,
+        17
+      ]
+    },
     "app/ResourceScreen.js": {
       "expectCount": 3,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        7,
-        9,
-        15
+        12,
+        18
       ]
     },
     "app/SettingScreen.js": {
       "expectCount": 5,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        7,
-        8,
-        18,
-        25,
-        10
+        11,
+        21,
+        28,
+        13
       ]
     },
     "app/SignupScreen.js": {
       "expectCount": 3,
-      "actualCount": 0,
+      "actualCount": 1,
       "undocumentLines": [
-        6,
-        8,
-        14
+        11,
+        17
       ]
     },
     "app/Setting/UserProfile.js": {
@@ -287,7 +386,23 @@
         20
       ]
     },
+    "app/Curriculum/Week2/Week2Q3.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
     "app/Curriculum/Week1/Week1Q1.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week2/Week2Q1.js": {
       "expectCount": 3,
       "actualCount": 1,
       "undocumentLines": [
@@ -329,6 +444,112 @@
         6,
         8,
         14
+      ]
+    },
+    "app/Curriculum/Week2/Week2A1.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        19
+      ]
+    },
+    "app/Curriculum/Week2/Week2A2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week2/Week2A3.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        8,
+        14
+      ]
+    },
+    "app/Curriculum/Week2/Week2Content.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        17,
+        23
+      ]
+    },
+    "app/Curriculum/Week2/Week2Q2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week3/Week3Content.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week3/Week3Q1.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week3/Week3Q2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week3/Week3Q3.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week4/Week4Content.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week4/Week4Q1.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week4/Week4Q2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week4/Week4Q3.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
       ]
     },
     "app/Data/graph-utils.js": {

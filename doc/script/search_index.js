@@ -54,6 +54,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "awesomeproject/app/resource/faq.js~faq",
+    "class/app/Resource/FAQ.js~FAQ.html",
+    "<span>FAQ</span> <span class=\"search-result-import-path\">AwesomeProject/app/Resource/FAQ.js</span>",
+    "class"
+  ],
+  [
     "awesomeproject/app/footercomponent.js~footercomponent",
     "class/app/FooterComponent.js~FooterComponent.html",
     "<span>FooterComponent</span> <span class=\"search-result-import-path\">AwesomeProject/app/FooterComponent.js</span>",
@@ -90,6 +96,54 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "awesomeproject/app/curriculum/week0/quizfinishw0.js~journalinput",
+    "class/app/Curriculum/Week0/QuizFinishW0.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/QuizFinishW0.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0a5.js~journalinput",
+    "class/app/Curriculum/Week0/Week0A5.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0A5.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0content.js~journalinput",
+    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Content.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q1.js~journalinput",
+    "class/app/Curriculum/Week0/Week0Q1.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q2.js~journalinput",
+    "class/app/Curriculum/Week0/Week0Q2.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q3.js~journalinput",
+    "class/app/Curriculum/Week0/Week0Q3.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q3.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q4.js~journalinput",
+    "class/app/Curriculum/Week0/Week0Q4.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q4.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q5.js~journalinput",
+    "class/app/Curriculum/Week0/Week0Q5.js~JournalInput.html",
+    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q5.js</span>",
+    "class"
+  ],
+  [
     "awesomeproject/app/journal/journalinput.js~journalinput",
     "class/app/Journal/JournalInput.js~JournalInput.html",
     "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Journal/JournalInput.js</span>",
@@ -117,6 +171,36 @@ window.esdocSearchIndex = [
     "awesomeproject/app/curriculum/week1/quizfinish.js~quizfinish",
     "class/app/Curriculum/Week1/QuizFinish.js~QuizFinish.html",
     "<span>QuizFinish</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/QuizFinish.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/quizfinishw2.js~quizfinishw2",
+    "class/app/Curriculum/Week2/QuizFinishW2.js~QuizFinishW2.html",
+    "<span>QuizFinishW2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/QuizFinishW2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/resource/r1.js~r1",
+    "class/app/Resource/R1.js~R1.html",
+    "<span>R1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Resource/R1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/resource/r2.js~r2",
+    "class/app/Resource/R2.js~R2.html",
+    "<span>R2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Resource/R2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/resource/r3.js~r3",
+    "class/app/Resource/R3.js~R3.html",
+    "<span>R3</span> <span class=\"search-result-import-path\">AwesomeProject/app/Resource/R3.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/resource/r4.js~r4",
+    "class/app/Resource/R4.js~R4.html",
+    "<span>R4</span> <span class=\"search-result-import-path\">AwesomeProject/app/Resource/R4.js</span>",
     "class"
   ],
   [
@@ -168,6 +252,18 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "awesomeproject/app/curriculum/week2/week2q1.js~week1q1",
+    "class/app/Curriculum/Week2/Week2Q1.js~Week1Q1.html",
+    "<span>Week1Q1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2Q1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/week2q3.js~week1q1",
+    "class/app/Curriculum/Week2/Week2Q3.js~Week1Q1.html",
+    "<span>Week1Q1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2Q3.js</span>",
+    "class"
+  ],
+  [
     "awesomeproject/app/curriculum/week1/week1q2.js~week1q2",
     "class/app/Curriculum/Week1/Week1Q2.js~Week1Q2.html",
     "<span>Week1Q2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q2.js</span>",
@@ -189,6 +285,84 @@ window.esdocSearchIndex = [
     "awesomeproject/app/curriculum/week1/week1q5.js~week1q5",
     "class/app/Curriculum/Week1/Week1Q5.js~Week1Q5.html",
     "<span>Week1Q5</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/Week1Q5.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/week2a1.js~week2a1",
+    "class/app/Curriculum/Week2/Week2A1.js~Week2A1.html",
+    "<span>Week2A1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2A1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/week2a2.js~week2a1",
+    "class/app/Curriculum/Week2/Week2A2.js~Week2A1.html",
+    "<span>Week2A1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2A2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/week2a3.js~week2a3",
+    "class/app/Curriculum/Week2/Week2A3.js~Week2A3.html",
+    "<span>Week2A3</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2A3.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/week2content.js~week2content",
+    "class/app/Curriculum/Week2/Week2Content.js~Week2Content.html",
+    "<span>Week2Content</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2Content.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week2/week2q2.js~week2q2",
+    "class/app/Curriculum/Week2/Week2Q2.js~Week2Q2.html",
+    "<span>Week2Q2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week2/Week2Q2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week3/week3content.js~week3content",
+    "class/app/Curriculum/Week3/Week3Content.js~Week3Content.html",
+    "<span>Week3Content</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week3/Week3Content.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week3/week3q1.js~week3q1",
+    "class/app/Curriculum/Week3/Week3Q1.js~Week3Q1.html",
+    "<span>Week3Q1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week3/Week3Q1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week3/week3q2.js~week3q2",
+    "class/app/Curriculum/Week3/Week3Q2.js~Week3Q2.html",
+    "<span>Week3Q2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week3/Week3Q2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week3/week3q3.js~week3q3",
+    "class/app/Curriculum/Week3/Week3Q3.js~Week3Q3.html",
+    "<span>Week3Q3</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week3/Week3Q3.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week4/week4content.js~week4content",
+    "class/app/Curriculum/Week4/Week4Content.js~Week4Content.html",
+    "<span>Week4Content</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week4/Week4Content.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week4/week4q1.js~week4q1",
+    "class/app/Curriculum/Week4/Week4Q1.js~Week4Q1.html",
+    "<span>Week4Q1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week4/Week4Q1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week4/week4q2.js~week4q2",
+    "class/app/Curriculum/Week4/Week4Q2.js~Week4Q2.html",
+    "<span>Week4Q2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week4/Week4Q2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week4/week4q3.js~week4q3",
+    "class/app/Curriculum/Week4/Week4Q3.js~Week4Q3.html",
+    "<span>Week4Q3</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week4/Week4Q3.js</span>",
     "class"
   ],
   [
@@ -534,6 +708,156 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "app/curriculum/week0/quizfinishw0.js",
+    "file/app/Curriculum/Week0/QuizFinishW0.js.html",
+    "app/Curriculum/Week0/QuizFinishW0.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/quizfinishw0.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/QuizFinishW0.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/QuizFinishW0.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/quizfinishw0.js~journalinput#render",
+    "class/app/Curriculum/Week0/QuizFinishW0.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/QuizFinishW0.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0a5.js",
+    "file/app/Curriculum/Week0/Week0A5.js.html",
+    "app/Curriculum/Week0/Week0A5.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0a5.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0A5.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0A5.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0a5.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0A5.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0A5.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0content.js",
+    "file/app/Curriculum/Week0/Week0Content.js.html",
+    "app/Curriculum/Week0/Week0Content.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0content.js~journalinput#addtodb",
+    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html#instance-method-addToDB",
+    "app/Curriculum/Week0/Week0Content.js~JournalInput#addToDB",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0content.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Content.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0content.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Content.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q1.js",
+    "file/app/Curriculum/Week0/Week0Q1.js.html",
+    "app/Curriculum/Week0/Week0Q1.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0q1.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0Q1.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q1.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q1.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0Q1.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q1.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q2.js",
+    "file/app/Curriculum/Week0/Week0Q2.js.html",
+    "app/Curriculum/Week0/Week0Q2.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0q2.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0Q2.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q2.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q2.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0Q2.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q2.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q3.js",
+    "file/app/Curriculum/Week0/Week0Q3.js.html",
+    "app/Curriculum/Week0/Week0Q3.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0q3.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0Q3.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q3.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q3.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0Q3.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q3.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q4.js",
+    "file/app/Curriculum/Week0/Week0Q4.js.html",
+    "app/Curriculum/Week0/Week0Q4.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0q4.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0Q4.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q4.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q4.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0Q4.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q4.js~JournalInput#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q5.js",
+    "file/app/Curriculum/Week0/Week0Q5.js.html",
+    "app/Curriculum/Week0/Week0Q5.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week0/week0q5.js~journalinput#navigate",
+    "class/app/Curriculum/Week0/Week0Q5.js~JournalInput.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q5.js~JournalInput#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week0/week0q5.js~journalinput#render",
+    "class/app/Curriculum/Week0/Week0Q5.js~JournalInput.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q5.js~JournalInput#render",
+    "method"
+  ],
+  [
     "app/curriculum/week1/quizfinish.js",
     "file/app/Curriculum/Week1/QuizFinish.js.html",
     "app/Curriculum/Week1/QuizFinish.js",
@@ -693,6 +1017,300 @@ window.esdocSearchIndex = [
     "app/curriculum/week1/week1q5.js~week1q5#render",
     "class/app/Curriculum/Week1/Week1Q5.js~Week1Q5.html#instance-method-render",
     "app/Curriculum/Week1/Week1Q5.js~Week1Q5#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/quizfinishw2.js",
+    "file/app/Curriculum/Week2/QuizFinishW2.js.html",
+    "app/Curriculum/Week2/QuizFinishW2.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/quizfinishw2.js~quizfinishw2#navigate",
+    "class/app/Curriculum/Week2/QuizFinishW2.js~QuizFinishW2.html#instance-method-navigate",
+    "app/Curriculum/Week2/QuizFinishW2.js~QuizFinishW2#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/quizfinishw2.js~quizfinishw2#render",
+    "class/app/Curriculum/Week2/QuizFinishW2.js~QuizFinishW2.html#instance-method-render",
+    "app/Curriculum/Week2/QuizFinishW2.js~QuizFinishW2#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2a1.js",
+    "file/app/Curriculum/Week2/Week2A1.js.html",
+    "app/Curriculum/Week2/Week2A1.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2a1.js~week2a1#navigate",
+    "class/app/Curriculum/Week2/Week2A1.js~Week2A1.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2A1.js~Week2A1#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2a1.js~week2a1#render",
+    "class/app/Curriculum/Week2/Week2A1.js~Week2A1.html#instance-method-render",
+    "app/Curriculum/Week2/Week2A1.js~Week2A1#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2a2.js",
+    "file/app/Curriculum/Week2/Week2A2.js.html",
+    "app/Curriculum/Week2/Week2A2.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2a2.js~week2a1#navigate",
+    "class/app/Curriculum/Week2/Week2A2.js~Week2A1.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2A2.js~Week2A1#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2a2.js~week2a1#render",
+    "class/app/Curriculum/Week2/Week2A2.js~Week2A1.html#instance-method-render",
+    "app/Curriculum/Week2/Week2A2.js~Week2A1#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2a3.js",
+    "file/app/Curriculum/Week2/Week2A3.js.html",
+    "app/Curriculum/Week2/Week2A3.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2a3.js~week2a3#navigate",
+    "class/app/Curriculum/Week2/Week2A3.js~Week2A3.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2A3.js~Week2A3#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2a3.js~week2a3#render",
+    "class/app/Curriculum/Week2/Week2A3.js~Week2A3.html#instance-method-render",
+    "app/Curriculum/Week2/Week2A3.js~Week2A3#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2content.js",
+    "file/app/Curriculum/Week2/Week2Content.js.html",
+    "app/Curriculum/Week2/Week2Content.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2content.js~week2content#navigate",
+    "class/app/Curriculum/Week2/Week2Content.js~Week2Content.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2Content.js~Week2Content#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2content.js~week2content#navigate",
+    "class/app/Curriculum/Week2/Week2Content.js~Week2Content.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2Content.js~Week2Content#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2content.js~week2content#render",
+    "class/app/Curriculum/Week2/Week2Content.js~Week2Content.html#instance-method-render",
+    "app/Curriculum/Week2/Week2Content.js~Week2Content#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2q1.js",
+    "file/app/Curriculum/Week2/Week2Q1.js.html",
+    "app/Curriculum/Week2/Week2Q1.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2q1.js~week1q1#navigate",
+    "class/app/Curriculum/Week2/Week2Q1.js~Week1Q1.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2Q1.js~Week1Q1#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2q1.js~week1q1#render",
+    "class/app/Curriculum/Week2/Week2Q1.js~Week1Q1.html#instance-method-render",
+    "app/Curriculum/Week2/Week2Q1.js~Week1Q1#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2q2.js",
+    "file/app/Curriculum/Week2/Week2Q2.js.html",
+    "app/Curriculum/Week2/Week2Q2.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2q2.js~week2q2#navigate",
+    "class/app/Curriculum/Week2/Week2Q2.js~Week2Q2.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2Q2.js~Week2Q2#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2q2.js~week2q2#render",
+    "class/app/Curriculum/Week2/Week2Q2.js~Week2Q2.html#instance-method-render",
+    "app/Curriculum/Week2/Week2Q2.js~Week2Q2#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2q3.js",
+    "file/app/Curriculum/Week2/Week2Q3.js.html",
+    "app/Curriculum/Week2/Week2Q3.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week2/week2q3.js~week1q1#navigate",
+    "class/app/Curriculum/Week2/Week2Q3.js~Week1Q1.html#instance-method-navigate",
+    "app/Curriculum/Week2/Week2Q3.js~Week1Q1#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week2/week2q3.js~week1q1#render",
+    "class/app/Curriculum/Week2/Week2Q3.js~Week1Q1.html#instance-method-render",
+    "app/Curriculum/Week2/Week2Q3.js~Week1Q1#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3content.js",
+    "file/app/Curriculum/Week3/Week3Content.js.html",
+    "app/Curriculum/Week3/Week3Content.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week3/week3content.js~week3content#navigate",
+    "class/app/Curriculum/Week3/Week3Content.js~Week3Content.html#instance-method-navigate",
+    "app/Curriculum/Week3/Week3Content.js~Week3Content#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3content.js~week3content#render",
+    "class/app/Curriculum/Week3/Week3Content.js~Week3Content.html#instance-method-render",
+    "app/Curriculum/Week3/Week3Content.js~Week3Content#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3q1.js",
+    "file/app/Curriculum/Week3/Week3Q1.js.html",
+    "app/Curriculum/Week3/Week3Q1.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week3/week3q1.js~week3q1#navigate",
+    "class/app/Curriculum/Week3/Week3Q1.js~Week3Q1.html#instance-method-navigate",
+    "app/Curriculum/Week3/Week3Q1.js~Week3Q1#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3q1.js~week3q1#render",
+    "class/app/Curriculum/Week3/Week3Q1.js~Week3Q1.html#instance-method-render",
+    "app/Curriculum/Week3/Week3Q1.js~Week3Q1#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3q2.js",
+    "file/app/Curriculum/Week3/Week3Q2.js.html",
+    "app/Curriculum/Week3/Week3Q2.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week3/week3q2.js~week3q2#navigate",
+    "class/app/Curriculum/Week3/Week3Q2.js~Week3Q2.html#instance-method-navigate",
+    "app/Curriculum/Week3/Week3Q2.js~Week3Q2#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3q2.js~week3q2#render",
+    "class/app/Curriculum/Week3/Week3Q2.js~Week3Q2.html#instance-method-render",
+    "app/Curriculum/Week3/Week3Q2.js~Week3Q2#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3q3.js",
+    "file/app/Curriculum/Week3/Week3Q3.js.html",
+    "app/Curriculum/Week3/Week3Q3.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week3/week3q3.js~week3q3#navigate",
+    "class/app/Curriculum/Week3/Week3Q3.js~Week3Q3.html#instance-method-navigate",
+    "app/Curriculum/Week3/Week3Q3.js~Week3Q3#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week3/week3q3.js~week3q3#render",
+    "class/app/Curriculum/Week3/Week3Q3.js~Week3Q3.html#instance-method-render",
+    "app/Curriculum/Week3/Week3Q3.js~Week3Q3#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4content.js",
+    "file/app/Curriculum/Week4/Week4Content.js.html",
+    "app/Curriculum/Week4/Week4Content.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week4/week4content.js~week4content#navigate",
+    "class/app/Curriculum/Week4/Week4Content.js~Week4Content.html#instance-method-navigate",
+    "app/Curriculum/Week4/Week4Content.js~Week4Content#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4content.js~week4content#render",
+    "class/app/Curriculum/Week4/Week4Content.js~Week4Content.html#instance-method-render",
+    "app/Curriculum/Week4/Week4Content.js~Week4Content#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4q1.js",
+    "file/app/Curriculum/Week4/Week4Q1.js.html",
+    "app/Curriculum/Week4/Week4Q1.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week4/week4q1.js~week4q1#navigate",
+    "class/app/Curriculum/Week4/Week4Q1.js~Week4Q1.html#instance-method-navigate",
+    "app/Curriculum/Week4/Week4Q1.js~Week4Q1#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4q1.js~week4q1#render",
+    "class/app/Curriculum/Week4/Week4Q1.js~Week4Q1.html#instance-method-render",
+    "app/Curriculum/Week4/Week4Q1.js~Week4Q1#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4q2.js",
+    "file/app/Curriculum/Week4/Week4Q2.js.html",
+    "app/Curriculum/Week4/Week4Q2.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week4/week4q2.js~week4q2#navigate",
+    "class/app/Curriculum/Week4/Week4Q2.js~Week4Q2.html#instance-method-navigate",
+    "app/Curriculum/Week4/Week4Q2.js~Week4Q2#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4q2.js~week4q2#render",
+    "class/app/Curriculum/Week4/Week4Q2.js~Week4Q2.html#instance-method-render",
+    "app/Curriculum/Week4/Week4Q2.js~Week4Q2#render",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4q3.js",
+    "file/app/Curriculum/Week4/Week4Q3.js.html",
+    "app/Curriculum/Week4/Week4Q3.js",
+    "file"
+  ],
+  [
+    "app/curriculum/week4/week4q3.js~week4q3#navigate",
+    "class/app/Curriculum/Week4/Week4Q3.js~Week4Q3.html#instance-method-navigate",
+    "app/Curriculum/Week4/Week4Q3.js~Week4Q3#navigate",
+    "method"
+  ],
+  [
+    "app/curriculum/week4/week4q3.js~week4q3#render",
+    "class/app/Curriculum/Week4/Week4Q3.js~Week4Q3.html#instance-method-render",
+    "app/Curriculum/Week4/Week4Q3.js~Week4Q3#render",
     "method"
   ],
   [
@@ -984,12 +1602,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "app/headercomponent.js~headercomponent#homepressed",
-    "class/app/HeaderComponent.js~HeaderComponent.html#instance-method-homePressed",
-    "app/HeaderComponent.js~HeaderComponent#homePressed",
-    "method"
-  ],
-  [
     "app/headercomponent.js~headercomponent#navigate",
     "class/app/HeaderComponent.js~HeaderComponent.html#instance-method-navigate",
     "app/HeaderComponent.js~HeaderComponent#navigate",
@@ -1263,6 +1875,96 @@ window.esdocSearchIndex = [
     "app/loginscreen.js~loginscreen#render",
     "class/app/LoginScreen.js~LoginScreen.html#instance-method-render",
     "app/LoginScreen.js~LoginScreen#render",
+    "method"
+  ],
+  [
+    "app/resource/faq.js",
+    "file/app/Resource/FAQ.js.html",
+    "app/Resource/FAQ.js",
+    "file"
+  ],
+  [
+    "app/resource/faq.js~faq#navigate",
+    "class/app/Resource/FAQ.js~FAQ.html#instance-method-navigate",
+    "app/Resource/FAQ.js~FAQ#navigate",
+    "method"
+  ],
+  [
+    "app/resource/faq.js~faq#render",
+    "class/app/Resource/FAQ.js~FAQ.html#instance-method-render",
+    "app/Resource/FAQ.js~FAQ#render",
+    "method"
+  ],
+  [
+    "app/resource/r1.js",
+    "file/app/Resource/R1.js.html",
+    "app/Resource/R1.js",
+    "file"
+  ],
+  [
+    "app/resource/r1.js~r1#navigate",
+    "class/app/Resource/R1.js~R1.html#instance-method-navigate",
+    "app/Resource/R1.js~R1#navigate",
+    "method"
+  ],
+  [
+    "app/resource/r1.js~r1#render",
+    "class/app/Resource/R1.js~R1.html#instance-method-render",
+    "app/Resource/R1.js~R1#render",
+    "method"
+  ],
+  [
+    "app/resource/r2.js",
+    "file/app/Resource/R2.js.html",
+    "app/Resource/R2.js",
+    "file"
+  ],
+  [
+    "app/resource/r2.js~r2#navigate",
+    "class/app/Resource/R2.js~R2.html#instance-method-navigate",
+    "app/Resource/R2.js~R2#navigate",
+    "method"
+  ],
+  [
+    "app/resource/r2.js~r2#render",
+    "class/app/Resource/R2.js~R2.html#instance-method-render",
+    "app/Resource/R2.js~R2#render",
+    "method"
+  ],
+  [
+    "app/resource/r3.js",
+    "file/app/Resource/R3.js.html",
+    "app/Resource/R3.js",
+    "file"
+  ],
+  [
+    "app/resource/r3.js~r3#navigate",
+    "class/app/Resource/R3.js~R3.html#instance-method-navigate",
+    "app/Resource/R3.js~R3#navigate",
+    "method"
+  ],
+  [
+    "app/resource/r3.js~r3#render",
+    "class/app/Resource/R3.js~R3.html#instance-method-render",
+    "app/Resource/R3.js~R3#render",
+    "method"
+  ],
+  [
+    "app/resource/r4.js",
+    "file/app/Resource/R4.js.html",
+    "app/Resource/R4.js",
+    "file"
+  ],
+  [
+    "app/resource/r4.js~r4#navigate",
+    "class/app/Resource/R4.js~R4.html#instance-method-navigate",
+    "app/Resource/R4.js~R4#navigate",
+    "method"
+  ],
+  [
+    "app/resource/r4.js~r4#render",
+    "class/app/Resource/R4.js~R4.html#instance-method-render",
+    "app/Resource/R4.js~R4#render",
     "method"
   ],
   [

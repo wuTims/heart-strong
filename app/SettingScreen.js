@@ -4,6 +4,9 @@ import { Content, Title, ListItem, Right, Left, Radio, Icon, Body, Switch, Picke
 import FooterComponent from '../app/FooterComponent'; 
 import HeaderComponent from '../app/HeaderComponent';
 
+/**
+* Component that holds User Profile information and allows for Alarm and Notification setting.
+*/
 export default class SettingScreen extends Component {
 	constructor() {
 		super();

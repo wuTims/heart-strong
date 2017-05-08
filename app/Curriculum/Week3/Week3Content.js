@@ -3,16 +3,16 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View,alertrt, Linking,  Image} from 'react-native';
 import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem} from 'native-base';
 
-export default class JournalInput extends Component {
+/**
+* Content template for Week 3 Curriculum 
+*
+*/
+export default class Week3Content extends Component {
 
-  navigate(routeName) { 
+  navigate(routeName) {
       this.props.navigator.push({
           name: routeName
       })
-  }
-
-  addToDB() {
-   
   }
 
   render(){

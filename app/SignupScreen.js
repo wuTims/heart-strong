@@ -3,6 +3,9 @@ import { StyleSheet, View, Text, Image } from 'react-native';
 import InputForm from './InputForm';
 import * as firebase from 'firebase';
 
+/**
+* Component for user signup. Renders InputForm component for user to fill out.
+*/
 export default class SignupScreen extends Component {
 
 	navigate(routeName) {

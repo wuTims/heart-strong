@@ -4,7 +4,11 @@ import { AppRegistry, Text, StyleSheet, View} from 'react-native';
 import {Container, Content, Input, Icon, Button,Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 import FooterComponent from '../../../app/FooterComponent'; 
 
-export default class JournalInput extends Component {
+/**
+* Question template for Week 2 Question 1
+*
+*/
+export default class Week1Q1 extends Component {
 
   navigate(routeName) {
       this.props.navigator.push({

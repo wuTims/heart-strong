@@ -3,16 +3,15 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View,alertrt, Linking,  Image} from 'react-native';
 import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem} from 'native-base';
 
-export default class JournalInput extends Component {
+/**
+* Component that renders links to resources for Week 2.
+*/
+export default class R2 extends Component {
 
   navigate(routeName) {
       this.props.navigator.push({
           name: routeName
       })
-  }
-
-  addToDB() {
-   
   }
 
   render(){
