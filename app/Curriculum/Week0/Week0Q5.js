@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View, alertrt} from 'react-native';
 import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem } from 'native-base';
 
-export default class JournalInput extends Component {
+/**
+* Question template for Week 0 Question 5
+*
+*/
+export default class Week0Q5 extends Component {
 
   navigate(routeName) {
       this.props.navigator.push({
