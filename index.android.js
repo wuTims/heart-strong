@@ -41,7 +41,7 @@ import * as firebase from 'firebase';
 import Firebase from './app/includes/firebase';
 
 
-export default class AwesomeProject extends Component {
+export default class HeartStrong extends Component {
   constructor() {
     Firebase.initialise();
     super();
@@ -145,5 +145,5 @@ export default class AwesomeProject extends Component {
 }
 
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('HeartStrong', () => HeartStrong);
 

@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package com.heartstrong;
 
 import android.app.Application;
 import android.util.Log;

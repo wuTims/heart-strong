@@ -18,11 +18,11 @@ import SettingScreen from './app/SettingScreen';
 import DataScreen from './app/DataScreen';
 import JournalScreen from './app/JournalScreen';
 import ResourceScreen from './app/ResourceScreen';
-import R1 from './app/Resourse/R1';
-import R2 from './app/Resourse/R2';
-import R3 from './app/Resourse/R3';
-import R4 from './app/Resourse/R4';
-import FAQ from './app/Resourse/FAQ';
+import R1 from './app/Resource/R1';
+import R2 from './app/Resource/R2';
+import R3 from './app/Resource/R3';
+import R4 from './app/Resource/R4';
+import FAQ from './app/Resource/FAQ';
 import JournalInput from './app/Journal/JournalInput';
 import CurriculumScreen from './app/CurriculumScreen';
 import Week1Content from './app/Curriculum/Week1/Week1Content';
@@ -69,7 +69,7 @@ import * as firebase from 'firebase';
 import Firebase from './app/includes/firebase';
 
 
-export default class AwesomeProject extends Component {
+export default class HeartStrong extends Component {
   constructor() {
     Firebase.initialise();
     super();
@@ -268,5 +268,5 @@ export default class AwesomeProject extends Component {
 }
 
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('HeartStrong', () => HeartStrong);
 
