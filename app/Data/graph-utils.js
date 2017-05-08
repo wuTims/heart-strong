@@ -16,7 +16,7 @@ const d3 = {
  */
 function createScaleX(start, end, width) {
   return d3.scale.scaleTime()
-    .domain([new Date(start * 1000), new Date(end * 1000)])
+    .domain([new Date(start), new Date(end)])
     .range([0, width]);
 }
 
@@ -32,6 +32,28 @@ function createScaleY(minY, maxY, height) {
     .domain([minY, maxY]).nice()
     // We invert our range so it outputs using the axis that React uses.
     .range([height, 0]);
+}
+
+function getLastDatum(data, value){//1 - this week 2- previous week
+  const lastDay = new Date(data[data.length - 1].date_of_entry).getDay();
+  if(value == 1){ //this week
+    return data[data.length - 1];
+  } else { //previous week
+      return data[data.length - (lastDay+2)];
+  }
+}
+
+function getFirstDatum(data, value){
+  const lastDay = new Date(data[data.length - 1].date_of_entry).getDay();
+  if(data.length <= 7){
+    return data[0];
+  } else if(value == 1){ //this week
+    return data[data.length - lastDay-1];
+  } else if (data.length <=14){
+    return data[0];
+  } else { //previous week
+      return data[data.length - (lastDay+8)];
+  }
 }
 
 /**
@@ -53,18 +75,20 @@ export function createLineGraph({
   height,
   value,
   }) {
-  const lastDatum = data[data.length - 1];
+
+  const lastDatum = getLastDatum(data, value);
+  const firstDatum = getFirstDatum(data, value);
   var number = data.length;
 
-  if(value < data.length && value != 0) {
-    number = value;
-  } else {
-    number = data.length;
-  }
+  // if(value < data.length && value != 0) {
+  //   number = value;
+  // } else {
+  //   number = data.length;
+  // }
 
   const scaleX = createScaleX(
-    data[data.length - number].time,
-    lastDatum.time,
+    firstDatum.date_of_entry,
+    lastDatum.date_of_entry,
     width
   );
 

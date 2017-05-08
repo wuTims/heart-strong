@@ -1,20 +1,36 @@
 import React, { Component } from 'react';
-import {StyleSheet, View, Button, Text, TextInput} from 'react-native'
+import {StyleSheet, View, Button, Text, TextInput} from 'react-native';
+import * as firebase from 'firebase';
+import DismissKeyboard from 'react-native-dismiss-keyboard';
 
 var CalendarView = require('./CalendarView');
 export default class DataInput extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		  this.state = {
-			
-		  } 
+            date: this.returnMonth() + this.props.date.getDate().toString() + ", " + this.props.date.getFullYear().toString(),
+			weight: '',
+            bloodPressureT: '',
+            bloodPressureB: '',
+            heartRate: '',
+            error: 'Please fill in all the fields',
+            errorMess:'',
+            bloodPressureMAP: '',
+            bloodPressure: 0,
+		  }; 
+          this.dataRef = this.getRef().child('health-data');
+          this.checkFields = this.checkFields.bind(this);
 	}
 
     navigate(routeName) {
       this.props.navigator.push({
           name: routeName
       })
-  }
+    }
+
+    getRef() {
+        return firebase.database().ref();
+    }
 
 	returnMonth() {
 		if(this.props.date.getMonth().toString() == 0) {
@@ -44,6 +60,53 @@ export default class DataInput extends Component {
 		} 
 	}
 
+    checkFields(){
+        DismissKeyboard();
+
+        if(this.state.weight == '') {
+            this.setState({
+                errorMess: this.state.error,
+            })
+        } else if(this.state.bloodPressureT == '') {
+            this.setState({
+                errorMess: this.state.error,
+            })
+        } else if(this.state.bloodPressureB == '') {
+            this.setState({
+                errorMess: this.state.error,
+            })
+        } else if(this.state.heartRate == '') {
+            this.setState({
+                errorMess: this.state.error,
+            })
+        } else {
+            this.setState({
+                errorMess: '',
+            });
+            this.dataRef.child('weight').child(this.props.date.getFullYear().toString()).child(this.props.date.getMonth().toString()).child(this.props.date.getDate().toString()).set({
+                "date_of_entry": this.state.date,
+                "value": this.state.weight,
+            });
+            this.dataRef.child('bloodPressureT').child(this.props.date.getFullYear().toString()).child(this.props.date.getMonth().toString()).child(this.props.date.getDate().toString()).set({
+                "date_of_entry": this.state.date,
+                "value": this.state.bloodPressureT,
+            });
+            this.dataRef.child('bloodPressureB').child(this.props.date.getFullYear().toString()).child(this.props.date.getMonth().toString()).child(this.props.date.getDate().toString()).set({
+                "date_of_entry": this.state.date,
+                "value": this.state.bloodPressureB,
+            });
+            this.dataRef.child('heartRate').child(this.props.date.getFullYear().toString()).child(this.props.date.getMonth().toString()).child(this.props.date.getDate().toString()).set({
+                "date_of_entry": this.state.date,
+                "value": this.state.heartRate,
+            });
+            this.dataRef.child('bloodPressureMAP').child(this.props.date.getFullYear().toString()).child(this.props.date.getMonth().toString()).child(this.props.date.getDate().toString()).set({
+                "date_of_entry": this.state.date,
+                "value": (parseFloat(2*this.state.bloodPressureB) + parseFloat(this.state.bloodPressureT))/3,
+            });
+            this.props.navigator.pop()
+        }
+    }
+
 	render() {
         return (
             <View style={{
@@ -52,9 +115,7 @@ export default class DataInput extends Component {
                 alignItems: 'flex-start',
                 padding: 10
             }}>
-            <Text style={styles.titleStyle}>{ "Entry for: " +
-                this.returnMonth() + this.props.date.getDate().toString() + ", " + this.props.date.getFullYear().toString() 
-            } </Text>
+            <Text style={styles.titleStyle}> Entry for:  {this.state.date} </Text>
                 <View style={{
 					flexDirection: 'row',
 					alignItems:'center', 
@@ -71,6 +132,7 @@ export default class DataInput extends Component {
                             padding: 10}}
                         placeholder="Input weight"
                         keyboardType='numeric'
+                        onChangeText={(weight) => this.setState({weight})}
                         >
                     </TextInput>
                 </View>
@@ -94,6 +156,7 @@ export default class DataInput extends Component {
                             width: 100,
                             padding: 10}}
                         keyboardType='numeric'
+                        onChangeText={(bloodPressureT) => this.setState({bloodPressureT})}
                         >
                     </TextInput>
                     <Text style={{flex: .1, fontSize: 18}}> / </Text>
@@ -106,6 +169,7 @@ export default class DataInput extends Component {
                             width: 100,
                             padding: 10}}
                         keyboardType='numeric'
+                        onChangeText={(bloodPressureB) => this.setState({bloodPressureB})}
                         >
                     </TextInput>
                 </View>
@@ -129,13 +193,16 @@ export default class DataInput extends Component {
                             padding: 10}}
                         placeholder="Input heart rate"
                         keyboardType='numeric'
-                        >
+                        onChangeText={(heartRate) => this.setState({heartRate})}>
                     </TextInput>
+                </View>
+                <View style={{flexDirection: 'column'}}>
+                    <Text>{this.state.errorMess}</Text>
                 </View>
                 <View> 
                     <Button 
 						title="Save" 
-                        onPress={() => {this.props.navigator.pop()}} 
+                        onPress={() => {this.checkFields()}} 
                         />
                 </View>
           </View>
@@ -146,7 +213,7 @@ const styles = StyleSheet.create({
   titleStyle: {
   	color:'black',
   	fontWeight: 'bold',
-    fontSize: 30
+    fontSize: 20
   }
 })
 

@@ -12,7 +12,6 @@ import {
   StyleSheet,
   Navigator } from 'react-native';
 import FooterComponent from './app/FooterComponent'; 
-import NavigatorComponent from './app/NavigatorComponent';
 import HeaderComponent from './app/HeaderComponent';
 import HomeScreen from './app/HomeScreen';
 import SettingScreen from './app/SettingScreen';

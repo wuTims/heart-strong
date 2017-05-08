@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { AppRegistry, Text, StyleSheet, View,alertrt, Linking,  Image} from 'react-native';
 import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem} from 'native-base';
+import FooterComponent from '../../../app/FooterComponent'; 
+
 
 export default class JournalInput extends Component {
 
@@ -18,7 +20,7 @@ export default class JournalInput extends Component {
                  <Header>
                      <Left>
                         <Button transparent   onPress={() => {this.navigate('Curriculum')}} >
-                            <Icon name='ios-arrow-round-back'  />
+                            <Icon name='arrow-back'  />
                         </Button>
                     </Left>
                     <Body>
@@ -58,7 +60,7 @@ export default class JournalInput extends Component {
                       </View>
                   </View>
                 </Content>
-
+                <FooterComponent activeTab='tabOne' navigator={this.props.navigator}/>
             </Container>
       );
     }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View , TextInput, Dimensions, Alert} from 'react-native';
 import { Content, ListItem, Right, Left, H2, Button, Input, InputGroup, Icon } from 'native-base';
 import FooterComponent from '../FooterComponent'; 
-import NavigatorComponent from '../NavigatorComponent';
 import HeaderComponent from '../HeaderComponent';
 import Communications from 'react-native-communications';
 import * as firebase from 'firebase';
@@ -13,15 +12,16 @@ const dimensionWindow = Dimensions.get('window');
 export default class UserProfile extends Component {
   constructor(props) {
     super(props);
+    this.dataRef = this.getRef().child('user-profile');
     this.state = {
-      userName: this.props.userInfo.userName,
-      phoneNumber: this.props.userInfo.phoneNumber,
-      doctorNumber: this.props.userInfo.doctorNumber,
-      doctorEmail: this.props.userInfo.doctorEmail,
+      userName: '',
+      phoneNumber: '',
+      doctorNumber: '',
+      doctorEmail: '',
       response: ""
     }; 
-
     this.logout = this.logout.bind(this);
+    this.getValue();
 
   }
 	navigate(routeName){
@@ -29,6 +29,29 @@ export default class UserProfile extends Component {
             name: routeName
         });
   }
+
+  componentDidMount() {
+    this.getValue();
+  }
+
+  getValue(){
+    this.dataRef.child('username').on('value', username => {
+      this.setState({userName: username.val()})
+    });
+    this.dataRef.child('phonenumber').on('value', phonenumber => {
+      this.setState({phoneNumber: phonenumber.val()})
+    });
+    this.dataRef.child('doctornumber').on('value', doctornumber => {
+      this.setState({doctorNumber: doctornumber.val()})
+    });
+    this.dataRef.child('doctoremail').on('value', doctoremail => {
+      this.setState({doctorEmail: doctoremail.val()})
+    });
+  }
+
+  getRef() {
+        return firebase.database().ref();
+    }
 
   async logout() {
     try {
@@ -60,7 +83,9 @@ export default class UserProfile extends Component {
                     	<TextInput
 							         style={{height: 40, width: Math.round(dimensionWindow.width * 0.9)}}
             						placeholder= "Username"
-            						onChangeText={(userName) => this.setState({userName})}
+            						onChangeText={(userName) => this.dataRef.update({
+                            "username": userName
+                        })}
             						value={this.state.userName}
   						        />
                 	</InputGroup>
@@ -72,8 +97,10 @@ export default class UserProfile extends Component {
       							     style={{height: 40, width: Math.round(dimensionWindow.width * 0.9)}}
             						placeholder= "Phone Number"
             						keyboardType = 'numeric'
-            						onChangeText={(phoneNumber) => this.setState({phoneNumber})}
-            						value={this.state.phoneNumber}
+                        onChangeText={(phonenumber) => this.dataRef.update({
+                            "phonenumber": phonenumber
+                        })}            						
+                        value={this.state.phoneNumber}
   						        />
 
                 	</InputGroup>
@@ -88,7 +115,9 @@ export default class UserProfile extends Component {
           							style={{height: 40, width: Math.round(dimensionWindow.width * 0.6)}}
           							keyboardType = 'numeric'
                 						placeholder= {this.props.userInfo.doctorNumber}
-                						onChangeText={(doctorNumber) => this.setState({doctorNumber})}
+                						onChangeText={(doctornumber) => this.dataRef.update({
+                              "doctornumber": doctornumber
+                            })}
                 						value={this.state.doctorNumber}
             						/>
             						<Text style={{fontWeight: "bold", color: 'blue'}} onPress={() => Communications.phonecall(this.state.doctorNumber, true)}> Call </Text>
@@ -102,7 +131,9 @@ export default class UserProfile extends Component {
                     	<TextInput
       							     style={{height: 40, width: Math.round(dimensionWindow.width * 0.7)}}
             						placeholder= {this.props.userInfo.doctorEmail}
-            						onChangeText={(doctorEmail) => this.setState({doctorEmail})}
+            						onChangeText={(doctoremail) => this.dataRef.update({
+                            "doctoremail": doctoremail
+                        })}
             						value={this.state.doctorEmail}
           						/>
   						        <Text style={{fontWeight: "bold", color: 'blue'}} onPress={() => Communications.email(['emailAddress1', 'emailAddress2'],null,null,'My Subject','My body text')}> Email </Text>
