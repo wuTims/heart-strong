@@ -68,7 +68,9 @@ This launches your project on the platform's emulator/simulator
 When the emulator/simulator is launched, you can refresh it after making changes to the code by:
 - Windows: ctrl+m and ‘reload’
 - IOS: cmd+r
- 
+
+
+### Importing Libraries and Packages: 
 If a new library was added, run:
 ```
 npm install react-native-new-package --save
@@ -82,7 +84,13 @@ npm install react-native-new-package
 or they will have an error saying module was not found.
 
 
-### Editing the project
+### Error Handling:
+*Add ART.xcodeproj to your project and link with libART.a* - Error may occur when you're missing an ART xcode file that's necessary to render the art components in the application.
+
+Instructions to resolve that issue can be found [here](http://browniefed.com/blog/getting-react-art-running-on-react-native/)
+
+
+### Editing the project:
 Open project folder in your text editor. All component JavaScript files are under the folder app. Edit if you change something in **index.android.js** don’t forget to edit **index.ios.js** (and vice versa) to have it also run on the other platform.
 
 ## 5. Contact Us
