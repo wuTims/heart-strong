@@ -93,6 +93,23 @@ Instructions to resolve that issue can be found [here](http://browniefed.com/blo
 ### Editing the project:
 Open project folder in your text editor. All component JavaScript files are under the folder app. Edit if you change something in **index.android.js** don’t forget to edit **index.ios.js** (and vice versa) to have it also run on the other platform.
 
+## 4. Backend using Firebase
+Contact any one of us for administrator/editor privileges for the Firebase platform.
+
+1. Go to:  firebase.google.com
+2. Click on Go to Console on the top right of the screen
+3. After you’ve received privileges to access our project you should see the project name “HeartStrong” 
+4. Click on the Project to access the backend features
+ 1. Authentication includes all the user accounts that have signed up through our application
+ 2. Database holds the schema and path of all relatable data used in our application
+ 3. Useful documentation on how to use Firebase's APIs: (https://firebase.google.com/docs/database/)
+
+### Giving other developers permissions
+1. To give other developers permission to your Firebase project, go under Settings → Project Settings
+2. Under *IAM* click on the **+Add** button on the top
+3. To add members provide their email as well as a role for them. (Typically editor if you want to give them read/write permissions)
+
+
 ## 5. Contact Us
 
 - Benny Ho (bimpulseho@gmail.com)
