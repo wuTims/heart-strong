@@ -1,4 +1,5 @@
 # HeartStrong
+Heartstrong has a goal to find a way reduce CHF readmissions. It aims to come up with a solution to bridge the gap between patients at risk for heart failure readmission and the healthcare ecosystem that supports them. Healthcares currently lack patient/caregiver centered support, assurance that patient develops an accountable lifestyle after discharge, and focus on reducing patient anxiety and confusion. 
 
 # Table of Contents
 
