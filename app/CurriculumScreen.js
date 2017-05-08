@@ -21,11 +21,12 @@ export default class CurriculumScreen extends Component {
               <Container>
                     <Content>
                         <ScrollView style={styles.scrollView}>
-                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Introduction to My Healthy Heart Care</Text>
+
+                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week0Content')}}> Introduce to Heartstrong Care</Text>
                              <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week One: Survival Skills</Text>
-                              <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week Two: Norishing the Body</Text>
-                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week Three: Rehabilitation</Text>
-                            <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week Four: Ready for Self-care</Text>
+                              <Text style={styles.alertStyle } onPress={() => {this.navigate('Week2Content')}}> Week Two: Norishing the Body</Text>
+                             <Text style={styles.alertStyle } onPress={() => {this.navigate('Week3Content')}}> Week Three: Rehabilitation</Text>
+                            <Text style={styles.alertStyle } onPress={() => {this.navigate('Week4Content')}}> Week Four: Ready for Self-care</Text>
                         
          
                         </ScrollView>

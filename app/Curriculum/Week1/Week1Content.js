@@ -42,25 +42,30 @@ export default class Week1Content extends Component {
                  
                   
                     <View style={styles.container}> 
-                        <Text> Some useful Resources </Text> 
+                        <Text style={{fontWeight: 'bold'}}> Some useful Resources </Text> 
                       	<Text style={{color: 'blue'}}
              				 	     onPress={() => Linking.openURL('http://www.ksw-gtg.com/aha-heartfailure/#/1/')}>
-          					 	    American Heart  Association 
+          					 	     Healthy Living with Heart Failure
         						    </Text>
 
         						  <Text style={{color: 'blue'}}
              				 	 onPress={() => Linking.openURL('http://www.heart.org/HEARTORG/Conditions/More/ConsumerHealthCare/Medication-Adherence---Taking-Your-Meds-as-Directed_UCM_453329_Article.jsp#.WL7U1tIrKUk')}>
-          						  American Heart  Association 
+          						 Symptom to Not Ignore
         						  </Text>
 
         						  <Text style={{color: 'blue'}}
              				 	 onPress={() => Linking.openURL('http://greatergood.berkeley.edu/article/item/tips_for_keeping_a_gratitude_journal')}>
-          						  Gratitude  Journaling
+          						  Tips for Keeping a Gratitude Journal
         						  </Text>
-                      </View>
+
+                      <Text  style={{color: 'blue'}} onPress={() => {this.navigate('R1')}}>
+                      Find More under Resources page 
+                      </Text>
+
+                      </View >
 
                       <View style={{height: 50}}>
-                        <Button rounded info full onPress= {() => {this.navigate('Week1Q1'); this.addToDB()}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
+                        <Button rounded info full onPress= {() => {this.navigate('Week1Q1')}}  ><Text style={{color: '#FFFFFF' }}> Take the quiz!</Text></Button>
                       </View>
                   </View>
                 </Content>
