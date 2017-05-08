@@ -96,54 +96,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "awesomeproject/app/curriculum/week0/quizfinishw0.js~journalinput",
-    "class/app/Curriculum/Week0/QuizFinishW0.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/QuizFinishW0.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0a5.js~journalinput",
-    "class/app/Curriculum/Week0/Week0A5.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0A5.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0content.js~journalinput",
-    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Content.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0q1.js~journalinput",
-    "class/app/Curriculum/Week0/Week0Q1.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q1.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0q2.js~journalinput",
-    "class/app/Curriculum/Week0/Week0Q2.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q2.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0q3.js~journalinput",
-    "class/app/Curriculum/Week0/Week0Q3.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q3.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0q4.js~journalinput",
-    "class/app/Curriculum/Week0/Week0Q4.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q4.js</span>",
-    "class"
-  ],
-  [
-    "awesomeproject/app/curriculum/week0/week0q5.js~journalinput",
-    "class/app/Curriculum/Week0/Week0Q5.js~JournalInput.html",
-    "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q5.js</span>",
-    "class"
-  ],
-  [
     "awesomeproject/app/journal/journalinput.js~journalinput",
     "class/app/Journal/JournalInput.js~JournalInput.html",
     "<span>JournalInput</span> <span class=\"search-result-import-path\">AwesomeProject/app/Journal/JournalInput.js</span>",
@@ -171,6 +123,12 @@ window.esdocSearchIndex = [
     "awesomeproject/app/curriculum/week1/quizfinish.js~quizfinish",
     "class/app/Curriculum/Week1/QuizFinish.js~QuizFinish.html",
     "<span>QuizFinish</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week1/QuizFinish.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/quizfinishw0.js~quizfinishw0",
+    "class/app/Curriculum/Week0/QuizFinishW0.js~QuizFinishW0.html",
+    "<span>QuizFinishW0</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/QuizFinishW0.js</span>",
     "class"
   ],
   [
@@ -225,6 +183,48 @@ window.esdocSearchIndex = [
     "awesomeproject/app/setting/userprofile.js~userprofile",
     "class/app/Setting/UserProfile.js~UserProfile.html",
     "<span>UserProfile</span> <span class=\"search-result-import-path\">AwesomeProject/app/Setting/UserProfile.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0a5.js~week0a5",
+    "class/app/Curriculum/Week0/Week0A5.js~Week0A5.html",
+    "<span>Week0A5</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0A5.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0content.js~week0content",
+    "class/app/Curriculum/Week0/Week0Content.js~Week0Content.html",
+    "<span>Week0Content</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Content.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q1.js~week0q1",
+    "class/app/Curriculum/Week0/Week0Q1.js~Week0Q1.html",
+    "<span>Week0Q1</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q1.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q2.js~week0q2",
+    "class/app/Curriculum/Week0/Week0Q2.js~Week0Q2.html",
+    "<span>Week0Q2</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q2.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q3.js~week0q3",
+    "class/app/Curriculum/Week0/Week0Q3.js~Week0Q3.html",
+    "<span>Week0Q3</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q3.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q4.js~week0q4",
+    "class/app/Curriculum/Week0/Week0Q4.js~Week0Q4.html",
+    "<span>Week0Q4</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q4.js</span>",
+    "class"
+  ],
+  [
+    "awesomeproject/app/curriculum/week0/week0q5.js~week0q5",
+    "class/app/Curriculum/Week0/Week0Q5.js~Week0Q5.html",
+    "<span>Week0Q5</span> <span class=\"search-result-import-path\">AwesomeProject/app/Curriculum/Week0/Week0Q5.js</span>",
     "class"
   ],
   [
@@ -714,15 +714,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/quizfinishw0.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/QuizFinishW0.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/QuizFinishW0.js~JournalInput#navigate",
+    "app/curriculum/week0/quizfinishw0.js~quizfinishw0#navigate",
+    "class/app/Curriculum/Week0/QuizFinishW0.js~QuizFinishW0.html#instance-method-navigate",
+    "app/Curriculum/Week0/QuizFinishW0.js~QuizFinishW0#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/quizfinishw0.js~journalinput#render",
-    "class/app/Curriculum/Week0/QuizFinishW0.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/QuizFinishW0.js~JournalInput#render",
+    "app/curriculum/week0/quizfinishw0.js~quizfinishw0#render",
+    "class/app/Curriculum/Week0/QuizFinishW0.js~QuizFinishW0.html#instance-method-render",
+    "app/Curriculum/Week0/QuizFinishW0.js~QuizFinishW0#render",
     "method"
   ],
   [
@@ -732,15 +732,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0a5.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0A5.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0A5.js~JournalInput#navigate",
+    "app/curriculum/week0/week0a5.js~week0a5#navigate",
+    "class/app/Curriculum/Week0/Week0A5.js~Week0A5.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0A5.js~Week0A5#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0a5.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0A5.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0A5.js~JournalInput#render",
+    "app/curriculum/week0/week0a5.js~week0a5#render",
+    "class/app/Curriculum/Week0/Week0A5.js~Week0A5.html#instance-method-render",
+    "app/Curriculum/Week0/Week0A5.js~Week0A5#render",
     "method"
   ],
   [
@@ -750,21 +750,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0content.js~journalinput#addtodb",
-    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html#instance-method-addToDB",
-    "app/Curriculum/Week0/Week0Content.js~JournalInput#addToDB",
+    "app/curriculum/week0/week0content.js~week0content#navigate",
+    "class/app/Curriculum/Week0/Week0Content.js~Week0Content.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Content.js~Week0Content#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0content.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0Content.js~JournalInput#navigate",
-    "method"
-  ],
-  [
-    "app/curriculum/week0/week0content.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0Content.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0Content.js~JournalInput#render",
+    "app/curriculum/week0/week0content.js~week0content#render",
+    "class/app/Curriculum/Week0/Week0Content.js~Week0Content.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Content.js~Week0Content#render",
     "method"
   ],
   [
@@ -774,15 +768,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0q1.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0Q1.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0Q1.js~JournalInput#navigate",
+    "app/curriculum/week0/week0q1.js~week0q1#navigate",
+    "class/app/Curriculum/Week0/Week0Q1.js~Week0Q1.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q1.js~Week0Q1#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0q1.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0Q1.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0Q1.js~JournalInput#render",
+    "app/curriculum/week0/week0q1.js~week0q1#render",
+    "class/app/Curriculum/Week0/Week0Q1.js~Week0Q1.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q1.js~Week0Q1#render",
     "method"
   ],
   [
@@ -792,15 +786,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0q2.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0Q2.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0Q2.js~JournalInput#navigate",
+    "app/curriculum/week0/week0q2.js~week0q2#navigate",
+    "class/app/Curriculum/Week0/Week0Q2.js~Week0Q2.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q2.js~Week0Q2#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0q2.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0Q2.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0Q2.js~JournalInput#render",
+    "app/curriculum/week0/week0q2.js~week0q2#render",
+    "class/app/Curriculum/Week0/Week0Q2.js~Week0Q2.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q2.js~Week0Q2#render",
     "method"
   ],
   [
@@ -810,15 +804,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0q3.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0Q3.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0Q3.js~JournalInput#navigate",
+    "app/curriculum/week0/week0q3.js~week0q3#navigate",
+    "class/app/Curriculum/Week0/Week0Q3.js~Week0Q3.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q3.js~Week0Q3#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0q3.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0Q3.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0Q3.js~JournalInput#render",
+    "app/curriculum/week0/week0q3.js~week0q3#render",
+    "class/app/Curriculum/Week0/Week0Q3.js~Week0Q3.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q3.js~Week0Q3#render",
     "method"
   ],
   [
@@ -828,15 +822,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0q4.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0Q4.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0Q4.js~JournalInput#navigate",
+    "app/curriculum/week0/week0q4.js~week0q4#navigate",
+    "class/app/Curriculum/Week0/Week0Q4.js~Week0Q4.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q4.js~Week0Q4#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0q4.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0Q4.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0Q4.js~JournalInput#render",
+    "app/curriculum/week0/week0q4.js~week0q4#render",
+    "class/app/Curriculum/Week0/Week0Q4.js~Week0Q4.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q4.js~Week0Q4#render",
     "method"
   ],
   [
@@ -846,15 +840,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/curriculum/week0/week0q5.js~journalinput#navigate",
-    "class/app/Curriculum/Week0/Week0Q5.js~JournalInput.html#instance-method-navigate",
-    "app/Curriculum/Week0/Week0Q5.js~JournalInput#navigate",
+    "app/curriculum/week0/week0q5.js~week0q5#navigate",
+    "class/app/Curriculum/Week0/Week0Q5.js~Week0Q5.html#instance-method-navigate",
+    "app/Curriculum/Week0/Week0Q5.js~Week0Q5#navigate",
     "method"
   ],
   [
-    "app/curriculum/week0/week0q5.js~journalinput#render",
-    "class/app/Curriculum/Week0/Week0Q5.js~JournalInput.html#instance-method-render",
-    "app/Curriculum/Week0/Week0Q5.js~JournalInput#render",
+    "app/curriculum/week0/week0q5.js~week0q5#render",
+    "class/app/Curriculum/Week0/Week0Q5.js~Week0Q5.html#instance-method-render",
+    "app/Curriculum/Week0/Week0Q5.js~Week0Q5#render",
     "method"
   ],
   [

@@ -1,7 +1,7 @@
 {
-  "coverage": "27.09%",
-  "expectCount": 251,
-  "actualCount": 68,
+  "coverage": "30.4%",
+  "expectCount": 250,
+  "actualCount": 76,
   "files": {
     "app/Setting/AddAlarm.js": {
       "expectCount": 5,
@@ -161,43 +161,6 @@
         26
       ]
     },
-    "app/Curriculum/Week0/Week0A5.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        8,
-        14
-      ]
-    },
-    "app/Curriculum/Week0/Week0Content.js": {
-      "expectCount": 4,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        14,
-        8,
-        18
-      ]
-    },
-    "app/Curriculum/Week0/Week0Q1.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        7,
-        9,
-        15
-      ]
-    },
-    "app/Curriculum/Week0/Week0Q5.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        8,
-        14
-      ]
-    },
     "app/Journal/JournalInput.js": {
       "expectCount": 7,
       "actualCount": 2,
@@ -207,42 +170,6 @@
         28,
         46,
         13
-      ]
-    },
-    "app/Curriculum/Week0/Week0Q3.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        8,
-        14
-      ]
-    },
-    "app/Curriculum/Week0/Week0Q2.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        7,
-        9,
-        15
-      ]
-    },
-    "app/Curriculum/Week0/Week0Q4.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        8,
-        14
-      ]
-    },
-    "app/Curriculum/Week0/QuizFinishW0.js": {
-      "expectCount": 3,
-      "actualCount": 0,
-      "undocumentLines": [
-        6,
-        8,
-        14
       ]
     },
     "app/JournalScreen.js": {
@@ -278,6 +205,14 @@
       "undocumentLines": [
         12,
         18
+      ]
+    },
+    "app/Curriculum/Week0/QuizFinishW0.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        19
       ]
     },
     "app/Curriculum/Week2/QuizFinishW2.js": {
@@ -362,6 +297,62 @@
         16
       ]
     },
+    "app/Curriculum/Week0/Week0A5.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week0/Week0Content.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q1.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q2.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        19
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q3.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q4.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
+    "app/Curriculum/Week0/Week0Q5.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        12,
+        18
+      ]
+    },
     "app/Curriculum/Week1/Week1A1.js": {
       "expectCount": 3,
       "actualCount": 1,
@@ -386,12 +377,12 @@
         20
       ]
     },
-    "app/Curriculum/Week2/Week2Q3.js": {
+    "app/Curriculum/Week2/Week2Q1.js": {
       "expectCount": 3,
       "actualCount": 1,
       "undocumentLines": [
-        12,
-        18
+        13,
+        19
       ]
     },
     "app/Curriculum/Week1/Week1Q1.js": {
@@ -402,12 +393,12 @@
         19
       ]
     },
-    "app/Curriculum/Week2/Week2Q1.js": {
+    "app/Curriculum/Week2/Week2Q3.js": {
       "expectCount": 3,
       "actualCount": 1,
       "undocumentLines": [
-        13,
-        19
+        12,
+        18
       ]
     },
     "app/Curriculum/Week1/Week1Q2.js": {
@@ -475,8 +466,8 @@
       "expectCount": 4,
       "actualCount": 1,
       "undocumentLines": [
-        12,
         17,
+        12,
         23
       ]
     },
