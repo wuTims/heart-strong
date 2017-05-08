@@ -15,6 +15,12 @@ export default class InputForm extends Component {
 		}
 
 		this.signup = this.signup.bind(this);
+		this.userRef = this.getRef().child('users');
+		this.authData; 
+	}
+
+	getRef() {
+		return firebase.database().ref();
 	}
 
 	navigate(routeName) {
@@ -33,6 +39,14 @@ export default class InputForm extends Component {
 				response: "Sign up successful, redirecting to login",
 				animating: true
 			})
+
+			// Current User built into firebase to retrieve uid
+			this.authData = await firebase.auth().currentUser;
+
+			this.userRef.child(this.authData.uid).set({
+				email: this.state.email,
+				password: this.state.password
+			});
 
 			setTimeout(() => {
 				this.navigate('Login');

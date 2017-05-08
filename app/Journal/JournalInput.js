@@ -1,9 +1,25 @@
 import React, { Component } from 'react';
+import HeaderComponent from '../../app/HeaderComponent';
+import FooterComponent from '../../app/FooterComponent';
+import * as firebase from 'firebase';
 
-import { AppRegistry, Text, StyleSheet, View,alertrt} from 'react-native';
-import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
+
+import { View, AppRegistry, Text, TextInput, StyleSheet, Button, TouchableOpacity} from 'react-native';
+import { Container, Content, Icon, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 
 export default class JournalInput extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ""
+    };
+    this._addEntry = this._addEntry.bind(this);
+    this.journalRef = this.getRef().child('journals');
+  }
+
+  getRef() {
+    return firebase.database().ref();
+  }
 
   navigate(routeName) {
       this.props.navigator.push({
@@ -11,35 +27,68 @@ export default class JournalInput extends Component {
       })
   }
 
-  addToDB() {
-   
+  _addEntry() {
+    this.journalRef.push({
+      date_of_entry: new Date().toLocaleString(),
+      entry: this.state.text
+    });
   }
 
   render(){
       return (
-         <Container>
-
-                 <Header>
-                     <Left>
-                        <Button transparent   onPress={() => {this.props.navigator.pop()}} >
-                            <Icon name='ios-arrow-round-back'  />
-                        </Button>
-                    </Left>
-                    <Body>
-                        <Title>New Journal</Title>
-                    </Body>
-                    <Right />
-                </Header>
-
+         <View style={styles.container}>
+            <Container>
+              <HeaderComponent titleText='New Journal' navigator={this.props.navigator} />
                 <Content>
-                   
-                    <Input placeholder="Date"  style={{color: '#00c497', height:50}} />
-                    <Input placeholder="Anything new today? "  style={{color: '#00c497', height: 200}} />
-                    <Button round success onPress= {() => {this.navigate('Journal'); this.addToDB()}}  ><Text> submit </Text></Button>
-                </Content>
+                  <TextInput
+                  placeholder="What are you grateful for?"
+                  onChangeText={(text) => this.setState({text})}
+                  style={styles.input}
+                  value={this.state.text}
+                  multiline={true}
+                  />
 
+                  <TouchableOpacity style={styles.actionButtonIcon} onPress= {() => {this.navigate('Journal'); this._addEntry()}}>
+                        <Text style={styles.button}>Add</Text>
+                  </TouchableOpacity>
+                </Content>
             </Container>
+            <FooterComponent activeTab='tabFour' navigator={this.props.navigator}/>
+        </View>
       );
     }
-
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'stretch',
+  },
+  input: {
+    backgroundColor: '#fffded',
+    padding: 10,
+    borderRadius: 3,
+    borderColor: 'black',
+    borderWidth: 1,
+    height: 400, 
+    margin: 20,
+    fontSize: 18,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  inputContainer: {
+    flex: 1
+  },
+  actionButtonIcon: {
+    margin: 20,
+    backgroundColor: '#4286f4',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 50,
+  },
+  button: {
+    color: '#FFF'
+  }
+})

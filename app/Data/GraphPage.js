@@ -8,9 +8,9 @@ import {
   View,
 } from 'react-native';
 
-import WeightGraph from './WeightGraph';
+import DataGraph from './DataGraph';
 
-export default class WeightPage extends Component {
+export default class GraphPage extends Component {
   static propTypes = {
     data: PropTypes.object.isRequired,
   }
@@ -19,18 +19,26 @@ export default class WeightPage extends Component {
     const {
       data: graphData,
       value: value,
+      type: type,
     } = this.props;
 
     const graphProps = {};
-    graphProps.data = graphData.weight;
+    // graphProps.data = graphData;
+    if(type == 'weight'){
+      graphProps.data = graphData.weight;
+    } else if (type == 'bloodpressure'){
+      graphProps.data = graphData.heartRate;
+    } else{
+      graphProps.data = graphData.bloodPressure;
+    }
     graphProps.value = value;
-    graphProps.xAccessor = d => new Date(d.time * 1000); //time in milliseconds since 1/11970
-    graphProps.yAccessor = d => d.weightMax;
+    graphProps.xAccessor = d => new Date(d.date_of_entry); 
+    graphProps.yAccessor = d => d.value;
 
     return (
       <View style={styles.container}>
         <View style={styles.content}>
-          <WeightGraph {...graphProps} />
+          <DataGraph {...graphProps} />
         </View>
       </View>
     );

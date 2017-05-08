@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { AppRegistry, Text, StyleSheet, View} from 'react-native';
 import {Container, Content, Input, Icon, Button,Left, Right, Body, Header, Title, ListItem  } from 'native-base';
+import FooterComponent from '../../../app/FooterComponent'; 
 
 export default class JournalInput extends Component {
 
@@ -9,10 +10,6 @@ export default class JournalInput extends Component {
       this.props.navigator.push({
           name: routeName
       })
-  }
-
-  addToDB() {
-   
   }
 
   render(){

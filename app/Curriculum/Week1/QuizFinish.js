@@ -11,7 +11,6 @@ export default class JournalInput extends Component {
       })
   }
 
-
   render(){
       return (
          <Container>

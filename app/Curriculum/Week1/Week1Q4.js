@@ -11,10 +11,6 @@ export default class JournalInput extends Component {
       })
   }
 
-  addToDB() {
-   
-  }
-
   render(){
       return (
          <Container>

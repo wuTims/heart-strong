@@ -1,31 +1,35 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, StyleSheet, View, ListView, TouchableHighlight} from 'react-native';
-import {Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
+import { TouchableOpacity, AppRegistry, Text, StyleSheet, View, ListView, TouchableHighlight, Button, AlertIOS} from 'react-native';
+import {Container, Content, Input, Icon, Left, Right, Body, Header, Title  } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
-import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
+import ListItem from '../app/ListItem';
+import * as firebase from 'firebase';
+
+
 
 export default class JournalScreen extends Component {
 	constructor(props) { 
 		super(props);
-		const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-		this.state = {dataSource: ds.cloneWithRows(['row 1', 'row 2'])};
+		this.state = {
+			dataSource: new ListView.DataSource({
+				rowHasChanged: (row1, row2) => row1 !== row2,
+			}),
+			entry: ""
+		};
+		this.journalRef = this.getRef().child('journals');
+
 	}
 
-// 	componentDidMount() {
-// 		fetch('http://10.122.10.87:3030/', {
-// 			method: 'GET'
-// 		})
-// 			.then((response) => response.json())
-// 			.then((responseJson) => {
-// 				console.log(responseJson);
-// 				this.setState({dataSource: this.state.dataSource.cloneWithRows(responseJson.notes)});
+	getRef() {
+		return firebase.database().ref();
+	}
 
-// 			})
-// 			.catch((error) => {
-// 				console.error(error);
-// 			});
-// 	}
+	_renderItem(entry) {
+	    return (
+	      <ListItem entry={entry} />
+	    );
+ 	}
 
   	navigate(routeName){
 	    this.props.navigator.push({
@@ -33,33 +37,51 @@ export default class JournalScreen extends Component {
 	    });
 	}
 
+	componentDidMount() {
+		this.listenForEntries(this.journalRef);
+  	}
+
+  	// RenderRow from listview pulls data from the DataSource which is held in the state
+  	// DataSource is given a value by this listener which pulls snapshots of data from firebase (entries with two fields)
+  	// CloneWithRows takes the data array pulled from firebase and clones into ListItems which is RenderRow's method call to _renderItem
+  	// _renderItem's argument is the row data set by cloneWithRows
+  	listenForEntries(journalRef) {
+	    journalRef.on('value', (snapshot) => {
+
+	      // get children as an array, retrieving from firebase and specifying fields to retrieve
+	      var entries = [];
+	      snapshot.forEach((child) => {
+	        entries.push({
+	          date_of_entry: child.val().date_of_entry,
+	          entry: child.val().entry
+	        });
+	      });
+
+	      this.setState({
+	        dataSource: this.state.dataSource.cloneWithRows(entries)
+	      });
+
+	    });
+	}
+
+
+
 	render() { 
 		return (
 	      	<View style={{flex: 1}}>
 				  <Container>
-				  	<HeaderComponent titleText='Journal Entries' navigator={this.props.navigator}/>
+				  	<HeaderComponent titleText='Journal' navigator={this.props.navigator}/>
 					<Content>
-						<Button onPress={() => {this.navigate('JournalInput')}}>
-							<Icon name='add' />
-                    	</Button>
+						<TouchableOpacity style={styles.actionButtonIcon} onPress= {() => {this.navigate('JournalInput')}}>
+							<Text style={styles.textStyle}> + </Text>
+						</TouchableOpacity>
+						
+						<ListView
+							dataSource={this.state.dataSource}
+							renderRow={this._renderItem.bind(this)}
+							style={styles.listView}>
+						</ListView>
 
-		                {/*<ListView
-		                  dataSource={this.state.dataSource}
-		                  renderRow={(rowData) => 
-		                  	<TouchableHighlight onPress= { () => this.navigate('JournalInput')}>
-								<View style={styles.row}>
-									<Text>{rowData.content}</Text>
-								</View>
-							</TouchableHighlight>
-		                  }
-		                  renderSeparator = {(sectionId, rowId) =>
-					          <View
-					            style={styles.style_separator}
-					            key={rowId}
-					          />
-					      }>
-		                </ListView>
-						*/}
 		              </Content>
 		          </Container>
 					
@@ -71,8 +93,10 @@ export default class JournalScreen extends Component {
 
 
 const styles = StyleSheet.create({
-  testStyle: {
+  textStyle: {
     textAlign: 'center',
+    color: '#FFFFFF',
+    fontSize: 24,
   },
   row: {
     flexDirection: 'row',
@@ -83,9 +107,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#F6F6F6',
   },
   actionButtonIcon: {
-    fontSize: 20,
-    height: 22,
-    color: 'white',
+    alignSelf: 'stretch',
+    backgroundColor: '#4286f4',
+    padding: 10,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 50,
   },
   style_separator: {
   	flex: 1,

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View } from 'react-native';
 import { Content, ListItem, Right, Left, H2, Button} from 'native-base';
 import FooterComponent from '../FooterComponent'; 
-import NavigatorComponent from '../NavigatorComponent';
 import HeaderComponent from '../HeaderComponent';
 import Swipeout from 'react-native-swipeout';
 

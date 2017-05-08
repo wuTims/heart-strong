@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Image, AppRegistry, Text, StyleSheet, View, ScrollView} from 'react-native';
 import FooterComponent from '../app/FooterComponent'; 
-import NavigatorComponent from '../app/NavigatorComponent';
 import HeaderComponent from '../app/HeaderComponent';
 
 export default class HomeScreen extends Component {

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View, ScrollView} from 'react-native';
 
 import FooterComponent from '../app/FooterComponent'; 
-import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 import { Container, Content, Input, Icon, Button, Left, Right, Body, Header, Title, ListItem  } from 'native-base';
 
@@ -22,6 +21,7 @@ export default class CurriculumScreen extends Component {
               <Container>
                     <Content>
                         <ScrollView style={styles.scrollView}>
+
                              <Text style={styles.alertStyle } onPress={() => {this.navigate('Week0Content')}}> Introduce to Heartstrong Care</Text>
                              <Text style={styles.alertStyle } onPress={() => {this.navigate('Week1Content')}}> Week One: Survival Skills</Text>
                               <Text style={styles.alertStyle } onPress={() => {this.navigate('Week2Content')}}> Week Two: Norishing the Body</Text>

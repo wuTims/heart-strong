@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { AppRegistry, Text, StyleSheet, View } from 'react-native';
 import { Content, Title, ListItem, Right, Left, Radio, Icon, Body, Switch, Picker, Item } from 'native-base';
 import FooterComponent from '../app/FooterComponent'; 
-import NavigatorComponent from '../app/NavigatorComponent'
 import HeaderComponent from '../app/HeaderComponent';
 
 export default class SettingScreen extends Component {
@@ -43,7 +42,7 @@ export default class SettingScreen extends Component {
 						<ListItem itemDivider>
 							<Text>Notification Settings</Text>
 						</ListItem>
-						<ListItem onPress={() => {this.navigate('AlarmSettings'), userInfo}}>
+						<ListItem onPress={() => {this.navigate('AlarmSettings')}}>
 							<Text>Alarms</Text>
 						</ListItem>
 					</Content>
