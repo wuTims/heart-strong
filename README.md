@@ -12,10 +12,10 @@ Any text editor like Sublime, Brackets would work (if you use Sublime we recomme
  - Mac users need [Xcode](https://developer.apple.com/xcode/) to run the emulator
  - Window users need [Android studio](https://developer.android.com/studio/index.html)
  
-Hardware
+### 2. Hardwareee
 We used simulators in xcode and android studio but to run on a device, you need an IOS or android.
- IOS - https://facebook.github.io/react-native/docs/running-on-device.html (you might run into some errors - google the errors)
-Android – as long as you have your phone plugged into your computer when you run – react-native run-android – and you enable USB debugging it will run on your phone.
+- IOS - https://facebook.github.io/react-native/docs/running-on-device.html (you might run into some errors - google the errors)
+- Android – as long as you have your phone plugged into your computer when you run – react-native run-android – and you enable [USB debugging](https://developer.android.com/training/basics/firstapp/running-app.html) it will run on your phone.
  
  
 To start follow this guide to set up your environment to run react native - https://facebook.github.io/react-native/docs/getting-started.html
