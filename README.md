@@ -96,7 +96,7 @@ Open project folder in your text editor. All component JavaScript files are unde
 ## 4. Backend using Firebase
 Contact any one of us for administrator/editor privileges for the Firebase platform.
 
-1. Go to: (firebase.google.com)
+1. Go to: firebase.google.com
 2. Click on Go to Console on the top right of the screen
 3. After you’ve received privileges to access our project you should see the project name “HeartStrong” 
 4. Click on the Project to access the backend features
